@@ -9,7 +9,7 @@ const topics = [
   "safety",
   "electrical-properties",
   "resistance",
-  "dc-ohms-law",
+  "dc-ohms-law"
 ];
 
 export async function loadAllFlashcardData() {

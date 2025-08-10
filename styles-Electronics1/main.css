@@ -4,8 +4,9 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--text);
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
 
 :root {
   --bg: #fdfdfd;
@@ -32,7 +33,8 @@ header {
 }
 
 .topic-card {
-  background: #e0e0e0;
+  background: linear-gradient(145deg, #d1d0d0, #ffffff);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
@@ -41,6 +43,11 @@ header {
 }
 .topic-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.topic-card, .flashcard > div {
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .flashcard-viewer {
@@ -63,8 +70,8 @@ header {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: #d7d7d7;
+  border: 1px solid #cbcbcb;
   border-radius: 8px;
   backface-visibility: hidden;
   transition: transform 0.6s;
@@ -72,6 +79,11 @@ header {
   align-self:center;
   align-items: center;
 }
+
+.flashcard:hover > div {
+  border-color: #007acc;
+}
+
 .flashcard .front {
   transform: rotateY(0deg);
   
@@ -107,13 +119,24 @@ header {
 }
 
 #prev, #next {
-  background: none;
-  border: none;
+  transform: scale(1.2);
+  background: rgba(0,0,0,0.05);
+  border-radius: 50%;
   cursor: pointer;
   padding: 0.5em;
   margin: 0.5em;
   transition: transform 0.2s ease;
 }
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+#prev:active, #next:active {
+  animation: pulse 0.3s ease;
+}
+
 
 #prev:hover, #next:hover {
   transform: scale(1.2);
@@ -130,8 +153,11 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  background: #f0f0f0;
+  background: #f8f8f8;
+  color: #555;
+  border-top: 1px solid #ddd;
 }
+
 .hidden {
   display: none;
 }
