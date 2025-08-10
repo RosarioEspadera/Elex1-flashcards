@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ps-001",
+    "question": "What is the function of a power supply in electronic circuits?",
+    "answer": "To convert electrical energy into a stable DC voltage for circuit operation.",
+    "tags": ["function", "power", "basic"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "ps-002",
+    "question": "What is rectification?",
+    "answer": "The process of converting AC to DC using diodes.",
+    "tags": ["rectification", "diodes", "conversion"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "ps-003",
+    "question": "What is the difference between half-wave and full-wave rectification?",
+    "answer": "Half-wave uses one diode and conducts during one half-cycle; full-wave uses multiple diodes and conducts during both half-cycles.",
+    "tags": ["rectification", "comparison", "diodes"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-004",
+    "question": "What is the role of a filter capacitor in a power supply?",
+    "answer": "To smooth out the ripples in the rectified DC voltage.",
+    "tags": ["filtering", "capacitors", "power"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-005",
+    "question": "What is voltage regulation?",
+    "answer": "Maintaining a constant output voltage despite changes in input or load.",
+    "tags": ["regulation", "stability", "power"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-006",
+    "question": "What is the function of a Zener diode in voltage regulation?",
+    "answer": "It maintains a constant voltage across its terminals when reverse biased beyond breakdown.",
+    "tags": ["zener", "regulation", "power"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-007",
+    "question": "What is ripple voltage?",
+    "answer": "The residual periodic variation in DC voltage after rectification and filtering.",
+    "tags": ["ripple", "filtering", "power"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-008",
+    "question": "What is the role of a transformer in a power supply?",
+    "answer": "To step up or step down AC voltage before rectification.",
+    "tags": ["transformers", "conversion", "power"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "ps-009",
+    "question": "What is a linear regulator?",
+    "answer": "A device that uses resistive elements to maintain a constant output voltage.",
+    "tags": ["linear", "regulation", "power"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-010",
+    "question": "What is a switching regulator?",
+    "answer": "A regulator that uses high-frequency switching and energy storage elements for efficient voltage control.",
+    "tags": ["switching", "efficiency", "power"],
+    "difficulty": "hard"
+  }
+]

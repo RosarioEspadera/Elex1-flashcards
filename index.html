@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elex1 Flashcards</title>
+  <link rel="stylesheet" href="styles-Electronics1/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Elex1 Flashcards</h1>
+    <button id="theme-toggle">🌓</button>
+  </header>
+
+  <section class="topics-grid">
+    <div class="topic-card" data-topic="diodes">🔌 Diodes</div>
+    <div class="topic-card" data-topic="bjts">⚙️ BJTs</div>
+    <div class="topic-card" data-topic="fets">📐 FETs</div>
+    <div class="topic-card" data-topic="amplifiers">📢 Amplifiers</div>
+    <div class="topic-card" data-topic="biasing">🎛️ Biasing</div>
+    <div class="topic-card" data-topic="power-supplies">🔋 Power Supplies</div>
+  </section>
+
+  <section class="flashcard-viewer hidden">
+    <div class="flashcard">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <button id="next">Next</button>
+  </section>
+
+  <section class="progress">
+    <p id="progress-info">Select a topic to begin.</p>
+  </section>
+
+  <footer>
+    <p>Built by Rosario Espadera</p>
+  </footer>
+
+  <script src="scripts-Electronics1/main.js"></script>
+</body>
+</html>

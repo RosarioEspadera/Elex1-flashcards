@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bias-001",
+    "question": "What is the purpose of biasing in transistor circuits?",
+    "answer": "To set the operating point for linear amplification and stable performance.",
+    "tags": ["biasing", "operation", "transistors"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "bias-002",
+    "question": "What is the Q-point in a transistor?",
+    "answer": "The quiescent point representing the DC operating condition of the transistor.",
+    "tags": ["q-point", "biasing", "dc"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bias-003",
+    "question": "What is fixed bias?",
+    "answer": "A biasing method using a resistor from the base to a fixed voltage source.",
+    "tags": ["fixed", "biasing", "bjt"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "bias-004",
+    "question": "What is collector-to-base bias?",
+    "answer": "A biasing method where the base resistor is connected to the collector, improving stability.",
+    "tags": ["collector-base", "biasing", "bjt"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bias-005",
+    "question": "What is voltage-divider bias?",
+    "answer": "A stable biasing method using two resistors to divide voltage and set base bias.",
+    "tags": ["voltage-divider", "biasing", "bjt"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bias-006",
+    "question": "Why is voltage-divider bias preferred in amplifier design?",
+    "answer": "It offers better thermal stability and consistent operating point.",
+    "tags": ["stability", "biasing", "amplifiers"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bias-007",
+    "question": "What is self-bias in FET circuits?",
+    "answer": "A method where the source resistor develops a voltage that reverse-biases the gate.",
+    "tags": ["self-bias", "fet", "biasing"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bias-008",
+    "question": "How does temperature affect biasing?",
+    "answer": "It can shift the operating point due to changes in current and voltage drops.",
+    "tags": ["temperature", "biasing", "stability"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "bias-009",
+    "question": "What is thermal runaway?",
+    "answer": "A condition where increased temperature causes more current, further increasing temperature and damaging the transistor.",
+    "tags": ["thermal", "runaway", "biasing"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "bias-010",
+    "question": "What is the role of emitter resistance in bias stability?",
+    "answer": "It provides negative feedback that stabilizes the operating point against temperature variations.",
+    "tags": ["emitter", "resistance", "biasing"],
+    "difficulty": "medium"
+  }
+]

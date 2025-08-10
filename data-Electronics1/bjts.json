@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bjt-001",
+    "question": "What are the three terminals of a BJT?",
+    "answer": "Emitter, Base, and Collector.",
+    "tags": ["structure", "bjt", "basic"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "bjt-002",
+    "question": "What is the current gain (β) of a BJT?",
+    "answer": "β = IC / IB, where IC is collector current and IB is base current.",
+    "tags": ["gain", "formulas", "bjt"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bjt-003",
+    "question": "What is the relationship between IE, IC, and IB in a BJT?",
+    "answer": "IE = IC + IB, where IE is emitter current.",
+    "tags": ["current", "relationships", "bjt"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bjt-004",
+    "question": "What is the function of the base in a BJT?",
+    "answer": "It controls the flow of current between the emitter and collector.",
+    "tags": ["base", "control", "bjt"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "bjt-005",
+    "question": "What is the typical base-emitter voltage (V_BE) for a silicon BJT?",
+    "answer": "Approximately 0.7 volts when forward biased.",
+    "tags": ["voltage", "biasing", "bjt"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "bjt-006",
+    "question": "What is active mode in a BJT?",
+    "answer": "The base-emitter junction is forward biased, and the base-collector junction is reverse biased.",
+    "tags": ["modes", "biasing", "bjt"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bjt-007",
+    "question": "What is saturation mode in a BJT?",
+    "answer": "Both the base-emitter and base-collector junctions are forward biased.",
+    "tags": ["modes", "saturation", "bjt"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bjt-008",
+    "question": "What is cutoff mode in a BJT?",
+    "answer": "Both junctions are reverse biased, and the transistor is off.",
+    "tags": ["modes", "cutoff", "bjt"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "bjt-009",
+    "question": "What is the role of a BJT in amplification?",
+    "answer": "It uses a small base current to control a larger collector current, amplifying the input signal.",
+    "tags": ["amplification", "applications", "bjt"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "bjt-010",
+    "question": "How does temperature affect BJT performance?",
+    "answer": "It increases leakage current and may shift the operating point.",
+    "tags": ["temperature", "performance", "bjt"],
+    "difficulty": "hard"
+    }
+]

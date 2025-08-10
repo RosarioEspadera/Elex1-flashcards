@@ -1,0 +1,86 @@
+[
+  {
+    "id": "diode-001",
+    "question": "What is the typical forward voltage drop of a silicon diode?",
+    "answer": "Approximately 0.7 volts",
+    "tags": ["diodes", "voltage", "basic"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diode-002",
+    "question": "What is the typical forward voltage drop of a germanium diode?",
+    "answer": "Approximately 0.3 volts",
+    "tags": ["diodes", "voltage", "basic"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diode-003",
+    "question": "What happens to a diode in reverse bias?",
+    "answer": "It blocks current flow, except for a small leakage current.",
+    "tags": ["biasing", "reverse", "diodes"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diode-004",
+    "question": "Define breakdown voltage in a diode.",
+    "answer": "The reverse voltage at which a diode begins to conduct significantly.",
+    "tags": ["breakdown", "reverse", "diodes"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diode-005",
+    "question": "What is Zener breakdown?",
+    "answer": "A quantum tunneling effect where a Zener diode conducts in reverse once breakdown voltage is reached.",
+    "tags": ["zener", "breakdown", "reverse bias"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diode-006",
+    "question": "What is avalanche breakdown?",
+    "answer": "A process where carriers gain enough energy to ionize atoms, causing a chain reaction of conduction.",
+    "tags": ["avalanche", "breakdown", "reverse bias"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diode-007",
+    "question": "What is the function of a rectifier diode?",
+    "answer": "It converts AC to DC by allowing current to flow in only one direction.",
+    "tags": ["rectifier", "applications", "diodes"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diode-008",
+    "question": "What is the role of a flyback diode in inductive circuits?",
+    "answer": "It protects components by providing a path for current when the inductive load is switched off.",
+    "tags": ["flyback", "inductors", "protection"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diode-009",
+    "question": "What is the reverse recovery time of a diode?",
+    "answer": "The time it takes for a diode to stop conducting after switching from forward to reverse bias.",
+    "tags": ["switching", "timing", "diodes"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diode-010",
+    "question": "How does temperature affect diode behavior?",
+    "answer": "Increased temperature reduces the forward voltage drop and increases leakage current.",
+    "tags": ["temperature", "performance", "diodes"],
+    "difficulty": "medium"
+  },
+{
+    "id": "diode-011",
+    "question": "What is a Schottky diode?",
+    "answer": "A diode with a low forward voltage drop and fast switching speed, made from a metal-semiconductor junction.",
+    "tags": ["Schottky", "types", "diodes"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diode-012",
+    "question": "What is the purpose of a light-emitting diode (LED)?",
+    "answer": "To emit light when current flows through it, used in displays and indicators.",
+    "tags": ["LED", "applications", "diodes"],
+    "difficulty": "easy"
+  }
+]

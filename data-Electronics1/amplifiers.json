@@ -1,0 +1,72 @@
+[
+  {
+    "id": "amp-001",
+    "question": "What is the primary function of an amplifier?",
+    "answer": "To increase the amplitude of an input signal without altering its other characteristics.",
+    "tags": ["function", "amplifiers", "basic"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amp-002",
+    "question": "What is voltage gain (Av)?",
+    "answer": "Av = Vout / Vin, the ratio of output voltage to input voltage.",
+    "tags": ["gain", "formulas", "amplifiers"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amp-003",
+    "question": "What is a common-emitter amplifier?",
+    "answer": "An amplifier configuration where the emitter is common to both input and output, providing high voltage gain and phase inversion.",
+    "tags": ["common-emitter", "bjt", "amplifiers"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amp-004",
+    "question": "What is the input impedance of a common-emitter amplifier?",
+    "answer": "Typically moderate, depending on biasing and transistor parameters.",
+    "tags": ["impedance", "common-emitter", "amplifiers"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amp-005",
+    "question": "What is the phase relationship in a common-emitter amplifier?",
+    "answer": "The output signal is 180° out of phase with the input.",
+    "tags": ["phase", "common-emitter", "amplifiers"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amp-006",
+    "question": "What is a differential amplifier?",
+    "answer": "An amplifier that amplifies the difference between two input signals.",
+    "tags": ["differential", "applications", "amplifiers"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amp-007",
+    "question": "What is bandwidth in amplifier design?",
+    "answer": "The range of frequencies over which the amplifier maintains consistent gain.",
+    "tags": ["bandwidth", "frequency", "amplifiers"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amp-008",
+    "question": "What is the role of coupling capacitors in amplifiers?",
+    "answer": "They block DC components while allowing AC signals to pass between stages.",
+    "tags": ["coupling", "capacitors", "amplifiers"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amp-009",
+    "question": "What is the effect of negative feedback in amplifiers?",
+    "answer": "It stabilizes gain, reduces distortion, and improves bandwidth.",
+    "tags": ["feedback", "stability", "amplifiers"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amp-010",
+    "question": "What is the purpose of biasing in amplifier circuits?",
+    "answer": "To set the operating point of the transistor for linear amplification.",
+    "tags": ["biasing", "operation", "amplifiers"],
+    "difficulty": "medium"
+    }
+]

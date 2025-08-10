@@ -1,0 +1,72 @@
+[
+  {
+    "id": "fet-001",
+    "question": "What are the three terminals of a FET?",
+    "answer": "Gate, Drain, and Source.",
+    "tags": ["structure", "fet", "basic"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fet-002",
+    "question": "What distinguishes a JFET from a MOSFET?",
+    "answer": "JFETs use a reverse-biased gate, while MOSFETs have an insulated gate and higher input impedance.",
+    "tags": ["comparison", "fet", "types"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fet-003",
+    "question": "What is the input impedance of a MOSFET?",
+    "answer": "Very high, often in the megaohm range or higher.",
+    "tags": ["impedance", "mosfet", "fet"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fet-004",
+    "question": "What is the role of the gate in a FET?",
+    "answer": "It controls the conductivity between the drain and source.",
+    "tags": ["gate", "control", "fet"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fet-005",
+    "question": "What is pinch-off voltage in a JFET?",
+    "answer": "The drain voltage at which the channel is fully depleted and current saturates.",
+    "tags": ["jfet", "pinch-off", "fet"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fet-006",
+    "question": "What is the threshold voltage (V_th) of a MOSFET?",
+    "answer": "The minimum gate voltage required to create a conducting channel.",
+    "tags": ["mosfet", "threshold", "fet"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fet-007",
+    "question": "What is the drain current equation for a MOSFET in saturation?",
+    "answer": "ID = (1/2) × μn × Cox × (W/L) × (V_GS − V_th)²",
+    "tags": ["equation", "mosfet", "fet"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fet-008",
+    "question": "What is the main advantage of MOSFETs over BJTs?",
+    "answer": "Higher input impedance and faster switching speed.",
+    "tags": ["comparison", "fet", "bjt"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fet-009",
+    "question": "What is the role of the oxide layer in a MOSFET?",
+    "answer": "It insulates the gate from the channel, enabling voltage control without current flow.",
+    "tags": ["structure", "mosfet", "fet"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fet-010",
+    "question": "How does temperature affect FET performance?",
+    "answer": "It can shift threshold voltage and affect carrier mobility, impacting current flow.",
+    "tags": ["temperature", "performance", "fet"],
+    "difficulty": "hard"
+  }
+]
