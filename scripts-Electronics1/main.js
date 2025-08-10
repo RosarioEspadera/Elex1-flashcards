@@ -21,6 +21,7 @@ const flashcard = document.querySelector(".flashcard");
 const front = document.querySelector(".front");
 const back = document.querySelector(".back");
 const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
 const progressInfo = document.getElementById("progress-info");
 
 let currentCards = [];
@@ -42,17 +43,28 @@ flashcard.onclick = () => {
   flashcard.classList.toggle("flipped");
 };
 
-nextBtn.onclick = () => {
-  currentIndex = (currentIndex + 1) % currentCards.length;
-  showCard();
+prevBtn.onclick = () => {
+  currentIndex = (currentIndex - 1 + currentCards.length) % currentCards.length;
+  showCard("left");
 };
 
-function showCard() {
+nextBtn.onclick = () => {
+  currentIndex = (currentIndex + 1) % currentCards.length;
+  showCard("right");
+};
+
+
+function showCard(direction = "right") {
   const card = currentCards[currentIndex];
   front.textContent = card.question;
   back.textContent = card.answer;
   flashcard.classList.remove("flipped");
+
+  flashcard.classList.remove("slide-left", "slide-right");
+  void flashcard.offsetWidth; // Force reflow
+  flashcard.classList.add(direction === "left" ? "slide-left" : "slide-right");
 }
+
 
 function renderFlashcards(data) {
   console.log("Loaded all flashcard data:", data);

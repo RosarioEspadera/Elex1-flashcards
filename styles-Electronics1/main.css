@@ -78,6 +78,43 @@ header {
 .flashcard.flipped .back {
   transform: rotateY(0deg);
 }
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.flashcard.slide-left {
+  animation: slideInLeft 0.3s ease;
+}
+
+.flashcard.slide-right {
+  animation: slideInRight 0.3s ease;
+}
+
+#prev, #next {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+  margin: 0.5em;
+  transition: transform 0.2s ease;
+}
+
+#prev:hover, #next:hover {
+  transform: scale(1.2);
+}
+
+#prev svg, #next svg {
+  stroke: var(--text-color, #333);
+  width: 2em;
+  height: 2em;
+}
+
 
 footer {
   text-align: center;
