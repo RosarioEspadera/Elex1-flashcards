@@ -1,72 +1,283 @@
 [
   {
-    "id": "fet-001",
+    "id": "fets-001",
+    "question": "What does FET stand for?",
+    "answer": "Field-Effect Transistor.",
+    "tags": ["fets", "definition"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fets-002",
     "question": "What are the three terminals of a FET?",
-    "answer": "Gate, Drain, and Source.",
-    "tags": ["structure", "fet", "basic"],
+    "answer": "Gate, Source, and Drain.",
+    "tags": ["fets", "structure"],
     "difficulty": "easy"
   },
   {
-    "id": "fet-002",
-    "question": "What distinguishes a JFET from a MOSFET?",
-    "answer": "JFETs use a reverse-biased gate, while MOSFETs have an insulated gate and higher input impedance.",
-    "tags": ["comparison", "fet", "types"],
-    "difficulty": "medium"
-  },
-  {
-    "id": "fet-003",
-    "question": "What is the input impedance of a MOSFET?",
-    "answer": "Very high, often in the megaohm range or higher.",
-    "tags": ["impedance", "mosfet", "fet"],
-    "difficulty": "medium"
-  },
-  {
-    "id": "fet-004",
-    "question": "What is the role of the gate in a FET?",
-    "answer": "It controls the conductivity between the drain and source.",
-    "tags": ["gate", "control", "fet"],
+    "id": "fets-003",
+    "question": "What are the two main types of FETs?",
+    "answer": "JFET and MOSFET.",
+    "tags": ["fets", "types"],
     "difficulty": "easy"
   },
   {
-    "id": "fet-005",
-    "question": "What is pinch-off voltage in a JFET?",
-    "answer": "The drain voltage at which the channel is fully depleted and current saturates.",
-    "tags": ["jfet", "pinch-off", "fet"],
+    "id": "fets-004",
+    "question": "What is the control mechanism of a FET?",
+    "answer": "Voltage applied to the gate controls current flow.",
+    "tags": ["fets", "operation"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fets-005",
+    "question": "What is the input impedance of a FET?",
+    "answer": "Very high, often in the megaohm range.",
+    "tags": ["fets", "performance"],
     "difficulty": "medium"
   },
   {
-    "id": "fet-006",
-    "question": "What is the threshold voltage (V_th) of a MOSFET?",
-    "answer": "The minimum gate voltage required to create a conducting channel.",
-    "tags": ["mosfet", "threshold", "fet"],
-    "difficulty": "medium"
-  },
-  {
-    "id": "fet-007",
-    "question": "What is the drain current equation for a MOSFET in saturation?",
-    "answer": "ID = (1/2) × μn × Cox × (W/L) × (V_GS − V_th)²",
-    "tags": ["equation", "mosfet", "fet"],
+    "id": "fets-006",
+    "question": "What is the pinch-off voltage in a JFET?",
+    "answer": "The gate-source voltage at which drain current becomes constant.",
+    "tags": ["fets", "parameters"],
     "difficulty": "hard"
   },
   {
-    "id": "fet-008",
-    "question": "What is the main advantage of MOSFETs over BJTs?",
-    "answer": "Higher input impedance and faster switching speed.",
-    "tags": ["comparison", "fet", "bjt"],
+    "id": "fets-007",
+    "question": "What is Idss in a JFET?",
+    "answer": "The maximum drain current when Vgs = 0.",
+    "tags": ["fets", "parameters"],
     "difficulty": "medium"
   },
   {
-    "id": "fet-009",
-    "question": "What is the role of the oxide layer in a MOSFET?",
-    "answer": "It insulates the gate from the channel, enabling voltage control without current flow.",
-    "tags": ["structure", "mosfet", "fet"],
+    "id": "fets-008",
+    "question": "What is the formula for drain current in a JFET?",
+    "answer": "Id = Idss × (1 - Vgs/Vp)²",
+    "tags": ["fets", "formulas"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-009",
+    "question": "What is the difference between enhancement and depletion MOSFETs?",
+    "answer": "Enhancement MOSFETs require gate voltage to conduct; depletion MOSFETs conduct at zero gate voltage.",
+    "tags": ["fets", "types"],
     "difficulty": "medium"
   },
   {
-    "id": "fet-010",
-    "question": "How does temperature affect FET performance?",
-    "answer": "It can shift threshold voltage and affect carrier mobility, impacting current flow.",
-    "tags": ["temperature", "performance", "fet"],
+    "id": "fets-010",
+    "question": "What is the threshold voltage (Vth) in a MOSFET?",
+    "answer": "The gate voltage at which the MOSFET begins to conduct.",
+    "tags": ["fets", "parameters"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-011",
+    "question": "What is the role of the gate oxide in a MOSFET?",
+    "answer": "To insulate the gate and allow capacitive control of the channel.",
+    "tags": ["fets", "structure"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-012",
+    "question": "What is the drain current equation for an enhancement-mode MOSFET in saturation?",
+    "answer": "Id = (1/2) × k × (Vgs - Vth)²",
+    "tags": ["fets", "formulas"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-013",
+    "question": "What is the transconductance (gm) of a FET?",
+    "answer": "gm = ∂Id / ∂Vgs",
+    "tags": ["fets", "formulas"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-014",
+    "question": "What is the role of a FET in a buffer amplifier?",
+    "answer": "To provide high input impedance and low output impedance.",
+    "tags": ["fets", "applications"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-015",
+    "question": "What is the role of a FET in a voltage-controlled resistor?",
+    "answer": "To vary resistance based on gate voltage in the ohmic region.",
+    "tags": ["fets", "applications"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-016",
+    "question": "What is the role of a FET in a switch?",
+    "answer": "To turn current flow on or off based on gate voltage.",
+    "tags": ["fets", "applications"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fets-017",
+    "question": "What is the role of a FET in a digital logic gate?",
+    "answer": "To implement switching behavior with low power consumption.",
+    "tags": ["fets", "applications"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-018",
+    "question": "What is the role of a FET in an analog amplifier?",
+    "answer": "To amplify signals with high input impedance and linearity.",
+    "tags": ["fets", "applications"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-019",
+    "question": "What is the gate leakage current in a MOSFET?",
+    "answer": "Very low due to the insulating oxide layer.",
+    "tags": ["fets", "parameters"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-020",
+    "question": "What is the role of a FET in RF circuits?",
+    "answer": "To provide low-noise amplification and fast switching.",
+    "tags": ["fets", "applications"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-021",
+    "question": "What is the purpose of biasing a FET?",
+    "answer": "To set the operating point for linear amplification or switching.",
+    "tags": ["fets", "biasing"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-022",
+    "question": "What is self-biasing in a JFET?",
+    "answer": "Using a resistor in the source leg to develop Vgs automatically.",
+    "tags": ["fets", "biasing"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-023",
+    "question": "What is the role of a voltage divider in MOSFET biasing?",
+    "answer": "To set a stable gate voltage using resistors.",
+    "tags": ["fets", "biasing"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-024",
+    "question": "What happens when Vgs < Vth in an enhancement-mode MOSFET?",
+    "answer": "The MOSFET remains off; no conduction occurs.",
+    "tags": ["fets", "operation"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fets-025",
+    "question": "What is the ohmic region in a FET?",
+    "answer": "The region where the FET behaves like a variable resistor.",
+    "tags": ["fets", "operation"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-026",
+    "question": "What is the saturation region in a FET?",
+    "answer": "The region where drain current is mostly independent of Vds.",
+    "tags": ["fets", "operation"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-027",
+    "question": "What is the cutoff region in a FET?",
+    "answer": "The region where the FET is off and no current flows.",
+    "tags": ["fets", "operation"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fets-028",
+    "question": "What is the role of a FET in a CMOS inverter?",
+    "answer": "To switch between high and low output states using complementary MOSFETs.",
+    "tags": ["fets", "applications"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-029",
+    "question": "Why are FETs preferred in low-noise amplifiers?",
+    "answer": "Due to their high input impedance and low gate current.",
+    "tags": ["fets", "applications"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-030",
+    "question": "What is the role of a FET in a voltage follower?",
+    "answer": "To buffer signals without amplification, preserving voltage.",
+    "tags": ["fets", "applications"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-031",
+    "question": "What is the gate capacitance in a MOSFET?",
+    "answer": "The capacitance between gate and channel due to the oxide layer.",
+    "tags": ["fets", "parameters"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-032",
+    "question": "What is channel-length modulation in MOSFETs?",
+    "answer": "A slight increase in drain current with Vds due to shortening of the channel.",
+    "tags": ["fets", "edge-cases"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-033",
+    "question": "What is subthreshold conduction in MOSFETs?",
+    "answer": "Leakage current that flows even when Vgs < Vth.",
+    "tags": ["fets", "edge-cases"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-034",
+    "question": "What is the body effect in MOSFETs?",
+    "answer": "An increase in threshold voltage due to source-body voltage.",
+    "tags": ["fets", "edge-cases"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-035",
+    "question": "What is thermal runaway in FETs?",
+    "answer": "A condition where increased temperature leads to higher current and further heating.",
+    "tags": ["fets", "edge-cases"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-036",
+    "question": "What is the safe operating area (SOA) of a FET?",
+    "answer": "The range of voltage and current within which the FET can operate safely.",
+    "tags": ["fets", "parameters"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-037",
+    "question": "What is the role of a FET in a current mirror?",
+    "answer": "To replicate current from one branch to another using matched devices.",
+    "tags": ["fets", "applications"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-038",
+    "question": "What is the role of a FET in a differential amplifier?",
+    "answer": "To amplify the difference between two input signals.",
+    "tags": ["fets", "applications"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-039",
+    "question": "What is the role of a FET in a mixer circuit?",
+    "answer": "To combine signals at different frequencies for modulation or demodulation.",
+    "tags": ["fets", "applications"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-040",
+    "question": "What is the role of a FET in a sample-and-hold circuit?",
+    "answer": "To isolate and store analog voltage levels temporarily.",
+    "tags": ["fets", "applications"],
     "difficulty": "hard"
   }
 ]
+

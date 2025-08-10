@@ -4,7 +4,12 @@ const topics = [
   "bjts",
   "diodes",
   "fets",
-  "power-supplies"
+  "power-supplies",
+  "dc-math",
+  "safety",
+  "electrical-properties",
+  "resistance",
+  "dc-ohms-law",
 ];
 
 export async function loadAllFlashcardData() {

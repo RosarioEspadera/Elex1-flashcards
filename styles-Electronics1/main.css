@@ -46,12 +46,18 @@ header {
 .flashcard-viewer {
   padding: 1rem;
   text-align: center;
+  align-content: center;
+  align-self:center;
+  align-items: center;
 }
 .flashcard {
   margin: 1rem auto;
   width: 300px;
   height: 180px;
   perspective: 1000px;
+  align-content: center;
+  align-self:center;
+  align-items: center;
 }
 .flashcard > div {
   width: 100%;
@@ -62,9 +68,13 @@ header {
   border-radius: 8px;
   backface-visibility: hidden;
   transition: transform 0.6s;
+  align-content: center;
+  align-self:center;
+  align-items: center;
 }
 .flashcard .front {
   transform: rotateY(0deg);
+  
 }
 .flashcard .back {
   transform: rotateY(180deg);

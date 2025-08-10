@@ -1,0 +1,283 @@
+[
+  {
+    "id": "resistance-001",
+    "question": "What is the unit of resistance?",
+    "answer": "Ohm (Ω)",
+    "tags": ["resistance", "units"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-002",
+    "question": "What is the formula for resistance using voltage and current?",
+    "answer": "R = V / I",
+    "tags": ["resistance", "formulas"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-003",
+    "question": "What does a resistor do in a circuit?",
+    "answer": "It limits the flow of electric current.",
+    "tags": ["resistance", "components"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-004",
+    "question": "What is the total resistance in a series circuit?",
+    "answer": "R_total = R1 + R2 + R3 + ...",
+    "tags": ["series", "resistance"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-005",
+    "question": "What is the total resistance in a parallel circuit?",
+    "answer": "1/R_total = 1/R1 + 1/R2 + 1/R3 + ...",
+    "tags": ["parallel", "resistance"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-006",
+    "question": "What color represents the digit 2 in the resistor color code?",
+    "answer": "Red",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-007",
+    "question": "What is the tolerance of a gold band in a 4-band resistor?",
+    "answer": "±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-008",
+    "question": "What is the resistance of a resistor with bands: red, violet, orange, gold?",
+    "answer": "27 kΩ ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-009",
+    "question": "What is a potentiometer?",
+    "answer": "A variable resistor used to adjust voltage or current.",
+    "tags": ["variable-resistors", "components"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-010",
+    "question": "What is the function of an ohmmeter?",
+    "answer": "To measure resistance in a circuit or component.",
+    "tags": ["tools", "measurement"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-011",
+    "question": "What is the effect of adding resistors in series?",
+    "answer": "Total resistance increases.",
+    "tags": ["series", "resistance"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-012",
+    "question": "What is the effect of adding resistors in parallel?",
+    "answer": "Total resistance decreases.",
+    "tags": ["parallel", "resistance"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-013",
+    "question": "What is the resistance of two 100 Ω resistors in parallel?",
+    "answer": "50 Ω",
+    "tags": ["parallel", "resistance", "calculations"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-014",
+    "question": "What is the resistance of two 100 Ω resistors in series?",
+    "answer": "200 Ω",
+    "tags": ["series", "resistance", "calculations"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-015",
+    "question": "What is a protoboard used for?",
+    "answer": "For building and testing temporary electronic circuits.",
+    "tags": ["tools", "prototyping"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-016",
+    "question": "What is the fourth band in a 4-band resistor used for?",
+    "answer": "Tolerance",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-017",
+    "question": "What is the resistance of a resistor with bands: brown, black, red, gold?",
+    "answer": "1 kΩ ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-018",
+    "question": "What is the resistance of a resistor with bands: green, blue, yellow, silver?",
+    "answer": "560 kΩ ±10%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-019",
+    "question": "What is the tolerance of a silver band in a 4-band resistor?",
+    "answer": "±10%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-020",
+    "question": "What is the resistance of a resistor with bands: orange, orange, brown, gold?",
+    "answer": "330 Ω ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-021",
+    "question": "What is the resistance of a resistor with bands: yellow, violet, red, gold?",
+    "answer": "4.7 kΩ ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-022",
+    "question": "What is the resistance of a resistor with bands: blue, gray, brown, silver?",
+    "answer": "680 Ω ±10%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-023",
+    "question": "What is the resistance of a resistor with bands: black, brown, red, gold?",
+    "answer": "1 kΩ ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-024",
+    "question": "What is the resistance of a resistor with bands: brown, green, orange, silver?",
+    "answer": "15 kΩ ±10%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-025",
+    "question": "What is the resistance of a resistor with bands: red, red, brown, gold?",
+    "answer": "220 Ω ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-026",
+    "question": "What is the resistance of a resistor with bands: orange, orange, orange, gold?",
+    "answer": "33 kΩ ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-027",
+    "question": "What is the resistance of a resistor with bands: gray, red, black, silver?",
+    "answer": "82 Ω ±10%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-028",
+    "question": "What is the resistance of a resistor with bands: white, brown, yellow, gold?",
+    "answer": "910 kΩ ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "resistance-029",
+    "question": "What is the resistance of a resistor with bands: green, brown, red, silver?",
+    "answer": "5.1 kΩ ±10%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-030",
+    "question": "What is the resistance of a resistor with bands: blue, green, brown, gold?",
+    "answer": "650 Ω ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-031",
+    "question": "What is the function of a variable resistor?",
+    "answer": "To adjust resistance manually for tuning or calibration.",
+    "tags": ["variable-resistors", "components"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-032",
+    "question": "What is the effect of temperature on resistance in most conductors?",
+    "answer": "Resistance increases with temperature.",
+    "tags": ["resistance", "temperature"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-033",
+    "question": "What is the resistance of a 1-meter copper wire with 1 mm² cross-section?",
+    "answer": "Approximately 0.0175 Ω",
+    "tags": ["resistance", "materials"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "resistance-034",
+    "question": "What is the role of a protoboard in circuit design?",
+    "answer": "It allows temporary circuit assembly without soldering.",
+    "tags": ["tools", "prototyping"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-035",
+    "question": "What is the resistance of three 100 Ω resistors in parallel?",
+    "answer": "33.3 Ω",
+    "tags": ["parallel", "resistance", "calculations"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-036",
+    "question": "What is the resistance of three 100 Ω resistors in series?",
+    "answer": "300 Ω",
+    "tags": ["series", "resistance", "calculations"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-037",
+    "question": "What is the function of the BK Precision 2831E ohmmeter?",
+    "answer": "To measure resistance with high precision.",
+    "tags": ["tools", "measurement"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-038",
+    "question": "What is the function of the Fluke 87 ohmmeter?",
+    "answer": "To measure resistance and continuity in circuits.",
+    "tags": ["tools", "measurement"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "resistance-039",
+    "question": "What is the resistance of a resistor with bands: brown, black, black, gold?",
+    "answer": "10 Ω ±5%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "resistance-040",
+    "question": "What is the resistance of a resistor with bands: red, black, yellow, silver?",
+    "answer": "200 kΩ ±10%",
+    "tags": ["color-code", "resistors"],
+    "difficulty": "hard"
+  }
+]
+

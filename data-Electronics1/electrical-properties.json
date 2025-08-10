@@ -1,0 +1,283 @@
+[
+  {
+    "id": "electrical-properties-001",
+    "question": "What is the formula for electrical power?",
+    "answer": "P = V × I",
+    "tags": ["power", "formulas"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-002",
+    "question": "What is the unit of electrical energy?",
+    "answer": "Watt-hour (Wh)",
+    "tags": ["energy", "units"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-003",
+    "question": "Define efficiency in electrical systems.",
+    "answer": "Efficiency = (Output Power / Input Power) × 100%",
+    "tags": ["efficiency", "formulas"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-004",
+    "question": "What is the capacity factor of a power plant?",
+    "answer": "Capacity Factor = Actual Output / Maximum Possible Output over time",
+    "tags": ["capacity-factor", "formulas"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-005",
+    "question": "What is the unit of electric current?",
+    "answer": "Ampere (A)",
+    "tags": ["current", "units"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-006",
+    "question": "What is the unit of voltage?",
+    "answer": "Volt (V)",
+    "tags": ["voltage", "units"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-007",
+    "question": "What is the unit of resistance?",
+    "answer": "Ohm (Ω)",
+    "tags": ["resistance", "units"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-008",
+    "question": "What is the relationship between energy and power?",
+    "answer": "Energy = Power × Time",
+    "tags": ["energy", "formulas"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-009",
+    "question": "What does a low capacity factor indicate?",
+    "answer": "The power source is underutilized or intermittent.",
+    "tags": ["capacity-factor", "analysis"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-010",
+    "question": "What is the typical efficiency range of solar panels?",
+    "answer": "15% to 22%",
+    "tags": ["efficiency", "solar"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-011",
+    "question": "What is the formula for calculating voltage?",
+    "answer": "V = I × R",
+    "tags": ["voltage", "formulas"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-012",
+    "question": "What is the formula for calculating current?",
+    "answer": "I = V / R",
+    "tags": ["current", "formulas"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-013",
+    "question": "What is the formula for calculating resistance?",
+    "answer": "R = V / I",
+    "tags": ["resistance", "formulas"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-014",
+    "question": "What is the role of transformers in power transmission?",
+    "answer": "To step up or step down voltage for efficient transmission and distribution.",
+    "tags": ["power-transmission", "transformers"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-015",
+    "question": "What is the main source of energy in a hydroelectric power plant?",
+    "answer": "Gravitational potential energy of water",
+    "tags": ["energy", "generation"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-016",
+    "question": "What is the function of a generator?",
+    "answer": "To convert mechanical energy into electrical energy.",
+    "tags": ["energy", "generation"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-017",
+    "question": "What is the typical voltage of household outlets in the Philippines?",
+    "answer": "220 volts",
+    "tags": ["voltage", "regional"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-018",
+    "question": "What is the effect of increasing resistance in a circuit with constant voltage?",
+    "answer": "Current decreases.",
+    "tags": ["resistance", "current"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-019",
+    "question": "What is the effect of increasing current in a circuit with constant resistance?",
+    "answer": "Voltage increases.",
+    "tags": ["current", "voltage"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-020",
+    "question": "What is the role of transmission lines?",
+    "answer": "To carry electrical power over long distances from generation to distribution.",
+    "tags": ["power-transmission", "infrastructure"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-021",
+    "question": "What is the effect of increasing voltage in a circuit with constant resistance?",
+    "answer": "Current increases.",
+    "tags": ["voltage", "current"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-022",
+    "question": "What is the definition of voltage?",
+    "answer": "The potential difference between two points in an electric field.",
+    "tags": ["voltage", "definitions"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-023",
+    "question": "What is the definition of current?",
+    "answer": "The flow of electric charge through a conductor.",
+    "tags": ["current", "definitions"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-024",
+    "question": "What is the definition of resistance?",
+    "answer": "The opposition to the flow of electric current.",
+    "tags": ["resistance", "definitions"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-025",
+    "question": "What is the unit of power?",
+    "answer": "Watt (W)",
+    "tags": ["power", "units"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-026",
+    "question": "What is the formula for calculating energy in joules?",
+    "answer": "Energy = Power × Time (in seconds)",
+    "tags": ["energy", "formulas"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-027",
+    "question": "What is the role of a substation in power transmission?",
+    "answer": "To transform voltage levels and distribute power to local areas.",
+    "tags": ["power-transmission", "infrastructure"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-028",
+    "question": "What is the typical voltage range for high-voltage transmission lines?",
+    "answer": "110 kV to 765 kV",
+    "tags": ["power-transmission", "voltage"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "electrical-properties-029",
+    "question": "What is the purpose of using alternating current (AC) for transmission?",
+    "answer": "AC is easier to transform and transmit over long distances.",
+    "tags": ["power-transmission", "ac"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-030",
+    "question": "What is the efficiency of a system with 12 kW input and 9 kW output?",
+    "answer": "75%",
+    "tags": ["efficiency", "calculations"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-031",
+    "question": "What is the capacity factor of a plant producing 500 MWh/day with a max of 1000 MWh/day?",
+    "answer": "50%",
+    "tags": ["capacity-factor", "calculations"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-032",
+    "question": "What is the role of a load in an electrical circuit?",
+    "answer": "To consume electrical energy and perform work.",
+    "tags": ["energy", "circuits"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-033",
+    "question": "What is the relationship between voltage and current in a resistor?",
+    "answer": "They are directly proportional (Ohm’s Law).",
+    "tags": ["voltage", "current", "resistance"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-034",
+    "question": "What is the effect of resistance on power dissipation?",
+    "answer": "Higher resistance increases power dissipation (P = I²R).",
+    "tags": ["resistance", "power"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-035",
+    "question": "What is the main source of energy in a thermal power plant?",
+    "answer": "Heat from burning fossil fuels.",
+    "tags": ["energy", "generation"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-036",
+    "question": "What is the main advantage of renewable energy sources?",
+    "answer": "They are sustainable and reduce environmental impact.",
+    "tags": ["energy", "renewables"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "electrical-properties-037",
+    "question": "What is the formula for power using resistance and current?",
+    "answer": "P = I² × R",
+    "tags": ["power", "formulas"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-038",
+    "question": "What is the formula for power using voltage and resistance?",
+    "answer": "P = V² / R",
+    "tags": ["power", "formulas"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "electrical-properties-039",
+    "question": "What is the role of a capacitor in an AC circuit?",
+    "answer": "To store and release energy, affecting phase and impedance.",
+    "tags": ["energy", "ac"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "electrical-properties-040",
+    "question": "What is the role of a battery in a DC circuit?",
+    "answer": "To provide a constant voltage source.",
+    "tags": ["energy", "dc"],
+    "difficulty": "easy"
+  }
+
+]
