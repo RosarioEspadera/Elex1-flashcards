@@ -1,144 +1,169 @@
-/* Reset and base styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9fb;
-  color: #222;
+:root {
+  --bg: #f9f9fc;
+  --fg: #1a1a1a;
+  --accent: #0077cc;
+  --card-bg: #ffffff;
+  --card-border: #ddd;
+  --transition-speed: 0.3s;
+  --font-family: 'Segoe UI', sans-serif;
 }
 
-header {
-  background-color: #2c3e50;
-  color: white;
-  padding: 1rem;
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header.site-header {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--card-border);
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header h1 {
+.site-title {
+  font-size: 1.8rem;
   margin: 0;
-  font-size: 1.5rem;
 }
 
-.top-nav a {
-  margin-left: 1rem;
+.top-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--accent);
+  transition: transform var(--transition-speed);
+}
+
+.nav-icon:hover svg {
+  transform: scale(1.1);
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.topics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.topic-card {
+  background-color: var(--card-bg);
+  border: 2px solid var(--accent);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.topic-card:hover {
+  background-color: var(--accent);
   color: white;
-  text-decoration: none;
+  transform: translateY(-2px);
 }
 
-.top-nav svg {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
+.flashcard-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .flashcard {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  margin: auto;
-  perspective: 1000px;
-  transition: transform 0.4s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 720px;
+  height: 480px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  background: #fff;
+  transition: transform var(--transition-speed);
 }
 
-.flashcard.flipped .front {
-  transform: rotateY(180deg);
-}
-.flashcard.flipped .back {
-  transform: rotateY(0deg);
-}
-
-.front, .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+.flashcard .front,
+.flashcard .back {
   padding: 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  transition: transform 0.4s ease;
+  justify-content: center;
+  font-size: 1.2rem;
+  overflow: auto;
 }
 
-.front img, .back img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 0.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.flashcard-controls {
+  display: flex;
+  gap: 2rem;
 }
 
-.front img:hover, .back img:hover {
-  transform: scale(1.05);
-}
-
-.card-preview {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 0.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease;
-}
-
-.card-preview:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-.topic-section h2 {
-  margin-top: 2rem;
-  font-size: 1.4rem;
-  color: #333;
-}
-
-/* Navigation buttons */
-button#prev,
-button#next {
-  background-color: #1e3a8a;
-  color: white;
+button {
+  background: none;
   border: none;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+  transition: transform var(--transition-speed);
 }
 
-button#prev:hover,
-button#next:hover {
-  background-color: #3749a1;
+button:hover {
+  transform: scale(1.1);
 }
 
 button svg {
-  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  color: var(--accent);
 }
 
-/* Progress section */
 .progress {
   text-align: center;
-  margin: 1rem;
+  margin-top: 2rem;
   font-size: 1rem;
   color: #555;
 }
 
-/* Footer */
-footer {
+footer.site-footer {
   text-align: center;
   padding: 1rem;
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--card-border);
   font-size: 0.9rem;
-  color: #888;
 }
-.size-6 {
-  width: 1.5em;
-  height: 1.5em;
+
+/* Hidden utility */
+.hidden {
+  display: none !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .flashcard {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .flashcard .front,
+  .flashcard .back {
+    min-height: 240px;
+  }
+
+  .flashcard-controls {
+    gap: 1rem;
+  }
 }
