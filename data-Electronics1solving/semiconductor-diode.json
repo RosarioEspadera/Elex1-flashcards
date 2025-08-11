@@ -1,8 +1,8 @@
 [
   {
     "id": "semiconductor-diode-001",
-    "question": "./images/Q1.jpeg",
-    "answer": "./images/Q1ans.jpeg",
+    "question": "./images-semiconductor-diode/Q1.jpeg",
+    "answer": "./images-semiconductor-diode/Q1ans.jpeg",
     "tags": ["semiconductor-diode", "units"],
     "difficulty": "easy"
   }
