@@ -1,48 +1,22 @@
-const topicList = [
-  "semiconductor-diode"
-];
+// This module loads all available flashcard topics for optional grid rendering or preloading
 
 export async function loadAllFlashcardData() {
+  const topics = [
+    'semiconductor-diode',
+    // Add more topics here as you expand (e.g. 'ohms-law', 'resistance', etc.)
+  ];
+
   const allData = {};
 
-  await Promise.all(
-    topicList.map(async topic => {
-      try {
-        const res = await fetch(`data-Electronics1solving/${topic}.json`);
-        const cards = await res.json();
-        allData[topic] = cards.map(card => normalizeCard(card));
-      } catch (err) {
-        console.warn(`Failed to load topic: ${topic}`, err);
-      }
-    })
-  );
-
-  return allData;
-}
-
-function normalizeCard(card) {
-  return {
-    question: normalizeContent(card.question),
-    answer: normalizeContent(card.answer)
-  };
-}
-
-function normalizeContent(content) {
-  if (typeof content === "string") return [content];
-
-  if (Array.isArray(content)) {
-    return content.map(item => {
-      if (typeof item === "string") return item;
-      if (item.type === "img") {
-        return {
-          type: "img",
-          src: item.src,
-          alt: item.alt || ""
-        };
-      }
-      return item;
-    });
+  for (const topic of topics) {
+    try {
+      const res = await fetch(`data-Electronics1solving/${topic}.json`);
+      const cards = await res.json();
+      allData[topic] = cards;
+    } catch (err) {
+      console.error(`Failed to load flashcards for ${topic}:`, err);
+    }
   }
 
-  return [String(content)];
+  return allData;
 }
