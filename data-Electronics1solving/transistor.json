@@ -1,0 +1,162 @@
+[
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q1.jpeg", "alt": "Q1-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q1ans.jpeg", "alt": "Q1ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q2.jpeg", "alt": "Q2-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q2ans.jpeg", "alt": "Q2ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q3.jpeg", "alt": "Q3-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q3ans.jpeg", "alt": "Q3ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q4.jpeg", "alt": "Q4-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q4ans.jpeg", "alt": "Q4ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q5.jpeg", "alt": "Q5-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q5ans.jpeg", "alt": "Q5ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q6.jpeg", "alt": "Q6-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q6ans.jpeg", "alt": "Q6ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q7.jpeg", "alt": "Q7-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q7ans.jpeg", "alt": "Q7ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q8.jpeg", "alt": "Q8-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q8ans.jpeg", "alt": "Q8ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q9.jpeg", "alt": "Q9-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q9ans.jpeg", "alt": "Q9ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q10.jpeg", "alt": "Q10-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q10ans.jpeg", "alt": "Q10ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q11.jpeg", "alt": "Q11-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q11ans.jpeg", "alt": "Q11ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q12.jpeg", "alt": "Q12-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q12ans.jpeg", "alt": "Q12ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q13.jpeg", "alt": "Q13-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q13ans.jpeg", "alt": "Q13ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q14.jpeg", "alt": "Q14-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q14ans.jpeg", "alt": "Q14ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q15.jpeg", "alt": "Q15-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q15ans.jpeg", "alt": "Q15ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q16.jpeg", "alt": "Q16-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q16ans.jpeg", "alt": "Q16ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q17.jpeg", "alt": "Q17-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q17ans.jpeg", "alt": "Q17ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q18.jpeg", "alt": "Q18-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q18ans.jpeg", "alt": "Q18ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q19.jpeg", "alt": "Q19-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q19ans.jpeg", "alt": "Q19ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q20.jpeg", "alt": "Q20-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q20ans.jpeg", "alt": "Q20ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q21.jpeg", "alt": "Q21-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q21ans.jpeg", "alt": "Q21ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q22.jpeg", "alt": "Q22-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q22ans.jpeg", "alt": "Q22ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q23.jpeg", "alt": "Q23-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q23ans.jpeg", "alt": "Q23ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q24.jpeg", "alt": "Q24-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q24ans.jpeg", "alt": "Q24ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q25.jpeg", "alt": "Q25-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q25ans.jpeg", "alt": "Q25ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q26.jpeg", "alt": "Q26-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q26ans.jpeg", "alt": "Q26ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q27.jpeg", "alt": "Q27-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q27ans.jpeg", "alt": "Q27ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q28.jpeg", "alt": "Q28-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q28ans.jpeg", "alt": "Q28ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q29.jpeg", "alt": "Q29-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q29ans.jpeg", "alt": "Q29ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q30.jpeg", "alt": "Q30-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q30ans.jpeg", "alt": "Q30ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q31.jpeg", "alt": "Q31-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q31ans.jpeg", "alt": "Q31ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q32.jpeg", "alt": "Q32-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q32ans.jpeg", "alt": "Q32ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q33.jpeg", "alt": "Q33-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q33ans.jpeg", "alt": "Q33ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q34.jpeg", "alt": "Q34-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q34ans.jpeg", "alt": "Q34ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q35.jpeg", "alt": "Q35-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q35ans.jpeg", "alt": "Q35ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q36.jpeg", "alt": "Q36-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q36ans.jpeg", "alt": "Q36ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q37.jpeg", "alt": "Q37-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q37ans.jpeg", "alt": "Q37ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q38.jpeg", "alt": "Q38-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q38ans.jpeg", "alt": "Q38ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q39.jpeg", "alt": "Q39-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q39ans.jpeg", "alt": "Q39ans-transistor" }]
+  },
+  {
+    "question": [{ "type": "img", "src": "images-transistor/Q40.jpeg", "alt": "Q40-transistor" }],
+    "answer": [{ "type": "img", "src": "images-transistor/Q40ans.jpeg", "alt": "Q40ans-transistor" }]
+  }
+]
