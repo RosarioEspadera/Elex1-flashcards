@@ -21,12 +21,12 @@ loadAllFlashcardData().then(allData => {
 topicCards.forEach(card => {
   card.addEventListener('click', async () => {
     const topic = card.dataset.topic;
+    currentTopic = topic;
     const res = await fetch(`data-Electronics1solving/${topic}.json`);
     currentCards = await res.json();
     currentIndex = 0;
     showCard();
     flashcardViewer.classList.remove('hidden');
-    progressInfo.textContent = `Showing ${topic} flashcard ${currentIndex + 1}`;
   });
 });
 
@@ -58,7 +58,7 @@ function showCard(direction = 'right') {
   void flashcard.offsetWidth; // trigger reflow
   flashcard.classList.add(direction === 'left' ? 'slide-left' : 'slide-right');
 
-  progressInfo.textContent = `Showing Semiconductor Diode flashcard ${currentIndex + 1}`;
+  progressInfo.textContent = `Showing ${currentTopic} flashcard ${currentIndex + 1}`;
 }
 
 // Render content (text + images)
