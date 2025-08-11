@@ -1,101 +1,92 @@
 [
   {
     "question": [
-      "Q1",
       { "type": "img", "src": "images-semiconductor-diode/Q1.jpeg", "alt": "Q1-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q1",
       { "type": "img", "src": "images-semiconductor-diode/Q1ans.jpeg", "alt": "Q1ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q2",
       { "type": "img", "src": "images-semiconductor-diode/Q2.jpeg", "alt": "Q2-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q2",
       { "type": "img", "src": "images-semiconductor-diode/Q2ans.jpeg", "alt": "Q2ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q3",
       { "type": "img", "src": "images-semiconductor-diode/Q3.jpeg", "alt": "Q3-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q3",
       { "type": "img", "src": "images-semiconductor-diode/Q3ans.jpeg", "alt": "Q3ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q4",
       { "type": "img", "src": "images-semiconductor-diode/Q4.jpeg", "alt": "Q4-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q4",
       { "type": "img", "src": "images-semiconductor-diode/Q4ans.jpeg", "alt": "Q4ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q5",
       { "type": "img", "src": "images-semiconductor-diode/Q5.jpeg", "alt": "Q5-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q5",
+      
       { "type": "img", "src": "images-semiconductor-diode/Q5ans.jpeg", "alt": "Q5ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q6",
+      
       { "type": "img", "src": "images-semiconductor-diode/Q6.jpeg", "alt": "Q6-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q6",
+     
       { "type": "img", "src": "images-semiconductor-diode/Q6ans.jpeg", "alt": "Q6ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q7",
+     
       { "type": "img", "src": "images-semiconductor-diode/Q7.jpeg", "alt": "Q7-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q7",
+      
       { "type": "img", "src": "images-semiconductor-diode/Q7ans.jpeg", "alt": "Q7ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q8",
+      
       { "type": "img", "src": "images-semiconductor-diode/Q8.jpeg", "alt": "Q8-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q8",
+      
       { "type": "img", "src": "images-semiconductor-diode/Q8ans.jpeg", "alt": "Q8ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q9",
+      
       { "type": "img", "src": "images-semiconductor-diode/Q9.jpeg", "alt": "Q9-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q9",
+      
       { "type": "img", "src": "images-semiconductor-diode/Q9ans.jpeg", "alt": "Q9ans-semiconductor-diode" }
     ]
   },
   {
     "question": [
-      "Q10",
+      
       { "type": "img", "src": "images-semiconductor-diode/Q10.jpeg", "alt": "Q10-semiconductor-diode" }
     ],
     "answer": [
-      "Solution to Q10",
+     
       { "type": "img", "src": "images-semiconductor-diode/Q10ansB.jpeg", "alt": "Q10ans-semiconductor-diode" }
     ]
   }
