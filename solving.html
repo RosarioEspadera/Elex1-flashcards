@@ -25,30 +25,30 @@
   </header>
 
 <main>
-    <section class="topics-grid" aria-label="Flashcard Topics">
+     <section class="topics-grid">
       <div class="topic-card" data-topic="semiconductor-diode" tabindex="0" role="button" aria-pressed="false">
         Semiconductor Diode
       </div>
     </section>
 
-    <section class="flashcard-viewer" aria-label="Flashcard Viewer">
-      <div class="flashcard">
-        <div class="card-inner">
-          <div class="front">
-            <img src="images/Q1.jpeg" alt="Question image" />
-          </div>
-          <div class="back">
-            <img src="images/Q1ans.jpeg" alt="Answer image" />
-          </div>
-        </div>
-      </div>
+  <section class="flashcard-viewer hidden">
+    <div class="flashcard">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <button id="prev" aria-label="Previous">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
 
-      <div class="flashcard-controls">
-        <button id="prev" aria-label="Previous Flashcard">←</button>
-        <button id="next" aria-label="Next Flashcard">→</button>
-        <button id="flip" aria-label="Flip Card">↻</button>
-      </div>
-    </section>
+<button id="next" aria-label="Next">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+  </section>
 
     <section class="progress" aria-live="polite">
       <p id="progress-info">Showing Semiconductor Diode flashcard 1</p>
