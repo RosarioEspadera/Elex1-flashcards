@@ -11,6 +11,8 @@ const progressInfo = document.getElementById('progress-info');
 
 let currentCards = [];
 let currentIndex = 0;
+let currentTopic = ''; // ← Add this line
+
 
 // Load all topics (optional grid view)
 loadAllFlashcardData().then(allData => {
