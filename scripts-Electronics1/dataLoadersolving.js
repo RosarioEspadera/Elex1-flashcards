@@ -4,6 +4,7 @@ export async function loadAllFlashcardData() {
   const topics = [
     'semiconductor-diode',
     'transistor',
+    'transistor-biasing'
     // Add more topics here as you expand (e.g. 'ohms-law', 'resistance', etc.)
   ];
 
