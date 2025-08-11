@@ -109,8 +109,8 @@ button:hover {
 
 .flashcard > div {
   position: absolute;
-  min-width: 280px;
-  max-width: 300px;
+  min-width: 300px;
+  max-width: 340px;
   margin: 0 auto;
   backface-visibility: hidden;
   background: white;
