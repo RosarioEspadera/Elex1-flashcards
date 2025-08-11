@@ -40,6 +40,7 @@ header {
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s;
+  z-index:1;
 }
 .topic-card:hover {
   transform: scale(1.05);
@@ -67,6 +68,7 @@ header {
   justify-content: center;
   text-align: center;
   margin: 1rem auto;
+  z-index:2;
 }
 
 .front,
