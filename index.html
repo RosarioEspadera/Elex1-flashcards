@@ -6,6 +6,15 @@
   <title>Elex1 Flashcards</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles-Electronics1/main.css" />
+  <link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(() => {
+      console.log('Service Worker registered');
+    });
+  }
+</script>
+
 </head>
 <body>
   <header>
