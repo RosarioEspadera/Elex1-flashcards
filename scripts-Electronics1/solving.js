@@ -1,14 +1,8 @@
 import { loadAllFlashcardData } from './dataLoadersolving.js';
 
 loadAllFlashcardData().then(allData => {
-  renderFlashcards(allData); // Placeholder for future bulk rendering
+  renderFlashcards(allData); // Optional: grid view for editor mode
 });
-
-async function loadTopic(topic) {
-  const res = await fetch(`data-Electronics1solving/${topic}.json`);
-  const cards = await res.json();
-  renderFlashcards(cards); // Optional: show all cards in grid
-}
 
 const topicCards = document.querySelectorAll(".topic-card");
 const flashcardViewer = document.querySelector(".flashcard-viewer");
@@ -48,23 +42,44 @@ nextBtn.onclick = () => {
   showCard("right");
 };
 
-
 function showCard(direction = "right") {
   const card = currentCards[currentIndex];
-  front.textContent = card.question;
-  back.textContent = card.answer;
-  flashcard.classList.remove("flipped");
 
-  flashcard.classList.remove("slide-left", "slide-right");
-  void flashcard.offsetWidth; // Force reflow
+  // Reset content
+  front.innerHTML = "";
+  back.innerHTML = "";
+
+  // Render question
+  renderContent(front, card.question);
+
+  // Render answer
+  renderContent(back, card.answer);
+
+  // Animate
+  flashcard.classList.remove("flipped", "slide-left", "slide-right");
+  void flashcard.offsetWidth;
   flashcard.classList.add(direction === "left" ? "slide-left" : "slide-right");
 }
 
+function renderContent(container, content) {
+  if (typeof content === "string") {
+    container.innerHTML = content;
+  } else if (Array.isArray(content)) {
+    content.forEach(item => {
+      if (typeof item === "string") {
+        container.innerHTML += item;
+      } else if (item.type === "img") {
+        const img = document.createElement("img");
+        img.src = item.src;
+        img.alt = item.alt || "";
+        img.style.maxWidth = "100%";
+        container.appendChild(img);
+      }
+    });
+  }
+}
 
 function renderFlashcards(data) {
-  console.log("Loaded all flashcard data:", data);
-
-  // Optional: render all cards in a grid for editor mode
   const container = document.querySelector(".card-grid");
   if (!container) return;
 
@@ -77,8 +92,8 @@ function renderFlashcards(data) {
       const div = document.createElement("div");
       div.className = "card-preview";
       div.innerHTML = `
-        <div class="question">${card.question}</div>
-        <div class="answer">${card.answer}</div>
+        <div class="question">${typeof card.question === "string" ? card.question : "[Image or rich content]"}</div>
+        <div class="answer">${typeof card.answer === "string" ? card.answer : "[Image or rich content]"}</div>
       `;
       section.appendChild(div);
     });

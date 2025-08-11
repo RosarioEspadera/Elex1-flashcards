@@ -32,74 +32,73 @@ header h1 {
   vertical-align: middle;
 }
 
-/* Topic grid */
-.topics-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.topic-card {
-  background-color: #e0e7ff;
-  color: #1e3a8a;
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
-}
-
-.topic-card:hover {
-  background-color: #c7d2fe;
-}
-
-/* Flashcard viewer */
-.flashcard-viewer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem auto;
-  max-width: 400px;
-}
-
 .flashcard {
+  position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  max-width: 500px;
+  height: 300px;
+  margin: auto;
   perspective: 1000px;
-  margin-bottom: 1rem;
-}
-
-.flashcard .front,
-.flashcard .back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
+  transition: transform 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #fff;
 }
 
-.flashcard .front img,
-.flashcard .back img {
+.flashcard.flipped .front {
+  transform: rotateY(180deg);
+}
+.flashcard.flipped .back {
+  transform: rotateY(0deg);
+}
+
+.front, .back {
+  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  backface-visibility: hidden;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  transition: transform 0.4s ease;
 }
 
-.flashcard .back {
-  transform: rotateY(180deg);
+.front img, .back img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.flashcard .flipped .front {
-  transform: rotateY(180deg);
+.front img:hover, .back img:hover {
+  transform: scale(1.05);
 }
 
-.flashcard .flipped .back {
-  transform: rotateY(0deg);
+.card-preview {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-preview:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.topic-section h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #333;
 }
 
 /* Navigation buttons */
