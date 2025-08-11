@@ -190,3 +190,8 @@ footer {
 .hidden {
   display: none;
 }
+.size-6 {
+  width: 1.5em;
+  height: 1.5em;
+  color:aliceblue;
+}
