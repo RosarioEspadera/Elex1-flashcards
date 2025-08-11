@@ -92,6 +92,21 @@ button:hover {
   position: relative;
 }
 
+.flashcard > .front,
+.flashcard > .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: white;
+  border: 2px solid #4f46e5;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  transition: transform 0.6s ease;
+}
+
 .flashcard > div {
   position: absolute;
   width: 100%;
@@ -105,20 +120,22 @@ button:hover {
   overflow-y: auto;
 }
 
-.front {
+.flashcard > .front {
+  transform: rotateY(0deg);
   z-index: 2;
 }
 
-.back {
+.flashcard > .back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.flashcard.flipped > .front {
   transform: rotateY(180deg);
 }
 
-.flashcard.flipped .front {
-  transform: rotateY(180deg);
-}
-
-.flashcard.flipped .back {
-  transform: rotateY(0deg);
+.flashcard.flipped > .back {
+  transform: rotateY(360deg);
   z-index: 3;
 }
 
