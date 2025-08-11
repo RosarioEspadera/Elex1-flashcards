@@ -7,14 +7,14 @@ loadAllFlashcardData().then(allData => {
 const topicCards = document.querySelectorAll(".topic-card");
 const flashcardViewer = document.querySelector(".flashcard-viewer");
 const flashcard = document.querySelector(".flashcard");
-const front = document.querySelector(".front");
-const back = document.querySelector(".back");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
 const progressInfo = document.getElementById("progress-info");
 
 let currentCards = [];
 let currentIndex = 0;
+
+
 
 topicCards.forEach(card => {
   card.onclick = async () => {
@@ -28,9 +28,13 @@ topicCards.forEach(card => {
   };
 });
 
-flashcard.onclick = () => {
-  flashcard.classList.toggle("flipped");
-};
+flashcard.addEventListener('click', () => {
+  const inner = flashcard.querySelector('.card-inner');
+  if (inner) {
+    inner.classList.toggle('flipped');
+  }
+});
+
 
 prevBtn.onclick = () => {
   currentIndex = (currentIndex - 1 + currentCards.length) % currentCards.length;
@@ -45,20 +49,27 @@ nextBtn.onclick = () => {
 function showCard(direction = "right") {
   const card = currentCards[currentIndex];
 
-  // Reset content
-  front.innerHTML = "";
-  back.innerHTML = "";
+  // Clear previous content
+flashcard.innerHTML = "";
 
-  // Render question
-  renderContent(front, card.question);
+// Create inner wrapper
+const inner = document.createElement("div");
+inner.className = "card-inner";
 
-  // Render answer
-  renderContent(back, card.answer);
+// Create front and back
+const frontEl = document.createElement("div");
+frontEl.className = "front";
+renderContent(frontEl, card.question);
 
-  // Animate
-  flashcard.classList.remove("flipped", "slide-left", "slide-right");
-  void flashcard.offsetWidth;
-  flashcard.classList.add(direction === "left" ? "slide-left" : "slide-right");
+const backEl = document.createElement("div");
+backEl.className = "back";
+renderContent(backEl, card.answer);
+
+// Assemble
+inner.appendChild(frontEl);
+inner.appendChild(backEl);
+flashcard.appendChild(inner);
+
 }
 
 function renderContent(container, content) {
@@ -78,6 +89,7 @@ function renderContent(container, content) {
     });
   }
 }
+
 
 function renderFlashcards(data) {
   const container = document.querySelector(".card-grid");
