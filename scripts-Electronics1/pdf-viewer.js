@@ -1,12 +1,8 @@
 // PDF.js setup for CDN compatibility (v4.x)
-let pdfjsLib = window['pdfjs-dist/build/pdf'];
-if (!pdfjsLib && window.pdfjsLib) {
-  pdfjsLib = window.pdfjsLib;
-}
+let pdfjsLib = window.pdfjsLib;
 if (pdfjsLib && pdfjsLib.GlobalWorkerOptions) {
   pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.js';
 }
-
 // DOM elements
 const pdfSelect = document.getElementById('pdfSelect');
 const loadPdfBtn = document.getElementById('loadPdfBtn');
