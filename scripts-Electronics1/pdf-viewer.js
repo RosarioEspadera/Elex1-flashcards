@@ -35,13 +35,18 @@ function renderPage(num) {
 }
 
 // Load a PDF file
+// filepath: /workspaces/Elex1-flashcards/scripts-Electronics1/pdf-viewer.js
 function loadPdf(url) {
+  if (!pdfjsLib || !pdfjsLib.getDocument) {
+    pageInfo.textContent = 'PDF.js library not loaded.';
+    return;
+  }
   pdfjsLib.getDocument(url).promise.then(doc => {
     pdfDoc = doc;
     pageCount = doc.numPages;
     pageNum = 1;
     renderPage(pageNum);
-  }).catch(err => {
+  }).catch(_err => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     pageInfo.textContent = 'Failed to load PDF.';
   });
