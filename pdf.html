@@ -17,5 +17,24 @@
   <canvas id="pdf-render"></canvas>
 
   <script type="module" src="scripts-Electronics1/pdf-viewer.js"></script>
+  <script>
+  function loadPDF(url) {
+    const loadingTask = pdfjsLib.getDocument(url);
+    loadingTask.promise.then(pdf => {
+      // Render first page
+      pdf.getPage(1).then(page => {
+        const scale = 1.5;
+        const viewport = page.getViewport({ scale });
+        const canvas = document.getElementById('pdf-canvas');
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        page.render({ canvasContext: context, viewport });
+      });
+    });
+  }
+</script>
+
 </body>
 </html>
