@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <title>PDF Viewer</title>
   <link rel="stylesheet" href="styles-Electronics1/pdf-viewer.css" />
 </head>
@@ -14,18 +12,19 @@
   <main>
     <div class="pdf-controls">
       <label for="pdfSelect">Choose a PDF:</label>
-      <select id="pdfSelect">
-        <option value="pdf/Basic-Electricity-and-Electronics-1.pdf">PDF 1 for Basic-Electricity-and-Electronics-1</option>
-        <option value="pdf/Solved Problems in Electronic Devices.pdf">PDF 2 for Solved Problems in Electronic Devices</option>
-      </select>
+      <select id="pdfSelect"></select>
       <button id="loadPdfBtn">Load PDF</button>
     </div>
     <div id="pdf-viewer">
-        <canvas id="pdf-canvas"></canvas>
-  <button id="prevPage">Previous</button>
-  <span id="pageInfo"></span>
-  <button id="nextPage">Next</button>
+      <canvas id="pdf-canvas"></canvas>
+    </div>
+    <div class="pdf-nav">
+      <button id="prevPage">Previous</button>
+      <span id="pageInfo"></span>
+      <button id="nextPage">Next</button>
+    </div>
+  </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.min.js"></script>
-  <script src="viewer.js"></script>
+  <script src="scripts-Electronics1/pdf-viewer.js"></script>
 </body>
 </html>
