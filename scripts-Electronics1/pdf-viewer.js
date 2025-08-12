@@ -1,6 +1,13 @@
-const pdfjsLib = window['pdfjs-dist/build/pdf'];
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.js';
+// PDF.js setup for CDN compatibility (v4.x)
+let pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (!pdfjsLib && window.pdfjsLib) {
+  pdfjsLib = window.pdfjsLib;
+}
+if (pdfjsLib && pdfjsLib.GlobalWorkerOptions) {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.js';
+}
 
+// DOM elements
 const pdfSelect = document.getElementById('pdfSelect');
 const loadPdfBtn = document.getElementById('loadPdfBtn');
 const canvas = document.getElementById('pdf-canvas');
@@ -13,6 +20,7 @@ let pdfDoc = null;
 let pageNum = 1;
 let pageCount = 0;
 
+// Render a page
 function renderPage(num) {
   pdfDoc.getPage(num).then(page => {
     const viewport = page.getViewport({ scale: 1.5 });
@@ -25,18 +33,25 @@ function renderPage(num) {
     };
     page.render(renderContext);
     pageInfo.textContent = `Page ${num} of ${pageCount}`;
+    prevPageBtn.disabled = (num <= 1);
+    nextPageBtn.disabled = (num >= pageCount);
   });
 }
 
+// Load a PDF file
 function loadPdf(url) {
   pdfjsLib.getDocument(url).promise.then(doc => {
     pdfDoc = doc;
     pageCount = doc.numPages;
     pageNum = 1;
     renderPage(pageNum);
+  }).catch(err => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    pageInfo.textContent = 'Failed to load PDF.';
   });
 }
 
+// Event listeners
 loadPdfBtn.addEventListener('click', () => {
   const selectedPdf = pdfSelect.value;
   loadPdf(selectedPdf);
@@ -56,7 +71,9 @@ nextPageBtn.addEventListener('click', () => {
   }
 });
 
-// Optionally load the first PDF on page load
-if (pdfSelect.value) {
-  loadPdf(pdfSelect.value);
-}
+// Load first PDF on page load if available
+window.addEventListener('DOMContentLoaded', () => {
+  if (pdfSelect.value) {
+    loadPdf(pdfSelect.value);
+  }
+});
