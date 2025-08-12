@@ -1,0 +1,702 @@
+[
+  {
+    "id": "SD001",
+    "question": "What is a semiconductor diode?",
+    "answer": "A device that allows current to flow in one direction only.",
+    "tags": ["semiconductor-diodes", "definition"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD002",
+    "question": "What materials are commonly used to make diodes?",
+    "answer": "Silicon and germanium.",
+    "tags": ["semiconductor-diodes", "materials"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD003",
+    "question": "What is the symbol for a diode?",
+    "answer": "A triangle pointing to a line.",
+    "tags": ["semiconductor-diodes", "symbol"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD004",
+    "question": "What is the anode of a diode?",
+    "answer": "The positive terminal.",
+    "tags": ["semiconductor-diodes", "structure"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD005",
+    "question": "What is the cathode of a diode?",
+    "answer": "The negative terminal.",
+    "tags": ["semiconductor-diodes", "structure"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD006",
+    "question": "What is the forward bias of a diode?",
+    "answer": "When the anode is connected to positive and cathode to negative, allowing current flow.",
+    "tags": ["semiconductor-diodes", "operation"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD007",
+    "question": "What is the reverse bias of a diode?",
+    "answer": "When the anode is connected to negative and cathode to positive, blocking current flow.",
+    "tags": ["semiconductor-diodes", "operation"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD008",
+    "question": "What is the depletion region in a diode?",
+    "answer": "The region around the PN junction where mobile charge carriers are depleted.",
+    "tags": ["semiconductor-diodes", "structure"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD009",
+    "question": "What is the barrier potential of a silicon diode?",
+    "answer": "Approximately 0.7 V.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD010",
+    "question": "What is the barrier potential of a germanium diode?",
+    "answer": "Approximately 0.3 V.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD011",
+    "question": "What is the breakdown voltage?",
+    "answer": "The voltage at which a diode conducts large reverse current.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD012",
+    "question": "What is the maximum reverse voltage a diode can withstand?",
+    "answer": "Peak inverse voltage (PIV).",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD013",
+    "question": "What is the function of a diode in a rectifier circuit?",
+    "answer": "To convert AC to DC.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD014",
+    "question": "What is a half-wave rectifier?",
+    "answer": "A circuit that uses one diode to convert AC to DC.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD015",
+    "question": "What is a full-wave rectifier?",
+    "answer": "A circuit that uses two or more diodes to convert both halves of AC to DC.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD016",
+    "question": "What is the function of the load resistor in a rectifier circuit?",
+    "answer": "To consume the rectified DC output.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD017",
+    "question": "What is the ripple factor?",
+    "answer": "A measure of the AC content in the rectified output.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD018",
+    "question": "What is the efficiency of a rectifier?",
+    "answer": "The ratio of DC output power to AC input power.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD019",
+    "question": "What is a filter circuit?",
+    "answer": "A circuit that removes AC ripple from the rectified output.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD020",
+    "question": "What is a capacitor filter?",
+    "answer": "A filter that uses a capacitor to smooth the rectified output.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD021",
+    "question": "What is a Zener diode?",
+    "answer": "A diode designed to operate in the reverse breakdown region for voltage regulation.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD022",
+    "question": "What is the application of Zener diode?",
+    "answer": "Voltage regulation.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD023",
+    "question": "What is a light emitting diode (LED)?",
+    "answer": "A diode that emits light when forward biased.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD024",
+    "question": "What is the application of LED?",
+    "answer": "Indicator lights and displays.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD025",
+    "question": "What is a photodiode?",
+    "answer": "A diode that generates current when exposed to light.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD026",
+    "question": "What is the application of photodiode?",
+    "answer": "Light sensors and solar cells.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD027",
+    "question": "What is a Schottky diode?",
+    "answer": "A diode with low forward voltage drop and fast switching.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD028",
+    "question": "What is the application of Schottky diode?",
+    "answer": "High-speed switching circuits.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD029",
+    "question": "What is a varactor diode?",
+    "answer": "A diode whose capacitance varies with applied voltage.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD030",
+    "question": "What is the application of varactor diode?",
+    "answer": "Tuning circuits in radios and TVs.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD031",
+    "question": "What is the reverse recovery time?",
+    "answer": "The time taken for a diode to stop conducting after switching from forward to reverse bias.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD032",
+    "question": "What is the forward current rating?",
+    "answer": "The maximum current a diode can conduct in forward bias.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD033",
+    "question": "What is the reverse leakage current?",
+    "answer": "The small current that flows when a diode is reverse biased.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD034",
+    "question": "What is the temperature coefficient of a diode?",
+    "answer": "The change in diode characteristics with temperature.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD035",
+    "question": "What is the effect of temperature on barrier potential?",
+    "answer": "Barrier potential decreases as temperature increases.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD036",
+    "question": "What is the effect of doping on diode characteristics?",
+    "answer": "Increased doping reduces barrier potential and increases conductivity.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD037",
+    "question": "What is the function of the depletion region?",
+    "answer": "It acts as a barrier to charge carrier movement.",
+    "tags": ["semiconductor-diodes", "structure"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD038",
+    "question": "What is the function of the PN junction?",
+    "answer": "It allows diode action by creating a depletion region.",
+    "tags": ["semiconductor-diodes", "structure"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD039",
+    "question": "What is the effect of forward bias on the depletion region?",
+    "answer": "It narrows the depletion region, allowing current flow.",
+    "tags": ["semiconductor-diodes", "operation"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD040",
+    "question": "What is the effect of reverse bias on the depletion region?",
+    "answer": "It widens the depletion region, blocking current flow.",
+    "tags": ["semiconductor-diodes", "operation"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD041",
+    "question": "What is avalanche breakdown?",
+    "answer": "A breakdown mechanism where carriers gain enough energy to ionize atoms, creating more carriers.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD042",
+    "question": "What is Zener breakdown?",
+    "answer": "A breakdown mechanism due to strong electric fields causing tunneling of electrons.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD043",
+    "question": "What is the knee voltage?",
+    "answer": "The minimum forward voltage at which a diode starts conducting significantly.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD044",
+    "question": "What is the static resistance of a diode?",
+    "answer": "The ratio of DC voltage to DC current in forward bias.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD045",
+    "question": "What is the dynamic resistance of a diode?",
+    "answer": "The ratio of change in voltage to change in current in forward bias.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD046",
+    "question": "What is the function of a diode in a clamping circuit?",
+    "answer": "To fix the voltage level of a signal.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD047",
+    "question": "What is the function of a diode in a clipping circuit?",
+    "answer": "To limit the amplitude of a signal.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD048",
+    "question": "What is a tunnel diode?",
+    "answer": "A diode with negative resistance due to quantum tunneling.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD049",
+    "question": "What is the application of tunnel diode?",
+    "answer": "High-frequency oscillators and amplifiers.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD050",
+    "question": "What is a PIN diode?",
+    "answer": "A diode with an intrinsic layer between P and N regions.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD051",
+    "question": "What is the application of PIN diode?",
+    "answer": "RF switches and attenuators.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD052",
+    "question": "What is a step recovery diode?",
+    "answer": "A diode used for generating pulses in high-frequency circuits.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD053",
+    "question": "What is the application of step recovery diode?",
+    "answer": "Pulse and frequency multipliers.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD054",
+    "question": "What is a Gunn diode?",
+    "answer": "A diode used for microwave generation.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD055",
+    "question": "What is the application of Gunn diode?",
+    "answer": "Microwave oscillators.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD056",
+    "question": "What is a laser diode?",
+    "answer": "A diode that emits coherent light.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD057",
+    "question": "What is the application of laser diode?",
+    "answer": "Optical communication and CD/DVD drives.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD058",
+    "question": "What is a solar cell?",
+    "answer": "A diode that converts light energy into electrical energy.",
+    "tags": ["semiconductor-diodes", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD059",
+    "question": "What is the application of solar cell?",
+    "answer": "Power generation from sunlight.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD060",
+    "question": "What is the reverse saturation current?",
+    "answer": "The small current that flows in reverse bias due to minority carriers.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD061",
+    "question": "What is the effect of reverse saturation current on diode performance?",
+    "answer": "It determines leakage and affects breakdown characteristics.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD062",
+    "question": "What is the ideal diode equation?",
+    "answer": "I = Is (e^(V/nVT) - 1).",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD063",
+    "question": "What is the significance of the ideal diode equation?",
+    "answer": "It describes the current-voltage relationship of a diode.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD064",
+    "question": "What is the cut-in voltage?",
+    "answer": "The minimum voltage required for a diode to conduct.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD065",
+    "question": "What is the reverse breakdown region?",
+    "answer": "The region where a diode conducts large reverse current.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD066",
+    "question": "What is the forward conduction region?",
+    "answer": "The region where a diode conducts current in forward bias.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD067",
+    "question": "What is the reverse blocking region?",
+    "answer": "The region where a diode blocks current in reverse bias.",
+    "tags": ["semiconductor-diodes", "characteristics"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD068",
+    "question": "What is the function of a diode in a voltage multiplier circuit?",
+    "answer": "To increase the output voltage using multiple stages.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD069",
+    "question": "What is the function of a diode in a logic circuit?",
+    "answer": "To perform logical operations like AND and OR.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD070",
+    "question": "What is the function of a diode in a protection circuit?",
+    "answer": "To prevent damage from voltage spikes.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD071",
+    "question": "What is the function of a diode in a demodulator circuit?",
+    "answer": "To extract information from modulated signals.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD072",
+    "question": "What is the function of a diode in a mixer circuit?",
+    "answer": "To combine two signals for frequency conversion.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD073",
+    "question": "What is the function of a diode in a limiter circuit?",
+    "answer": "To restrict the amplitude of a signal.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD074",
+    "question": "What is the function of a diode in a voltage regulator circuit?",
+    "answer": "To maintain a constant output voltage.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD075",
+    "question": "What is the function of a diode in a inverter circuit?",
+    "answer": "To convert DC to AC.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD076",
+    "question": "What is the function of a diode in a oscillator circuit?",
+    "answer": "To generate periodic signals.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD077",
+    "question": "What is the function of a diode in a frequency multiplier circuit?",
+    "answer": "To produce output signals at multiples of input frequency.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD078",
+    "question": "What is the function of a diode in a phase detector circuit?",
+    "answer": "To compare the phase of two signals.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD079",
+    "question": "What is the function of a diode in a envelope detector circuit?",
+    "answer": "To recover the envelope of a modulated signal.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD080",
+    "question": "What is the function of a diode in a voltage reference circuit?",
+    "answer": "To provide a stable reference voltage.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD081",
+    "question": "What is the function of a diode in a snubber circuit?",
+    "answer": "To protect switching devices from voltage spikes.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD082",
+    "question": "What is the function of a diode in a flyback circuit?",
+    "answer": "To provide a path for current when the switch is off.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD083",
+    "question": "What is the function of a diode in a freewheeling circuit?",
+    "answer": "To allow current to circulate in inductive loads.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD084",
+    "question": "What is the function of a diode in a crowbar circuit?",
+    "answer": "To protect against overvoltage by shorting the supply.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD085",
+    "question": "What is the function of a diode in a relay driver circuit?",
+    "answer": "To prevent back EMF from damaging the driver.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD086",
+    "question": "What is the function of a diode in a battery charger circuit?",
+    "answer": "To prevent reverse current flow.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD087",
+    "question": "What is the function of a diode in a polarity protection circuit?",
+    "answer": "To protect against incorrect polarity connections.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD088",
+    "question": "What is the function of a diode in a logic level shifter?",
+    "answer": "To shift voltage levels between circuits.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD089",
+    "question": "What is the function of a diode in a analog switch?",
+    "answer": "To control the flow of analog signals.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD090",
+    "question": "What is the function of a diode in a sample and hold circuit?",
+    "answer": "To store and maintain a voltage level.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD091",
+    "question": "What is the function of a diode in a peak detector circuit?",
+    "answer": "To detect the peak value of a signal.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD092",
+    "question": "What is the function of a diode in a voltage doubler circuit?",
+    "answer": "To double the input voltage.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD093",
+    "question": "What is the function of a diode in a voltage tripler circuit?",
+    "answer": "To triple the input voltage.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD094",
+    "question": "What is the function of a diode in a voltage quadrupler circuit?",
+    "answer": "To quadruple the input voltage.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD095",
+    "question": "What is the function of a diode in a bridge rectifier?",
+    "answer": "To convert AC to DC using four diodes.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD096",
+    "question": "What is the function of a diode in a center-tap rectifier?",
+    "answer": "To convert AC to DC using two diodes and a center-tapped transformer.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD097",
+    "question": "What is the function of a diode in a voltage clamp circuit?",
+    "answer": "To prevent voltage from exceeding a certain level.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD098",
+    "question": "What is the function of a diode in a voltage limiter circuit?",
+    "answer": "To restrict voltage to a safe level.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD099",
+    "question": "What is the function of a diode in a voltage spike suppressor?",
+    "answer": "To absorb and suppress voltage spikes.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "SD100",
+    "question": "What is the function of a diode in a reverse polarity protection circuit?",
+    "answer": "To prevent damage from incorrect polarity connections.",
+    "tags": ["semiconductor-diodes", "applications"],
+    "source": "JIECEP Library"
+  }
+]

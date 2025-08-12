@@ -27,6 +27,11 @@ const urlsToCache = [
   '/Elex1-flashcards/data-Electronics1/resistance.json',
   '/Elex1-flashcards/data-Electronics1/safety.json',
   '/Elex1-flashcards/data-Electronics1/transistor.json',
+  '/Elex1-flashcards/data-Electronics1/combinational.json',
+  '/Elex1-flashcards/data-Electronics1/fundamentals.json',
+  '/Elex1-flashcards/data-Electronics1/introsemiconductors.json',
+  '/Elex1-flashcards/data-Electronics1/semiconductor-diodes.json',
+  '/Elex1-flashcards/data-Electronics1/special-diodes-and-applications.json',
   // Electronics1solving topic JSON files
   '/Elex1-flashcards/data-Electronics1solving/semiconductor-diode.json',
   '/Elex1-flashcards/data-Electronics1solving/transistor.json',

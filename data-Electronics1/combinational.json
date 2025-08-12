@@ -1,0 +1,282 @@
+[
+  {
+    "id": "CTC001",
+    "question": "What is a combinational circuit?",
+    "answer": "A digital circuit whose output depends only on the current inputs.",
+    "tags": ["combinational", "definition"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC002",
+    "question": "What is the difference between combinational and sequential circuits?",
+    "answer": "Combinational circuits have no memory; sequential circuits depend on past inputs.",
+    "tags": ["comparison", "memory"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC003",
+    "question": "What basic logic gates are used in combinational circuits?",
+    "answer": "AND, OR, NOT, NAND, NOR, XOR, and XNOR.",
+    "tags": ["logic gates", "combinational"],
+    "source": "Digital Fundamentals – Floyd"
+  },
+  {
+    "id": "CTC004",
+    "question": "How is a NOT gate implemented using transistors?",
+    "answer": "Using one NMOS and one PMOS transistor in a CMOS inverter configuration.",
+    "tags": ["NOT gate", "transistor"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC005",
+    "question": "What is the function of a NAND gate?",
+    "answer": "It outputs LOW only when all inputs are HIGH.",
+    "tags": ["NAND", "logic"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC006",
+    "question": "How is a NAND gate built using CMOS transistors?",
+    "answer": "Two PMOS transistors in parallel and two NMOS transistors in series.",
+    "tags": ["NAND", "CMOS"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC007",
+    "question": "What is the role of PMOS transistors in CMOS logic?",
+    "answer": "To pull the output HIGH when inputs are LOW.",
+    "tags": ["PMOS", "CMOS"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC008",
+    "question": "What is the role of NMOS transistors in CMOS logic?",
+    "answer": "To pull the output LOW when inputs are HIGH.",
+    "tags": ["NMOS", "CMOS"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC009",
+    "question": "What is a multiplexer (MUX)?",
+    "answer": "A circuit that selects one of many inputs and forwards it to the output.",
+    "tags": ["MUX", "combinational"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC010",
+    "question": "How is a 2-to-1 multiplexer implemented using transistors?",
+    "answer": "Using transmission gates controlled by a select signal and its complement.",
+    "tags": ["MUX", "transistor"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC011",
+    "question": "What is a decoder?",
+    "answer": "A circuit that converts binary input into a one-hot output.",
+    "tags": ["decoder", "combinational"],
+    "source": "Digital Fundamentals – Floyd"
+  },
+  {
+    "id": "CTC012",
+    "question": "What is an encoder?",
+    "answer": "A circuit that converts one-hot input into binary output.",
+    "tags": ["encoder", "combinational"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC013",
+    "question": "What is a half adder?",
+    "answer": "A circuit that adds two binary digits and outputs sum and carry.",
+    "tags": ["adder", "combinational"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC014",
+    "question": "What is a full adder?",
+    "answer": "A circuit that adds three binary digits (including carry-in) and outputs sum and carry-out.",
+    "tags": ["adder", "combinational"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC015",
+    "question": "How is an XOR gate implemented using transistors?",
+    "answer": "Using a combination of NMOS and PMOS transistors arranged to produce exclusive logic.",
+    "tags": ["XOR", "transistor"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC016",
+    "question": "What is propagation delay in combinational circuits?",
+    "answer": "The time it takes for a change in input to affect the output.",
+    "tags": ["timing", "delay"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC017",
+    "question": "What affects the speed of a combinational circuit?",
+    "answer": "Transistor switching speed, load capacitance, and circuit complexity.",
+    "tags": ["performance", "speed"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC018",
+    "question": "What is fan-in?",
+    "answer": "The number of inputs a logic gate can handle.",
+    "tags": ["fan-in", "logic"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC019",
+    "question": "What is fan-out?",
+    "answer": "The number of gate inputs that a single output can drive.",
+    "tags": ["fan-out", "logic"],
+    "source": "Digital Fundamentals – Floyd"
+  },
+  {
+    "id": "CTC020",
+    "question": "What is power dissipation in CMOS circuits?",
+    "answer": "Mostly dynamic, due to charging and discharging of load capacitance.",
+    "tags": ["power", "CMOS"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC021",
+    "question": "What is a transmission gate?",
+    "answer": "A bidirectional switch made from parallel NMOS and PMOS transistors.",
+    "tags": ["transmission gate", "transistor"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC022",
+    "question": "Why are transmission gates preferred over pass transistors?",
+    "answer": "They pass both logic HIGH and LOW more effectively.",
+    "tags": ["transmission gate", "logic"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC023",
+    "question": "What is logic level degradation?",
+    "answer": "A reduction in voltage levels due to resistive losses in pass transistors.",
+    "tags": ["voltage", "degradation"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC024",
+    "question": "What is a carry-lookahead adder?",
+    "answer": "An adder that speeds up addition by computing carry signals in advance.",
+    "tags": ["adder", "performance"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC025",
+    "question": "How is a carry-lookahead adder implemented?",
+    "answer": "Using generate and propagate logic to compute carry bits quickly.",
+    "tags": ["adder", "carry"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC026",
+    "question": "What is a priority encoder?",
+    "answer": "An encoder that assigns priority to the highest-order active input.",
+    "tags": ["encoder", "priority"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC027",
+    "question": "What is a comparator?",
+    "answer": "A circuit that compares two binary numbers and outputs their relation.",
+    "tags": ["comparator", "combinational"],
+    "source": "Digital Fundamentals – Floyd"
+  },
+  {
+    "id": "CTC028",
+    "question": "How is a 1-bit comparator implemented?",
+    "answer": "Using XOR gates and AND gates to determine equality and magnitude.",
+    "tags": ["comparator", "logic"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC029",
+    "question": "What is a parity generator?",
+    "answer": "A circuit that produces a parity bit for error detection.",
+    "tags": ["parity", "error detection"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC030",
+    "question": "What is a parity checker?",
+    "answer": "A circuit that verifies the parity of received data.",
+    "tags": ["parity", "error checking"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC031",
+    "question": "What is a Boolean expression?",
+    "answer": "An algebraic representation of logic operations.",
+    "tags": ["Boolean", "logic"],
+    "source": "Digital Fundamentals – Floyd"
+  },
+  {
+    "id": "CTC032",
+    "question": "How are Boolean expressions simplified?",
+    "answer": "Using algebraic laws or Karnaugh maps.",
+    "tags": ["Boolean", "simplification"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC033",
+    "question": "What is a Karnaugh map?",
+    "answer": "A graphical tool for simplifying Boolean expressions.",
+    "tags": ["K-map", "simplification"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC034",
+    "question": "What is a hazard in combinational circuits?",
+    "answer": "An unwanted glitch due to different signal propagation delays.",
+    "tags": ["hazard", "timing"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC035",
+    "question": "How can hazards be eliminated?",
+    "answer": "By adding redundant logic or using hazard-free design techniques.",
+    "tags": ["hazard", "design"],
+    "source": "CMOS VLSI Design – Weste & Harris"
+  },
+  {
+    "id": "CTC036",
+    "question": "What is a PLA (Programmable Logic Array)?",
+    "answer": "A configurable combinational circuit with programmable AND and OR planes.",
+    "tags": ["PLA", "programmable"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC037",
+    "question": "What is a PAL (Programmable Array Logic)?",
+    "answer": "A programmable logic device with fixed OR and programmable AND planes.",
+    "tags": ["PAL", "programmable"],
+    "source": "Digital Logic Design – Morris Mano"
+  },
+  {
+    "id": "CTC038",
+    "question": "What is a look-up table (LUT)?",
+    "answer": "A memory-based structure used to implement logic functions in FPGAs.",
+    "tags": ["LUT", "FPGA"],
+    "source": "FPGA Architecture – Trimberger"
+  },
+  {
+    "id": "CTC039",
+    "question": "What is logic synthesis?",
+    "answer": "The process of converting high-level descriptions into gate-level implementations.",
+    "tags": ["synthesis", "design"],
+    "source": "Digital Electronics – Floyd"
+  },
+  {
+    "id": "CTC040",
+    "question": "What tools are used for logic synthesis?",
+    "answer": "Tools like Synopsys Design Compiler and Xilinx Vivado.",
+    "tags": ["tools", "synthesis"],
+    "source": "FPGA Architecture – Trimberger"
+  }
+]

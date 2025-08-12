@@ -1,0 +1,422 @@
+[
+  {
+    "id": "IS001",
+    "question": "What is a semiconductor?",
+    "answer": "A material whose electrical conductivity is between that of a conductor and an insulator.",
+    "tags": ["introsemiconductors", "definition"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS002",
+    "question": "Name two common semiconductor materials.",
+    "answer": "Silicon and Germanium.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS003",
+    "question": "What is intrinsic semiconductor?",
+    "answer": "A pure semiconductor without any significant dopant atoms.",
+    "tags": ["introsemiconductors", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS004",
+    "question": "What is extrinsic semiconductor?",
+    "answer": "A semiconductor that has been doped with impurities to modify its electrical properties.",
+    "tags": ["introsemiconductors", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS005",
+    "question": "What is doping in semiconductors?",
+    "answer": "The process of adding impurities to a semiconductor to change its conductivity.",
+    "tags": ["introsemiconductors", "process"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS006",
+    "question": "What is a donor impurity?",
+    "answer": "An impurity that adds extra electrons to a semiconductor, creating n-type material.",
+    "tags": ["introsemiconductors", "doping"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS007",
+    "question": "What is an acceptor impurity?",
+    "answer": "An impurity that creates holes in a semiconductor, forming p-type material.",
+    "tags": ["introsemiconductors", "doping"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS008",
+    "question": "What is n-type semiconductor?",
+    "answer": "A semiconductor in which electrons are the majority charge carriers.",
+    "tags": ["introsemiconductors", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS009",
+    "question": "What is p-type semiconductor?",
+    "answer": "A semiconductor in which holes are the majority charge carriers.",
+    "tags": ["introsemiconductors", "types"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS010",
+    "question": "What is a hole in semiconductor physics?",
+    "answer": "A vacancy left by an electron, acting as a positive charge carrier.",
+    "tags": ["introsemiconductors", "charge"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS011",
+    "question": "What is the band gap?",
+    "answer": "The energy difference between the valence band and the conduction band in a semiconductor.",
+    "tags": ["introsemiconductors", "energy"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS012",
+    "question": "What is the typical band gap of silicon?",
+    "answer": "About 1.1 eV.",
+    "tags": ["introsemiconductors", "energy"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS013",
+    "question": "What is the typical band gap of germanium?",
+    "answer": "About 0.66 eV.",
+    "tags": ["introsemiconductors", "energy"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS014",
+    "question": "What is the conduction band?",
+    "answer": "The range of electron energies higher than the valence band where electrons are free to move.",
+    "tags": ["introsemiconductors", "energy"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS015",
+    "question": "What is the valence band?",
+    "answer": "The energy band in a semiconductor where electrons are bound to atoms.",
+    "tags": ["introsemiconductors", "energy"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS016",
+    "question": "What is the Fermi level?",
+    "answer": "The energy level at which the probability of finding an electron is 50%.",
+    "tags": ["introsemiconductors", "energy"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS017",
+    "question": "What happens to conductivity when temperature increases in a semiconductor?",
+    "answer": "Conductivity increases as more electrons gain energy to cross the band gap.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS018",
+    "question": "What is carrier concentration?",
+    "answer": "The number of charge carriers per unit volume in a semiconductor.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS019",
+    "question": "What is mobility in semiconductors?",
+    "answer": "The ability of charge carriers to move through a material under an electric field.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS020",
+    "question": "What is recombination?",
+    "answer": "The process where electrons and holes combine, reducing carrier concentration.",
+    "tags": ["introsemiconductors", "process"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS021",
+    "question": "What is generation in semiconductors?",
+    "answer": "The process of creating electron-hole pairs.",
+    "tags": ["introsemiconductors", "process"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS022",
+    "question": "What is the effect of doping on conductivity?",
+    "answer": "Doping increases conductivity by adding more charge carriers.",
+    "tags": ["introsemiconductors", "doping"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS023",
+    "question": "What is a majority carrier?",
+    "answer": "The most abundant charge carrier in a doped semiconductor.",
+    "tags": ["introsemiconductors", "charge"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS024",
+    "question": "What is a minority carrier?",
+    "answer": "The less abundant charge carrier in a doped semiconductor.",
+    "tags": ["introsemiconductors", "charge"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS025",
+    "question": "What is the role of pentavalent impurities?",
+    "answer": "They donate electrons, creating n-type semiconductors.",
+    "tags": ["introsemiconductors", "doping"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS026",
+    "question": "What is the role of trivalent impurities?",
+    "answer": "They accept electrons, creating p-type semiconductors.",
+    "tags": ["introsemiconductors", "doping"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS027",
+    "question": "What is the effect of electric field on charge carriers?",
+    "answer": "It causes electrons and holes to move, creating current.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS028",
+    "question": "What is drift current?",
+    "answer": "Current caused by the movement of charge carriers due to an electric field.",
+    "tags": ["introsemiconductors", "current"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS029",
+    "question": "What is diffusion current?",
+    "answer": "Current caused by the movement of carriers from high to low concentration.",
+    "tags": ["introsemiconductors", "current"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS030",
+    "question": "What is the Hall effect?",
+    "answer": "The production of a voltage difference across a conductor when a magnetic field is applied perpendicular to current.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS031",
+    "question": "What is the symbol for silicon?",
+    "answer": "Si.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS032",
+    "question": "What is the symbol for germanium?",
+    "answer": "Ge.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS033",
+    "question": "What is the atomic number of silicon?",
+    "answer": "14.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS034",
+    "question": "What is the atomic number of germanium?",
+    "answer": "32.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS035",
+    "question": "What is the crystal structure of silicon?",
+    "answer": "Diamond cubic.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS036",
+    "question": "What is the crystal structure of germanium?",
+    "answer": "Diamond cubic.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS037",
+    "question": "What is the typical resistivity of intrinsic silicon?",
+    "answer": "About 2.3 × 10^5 Ω·cm.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS038",
+    "question": "What is the typical resistivity of intrinsic germanium?",
+    "answer": "About 60 Ω·cm.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS039",
+    "question": "What is the mobility of electrons in silicon?",
+    "answer": "About 1350 cm²/V·s.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS040",
+    "question": "What is the mobility of holes in silicon?",
+    "answer": "About 480 cm²/V·s.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS041",
+    "question": "What is the mobility of electrons in germanium?",
+    "answer": "About 3900 cm²/V·s.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS042",
+    "question": "What is the mobility of holes in germanium?",
+    "answer": "About 1900 cm²/V·s.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS043",
+    "question": "What is the effect of light on semiconductors?",
+    "answer": "Light can generate electron-hole pairs, increasing conductivity.",
+    "tags": ["introsemiconductors", "properties"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS044",
+    "question": "What is a photoconductor?",
+    "answer": "A semiconductor whose conductivity increases when exposed to light.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS045",
+    "question": "What is a thermistor?",
+    "answer": "A resistor whose resistance changes significantly with temperature.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS046",
+    "question": "What is a piezoresistor?",
+    "answer": "A resistor whose resistance changes with mechanical stress.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS047",
+    "question": "What is a semiconductor diode?",
+    "answer": "A device that allows current to flow in one direction only.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS048",
+    "question": "What is a transistor?",
+    "answer": "A semiconductor device used to amplify or switch electronic signals.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS049",
+    "question": "What is a photovoltaic cell?",
+    "answer": "A device that converts light energy into electrical energy using semiconductors.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS050",
+    "question": "What is a semiconductor laser?",
+    "answer": "A device that emits coherent light using semiconductor materials.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS051",
+    "question": "What is the effect of reverse bias on a PN junction?",
+    "answer": "It increases the width of the depletion region and reduces current flow.",
+    "tags": ["introsemiconductors", "pn-junction"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS052",
+    "question": "What is the effect of forward bias on a PN junction?",
+    "answer": "It decreases the width of the depletion region and allows current to flow.",
+    "tags": ["introsemiconductors", "pn-junction"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS053",
+    "question": "What is the depletion region?",
+    "answer": "The region around the PN junction where mobile charge carriers are depleted.",
+    "tags": ["introsemiconductors", "pn-junction"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS054",
+    "question": "What is breakdown voltage?",
+    "answer": "The voltage at which a semiconductor junction conducts large reverse current.",
+    "tags": ["introsemiconductors", "pn-junction"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS055",
+    "question": "What is avalanche breakdown?",
+    "answer": "A breakdown mechanism where carriers gain enough energy to ionize atoms, creating more carriers.",
+    "tags": ["introsemiconductors", "pn-junction"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS056",
+    "question": "What is Zener breakdown?",
+    "answer": "A breakdown mechanism due to strong electric fields causing tunneling of electrons.",
+    "tags": ["introsemiconductors", "pn-junction"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS057",
+    "question": "What is the role of semiconductors in electronics?",
+    "answer": "They are the foundation of modern electronic devices due to their controllable conductivity.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS058",
+    "question": "What is a semiconductor device?",
+    "answer": "An electronic component that exploits the electronic properties of semiconductor materials.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS059",
+    "question": "What is the importance of silicon in the electronics industry?",
+    "answer": "Silicon is widely used due to its abundance, stability, and suitable electronic properties.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  },
+  {
+    "id": "IS060",
+    "question": "What is the importance of band gap engineering?",
+    "answer": "It allows the design of semiconductor materials with specific electronic and optical properties.",
+    "tags": ["introsemiconductors", "applications"],
+    "source": "JIECEP Library"
+  }
+]

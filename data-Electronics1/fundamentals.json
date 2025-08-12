@@ -1,0 +1,782 @@
+[
+  {
+    "id": "F001",
+    "question": "What is the unit of electric current?",
+    "answer": "Ampere (A).",
+    "tags": ["fundamentals", "units"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F002",
+    "question": "What is Ohm’s Law?",
+    "answer": "V = IR, where voltage equals current times resistance.",
+    "tags": ["fundamentals", "ohms-law"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F003",
+    "question": "Define electric charge.",
+    "answer": "A property of matter that causes it to experience a force in an electric field.",
+    "tags": ["fundamentals", "charge"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F004",
+    "question": "What is the unit of resistance?",
+    "answer": "Ohm (Ω).",
+    "tags": ["fundamentals", "units"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F005",
+    "question": "What is the formula for electrical power?",
+    "answer": "P = VI, where power equals voltage times current.",
+    "tags": ["fundamentals", "power"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "F006",
+    "question": "What is the unit of energy?",
+    "answer": "Joule (J).",
+    "tags": ["fundamentals", "units"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F007",
+    "question": "What is the function of a resistor?",
+    "answer": "To limit or control the flow of electric current.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F008",
+    "question": "Define voltage.",
+    "answer": "The potential difference between two points in an electric field.",
+    "tags": ["fundamentals", "voltage"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F009",
+    "question": "What is the unit of voltage?",
+    "answer": "Volt (V).",
+    "tags": ["fundamentals", "units"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F010",
+    "question": "What is a conductor?",
+    "answer": "A material that allows electric current to flow easily.",
+    "tags": ["fundamentals", "materials"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F011",
+    "question": "What is a semiconductor?",
+    "answer": "A material with electrical conductivity between that of a conductor and an insulator.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F012",
+    "question": "Name two common semiconductor materials.",
+    "answer": "Silicon and Germanium.",
+    "tags": ["introsemiconductors", "materials"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F013",
+    "question": "What is a PN junction?",
+    "answer": "The boundary between p-type and n-type semiconductor regions.",
+    "tags": ["semiconductor-diodes", "pn-junction"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F014",
+    "question": "What is the main function of a diode?",
+    "answer": "To allow current to flow in one direction only.",
+    "tags": ["diodes", "components"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F015",
+    "question": "What is the forward voltage drop of a silicon diode?",
+    "answer": "Approximately 0.7 V.",
+    "tags": ["diodes", "characteristics"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F016",
+    "question": "What is a Zener diode used for?",
+    "answer": "Voltage regulation.",
+    "tags": ["special-diodes-and-applications", "zener"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F017",
+    "question": "What is the function of a Light Emitting Diode (LED)?",
+    "answer": "To emit light when current flows through it.",
+    "tags": ["special-diodes-and-applications", "led"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F018",
+    "question": "What is a photodiode?",
+    "answer": "A diode that generates current when exposed to light.",
+    "tags": ["special-diodes-and-applications", "photodiode"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F019",
+    "question": "What is a Schottky diode known for?",
+    "answer": "Low forward voltage drop and fast switching.",
+    "tags": ["special-diodes-and-applications", "schottky"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F020",
+    "question": "What is a varactor diode used for?",
+    "answer": "Voltage-controlled capacitance in tuning circuits.",
+    "tags": ["special-diodes-and-applications", "varactor"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F021",
+    "question": "What does BJT stand for?",
+    "answer": "Bipolar Junction Transistor.",
+    "tags": ["bjts", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F022",
+    "question": "Name the three regions of a BJT.",
+    "answer": "Emitter, Base, Collector.",
+    "tags": ["bjts", "structure"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F023",
+    "question": "What is the main function of a FET?",
+    "answer": "To control current using an electric field.",
+    "tags": ["fets", "components"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F024",
+    "question": "What does FET stand for?",
+    "answer": "Field Effect Transistor.",
+    "tags": ["fets", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F025",
+    "question": "What is a combinational circuit?",
+    "answer": "A circuit whose output depends only on the current inputs.",
+    "tags": ["combinational", "logic"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F026",
+    "question": "What is the unit of capacitance?",
+    "answer": "Farad (F).",
+    "tags": ["fundamentals", "units"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F027",
+    "question": "What is the function of a capacitor?",
+    "answer": "To store electrical energy in an electric field.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F028",
+    "question": "What is the unit of inductance?",
+    "answer": "Henry (H).",
+    "tags": ["fundamentals", "units"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F029",
+    "question": "What is the function of an inductor?",
+    "answer": "To store energy in a magnetic field.",
+    "tags": ["fundamentals", "components"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F030",
+    "question": "What is Kirchhoff’s Voltage Law (KVL)?",
+    "answer": "The sum of all voltages around a closed loop is zero.",
+    "tags": ["fundamentals", "kirchhoff"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "F031",
+    "question": "What is Kirchhoff’s Current Law (KCL)?",
+    "answer": "The sum of currents entering a junction equals the sum leaving.",
+    "tags": ["fundamentals", "kirchhoff"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "F032",
+    "question": "What is a logic gate?",
+    "answer": "An electronic device that implements a Boolean function.",
+    "tags": ["combinational", "logic"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F033",
+    "question": "Name three basic logic gates.",
+    "answer": "AND, OR, NOT.",
+    "tags": ["combinational", "logic"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F034",
+    "question": "What is a truth table?",
+    "answer": "A table showing all possible input and output combinations for a logic circuit.",
+    "tags": ["combinational", "logic"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F035",
+    "question": "What is a rectifier?",
+    "answer": "A circuit that converts AC to DC.",
+    "tags": ["diodes", "applications"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F036",
+    "question": "What is a filter circuit?",
+    "answer": "A circuit that removes unwanted frequencies from a signal.",
+    "tags": ["fundamentals", "applications"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F037",
+    "question": "What is the unit of frequency?",
+    "answer": "Hertz (Hz).",
+    "tags": ["fundamentals", "units"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F038",
+    "question": "What is a transformer?",
+    "answer": "A device that transfers electrical energy between circuits by electromagnetic induction.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F039",
+    "question": "What is the function of a fuse?",
+    "answer": "To protect circuits by breaking the connection when current exceeds a safe level.",
+    "tags": ["fundamentals", "components"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F040",
+    "question": "What is a relay?",
+    "answer": "An electrically operated switch.",
+    "tags": ["fundamentals", "components"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  }  ,
+  {
+    "id": "F041",
+    "question": "What is a potentiometer?",
+    "answer": "A variable resistor used to adjust voltage.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F042",
+    "question": "What is a rheostat?",
+    "answer": "A variable resistor used to control current.",
+    "tags": ["fundamentals", "components"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F043",
+    "question": "What is a multimeter?",
+    "answer": "An instrument used to measure voltage, current, and resistance.",
+    "tags": ["fundamentals", "tools"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F044",
+    "question": "What is a breadboard?",
+    "answer": "A device for prototyping electronic circuits without soldering.",
+    "tags": ["fundamentals", "tools"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F045",
+    "question": "What is a short circuit?",
+    "answer": "A low-resistance connection between two points causing excessive current.",
+    "tags": ["fundamentals", "safety"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F046",
+    "question": "What is an open circuit?",
+    "answer": "A circuit with a break preventing current flow.",
+    "tags": ["fundamentals", "safety"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F047",
+    "question": "What is a series circuit?",
+    "answer": "A circuit in which components are connected end-to-end so current flows through each in turn.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F048",
+    "question": "What is a parallel circuit?",
+    "answer": "A circuit in which components are connected across the same voltage source.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F049",
+    "question": "What is the total resistance in a series circuit?",
+    "answer": "The sum of the individual resistances.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F050",
+    "question": "What is the total resistance in a parallel circuit?",
+    "answer": "Less than the smallest individual resistance; calculated by 1/Rt = 1/R1 + 1/R2 + ...",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F051",
+    "question": "What is a node in a circuit?",
+    "answer": "A point where two or more circuit elements meet.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F052",
+    "question": "What is a mesh in circuit analysis?",
+    "answer": "A loop that does not contain any other loops within it.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F053",
+    "question": "What is the function of a switch?",
+    "answer": "To open or close an electrical circuit.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F054",
+    "question": "What is a load in a circuit?",
+    "answer": "Any component that consumes electrical power.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F055",
+    "question": "What is a ground in a circuit?",
+    "answer": "A reference point of zero voltage.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F056",
+    "question": "What is a voltage divider?",
+    "answer": "A circuit that produces a fraction of its input voltage.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F057",
+    "question": "What is a current divider?",
+    "answer": "A circuit that splits current among parallel branches.",
+    "tags": ["fundamentals", "circuits"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F058",
+    "question": "What is the function of a battery?",
+    "answer": "To provide a source of electrical energy.",
+    "tags": ["fundamentals", "components"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "F059",
+    "question": "What is the unit of electric charge?",
+    "answer": "Coulomb (C).",
+    "tags": ["fundamentals", "units"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "F060",
+    "question": "What is the unit of magnetic flux?",
+    "answer": "Weber (Wb).",
+    "tags": ["fundamentals", "units"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "F061",
+    "question": "What is the function of a transformer?",
+    "answer": "To change the voltage level in AC circuits.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "F062",
+    "question": "What is an oscilloscope used for?",
+    "answer": "To visualize electrical signals as waveforms.",
+    "tags": ["fundamentals", "tools"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F063",
+    "question": "What is a signal generator?",
+    "answer": "A device that produces electrical signals of varying frequencies.",
+    "tags": ["fundamentals", "tools"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F064",
+    "question": "What is a logic analyzer?",
+    "answer": "An instrument used to capture and analyze digital signals.",
+    "tags": ["fundamentals", "tools"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F065",
+    "question": "What is a microcontroller?",
+    "answer": "A compact integrated circuit designed to govern a specific operation in an embedded system.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F066",
+    "question": "What is a microprocessor?",
+    "answer": "A computer processor on a microchip that performs arithmetic and logic operations.",
+    "tags": ["fundamentals", "components"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F067",
+    "question": "What is a digital signal?",
+    "answer": "A signal that represents data as discrete values, typically in binary form.",
+    "tags": ["fundamentals", "signals"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F068",
+    "question": "What is an analog signal?",
+    "answer": "A signal that represents data as continuous values.",
+    "tags": ["fundamentals", "signals"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F069",
+    "question": "What is modulation?",
+    "answer": "The process of varying a carrier signal in order to transmit information.",
+    "tags": ["fundamentals", "signals"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F070",
+    "question": "What is demodulation?",
+    "answer": "The process of extracting the original information-bearing signal from a modulated carrier signal.",
+    "tags": ["fundamentals", "signals"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F071",
+    "question": "What is a frequency response?",
+    "answer": "The measure of an output signal's amplitude and phase in relation to the input signal across a range of frequencies.",
+    "tags": ["fundamentals", "signals"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F072",
+    "question": "What is a bandwidth?",
+    "answer": "The range of frequencies over which a circuit or device operates effectively.",
+    "tags": ["fundamentals", "signals"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F073",
+    "question": "What is a filter?",
+    "answer": "A circuit that allows certain frequencies to pass while blocking others.",
+    "tags": ["fundamentals", "signals"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F074",
+    "question": "What is a low-pass filter?",
+    "answer": "A filter that allows low frequencies to pass and attenuates high frequencies.",
+    "tags": ["fundamentals", "filters"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F075",
+    "question": "What is a high-pass filter?",
+    "answer": "A filter that allows high frequencies to pass and attenuates low frequencies.",
+    "tags": ["fundamentals", "filters"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F076",
+    "question": "What is a band-pass filter?",
+    "answer": "A filter that allows a specific range of frequencies to pass while attenuating frequencies outside that range.",
+    "tags": ["fundamentals", "filters"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F077",
+    "question": "What is a notch filter?",
+    "answer": "A filter that attenuates a specific frequency while allowing others to pass.",
+    "tags": ["fundamentals", "filters"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F078",
+    "question": "What is a phase shift?",
+    "answer": "The difference in phase between two signals, often expressed in degrees.",
+    "tags": ["fundamentals", "signals"],    
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+    },      
+    {   "id": "F079",
+    "question": "What is a gain in electronics?",
+    "answer": "The ratio of output signal power to input signal power, often expressed in decibels (dB).",
+    "tags": ["fundamentals", "signals"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F080",
+    "question": "What is a decibel?",
+    "answer": "A logarithmic unit used to express the ratio of two values, commonly used to measure gain or loss in a signal.",
+    "tags": ["fundamentals", "units"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F081",
+    "question": "What is a signal-to-noise ratio (SNR)?",
+    "answer": "A measure of signal strength relative to background noise, often expressed in decibels (dB).",
+    "tags": ["fundamentals", "signals"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F082",
+    "question": "What is a digital-to-analog converter (DAC)?",
+    "answer": "A device that converts digital signals into analog signals.",
+    "tags": ["fundamentals", "conversion"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F083",
+    "question": "What is an analog-to-digital converter (ADC)?",
+    "answer": "A device that converts analog signals into digital signals.",
+    "tags": ["fundamentals", "conversion"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F084",
+    "question": "What is a microcontroller used for?",
+    "answer": "To control electronic devices and systems by executing programmed instructions.",
+    "tags": ["fundamentals", "components"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F085",
+    "question": "What is a microprocessor used for?",
+    "answer": "To perform arithmetic and logic operations in a computer system.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F086",
+    "question": "What is a programmable logic device (PLD)?",
+    "answer": "An electronic component that can be programmed to perform specific logic functions.",
+    "tags": ["fundamentals", "components"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F087",
+    "question": "What is a field-programmable gate array (FPGA)?",
+    "answer": "A type of PLD that can be configured by the user to perform complex logic operations.",
+    "tags": ["fundamentals", "components"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F088",
+    "question": "What is a digital signal processor (DSP)?",
+    "answer": "A specialized microprocessor designed for processing digital signals in real-time.",
+    "tags": ["fundamentals", "components"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F089",
+    "question": "What is a system-on-a-chip (SoC)?",
+    "answer": "An integrated circuit that combines all components of a computer or electronic system into a single chip.",
+    "tags": ["fundamentals", "components"],
+    "source": "Principles of Electronics – V&R Mehta" },
+  {    "id": "F090",
+    "question": "What is a bus in computer architecture?",
+    "answer": "A communication system that transfers data between components inside a computer or between computers.",
+    "tags": ["fundamentals", "architecture"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F091",
+    "question": "What is a memory address?",
+    "answer": "A unique identifier for a memory location where data is stored.",
+    "tags": ["fundamentals", "memory"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F092",
+    "question": "What is random access memory (RAM)?",
+    "answer": "A type of volatile memory that allows data to be read and written in any order.",
+    "tags": ["fundamentals", "memory"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F093",
+    "question": "What is read-only memory (ROM)?",
+    "answer": "A type of non-volatile memory that is used to store firmware or software that is not intended to be modified.",
+    "tags": ["fundamentals", "memory"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F094",
+    "question": "What is flash memory?",
+    "answer": "A type of non-volatile memory that can be electrically erased and reprogrammed.",
+    "tags": ["fundamentals", "memory"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F095",
+    "question": "What is a cache memory?",
+    "answer": "A small, high-speed memory that stores frequently accessed data to speed up data retrieval.",
+    "tags": ["fundamentals", "memory"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F096",
+    "question": "What is a hard disk drive (HDD)?",
+    "answer": "A data storage device that uses magnetic storage to store and retrieve digital information.",
+    "tags": ["fundamentals", "storage"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F097",
+    "question": "What is a solid-state drive (SSD)?",
+    "answer": "A data storage device that uses flash memory to store data, providing faster access times than HDDs.",
+    "tags": ["fundamentals", "storage"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F098",
+    "question": "What is a network interface card (NIC)?",
+    "answer": "A hardware component that allows a computer to connect to a network.",
+    "tags": ["fundamentals", "networking"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F099",
+    "question": "What is an Ethernet cable?",
+    "answer": "A cable used to connect devices in a wired network, typically using twisted pair or fiber optics.",
+    "tags": ["fundamentals", "networking"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F100",
+    "question": "What is Wi-Fi?",
+    "answer": "A technology that allows electronic devices to connect to a wireless local area network (WLAN).",
+    "tags": ["fundamentals", "networking"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F101",
+    "question": "What is a router?",
+    "answer": "A device that forwards data packets between computer networks, directing traffic on the internet.",
+    "tags": ["fundamentals", "networking"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F102",
+    "question": "What is a switch in networking?",
+    "answer": "A device that connects devices within a network and uses MAC addresses to forward data to the correct destination.",
+    "tags": ["fundamentals", "networking"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F103",
+    "question": "What is a firewall?",
+    "answer": "A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.",
+    "tags": ["fundamentals", "security"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F104",
+    "question": "What is encryption?",
+    "answer": "The process of converting information or data into a code to prevent unauthorized access.",
+    "tags": ["fundamentals", "security"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"},
+  {    "id": "F105",
+    "question": "What is a digital signature?",
+    "answer": "A cryptographic technique used to validate the authenticity and integrity of a message or document.",
+    "tags": ["fundamentals", "security"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F106",
+    "question": "What is a public key infrastructure (PKI)?",
+    "answer": "A framework for managing digital certificates and public-key encryption to secure communications.",
+    "tags": ["fundamentals", "security"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F107",
+    "question": "What is a virtual private network (VPN)?",
+    "answer": "A service that creates a secure, encrypted connection over a less secure network, such as the internet.",
+    "tags": ["fundamentals", "networking"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F108",
+    "question": "What is a cloud computing service?",
+    "answer": "A service that provides computing resources and data storage over the internet, allowing users to access and use applications and data remotely.",
+    "tags": ["fundamentals", "  cloud-computing"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F109",
+    "question": "What is the Internet of Things (IoT)?",
+    "answer": "A network of physical objects embedded with sensors, software, and other technologies to connect and exchange data with other devices and systems over the internet.",
+    "tags": ["fundamentals", "iot"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F110",
+    "question": "What is a sensor?",
+    "answer": "A device that detects and responds to physical stimuli, such as light, heat, motion, or pressure, and converts it into a signal that can be measured or recorded.",
+    "tags": ["fundamentals", "sensors"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F111",
+    "question": "What is an actuator?",
+    "answer": "A device that converts a control signal into physical motion, such as a motor or a valve.",
+    "tags": ["fundamentals", "actuators"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F112",
+    "question": "What is a microcontroller used for in IoT?",
+    "answer": "To process data from sensors and control actuators in IoT devices.",
+    "tags": ["fundamentals", "iot"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F113",
+    "question": "What is a smart home?",
+    "answer": "A residence equipped with smart devices that can be controlled remotely and can communicate with each other to enhance convenience, security, and energy efficiency.",
+    "tags": ["fundamentals", "smart-home"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F114",
+    "question": "What is a smart grid?",
+    "answer": "An electricity supply network that uses digital communication technology to detect and react to local changes in usage, improving efficiency and reliability.",
+    "tags": ["fundamentals", "smart-grid"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F115",
+    "question": "What is a wearable device?",
+    "answer": "An electronic device that can be worn on the body, often used for health monitoring, fitness tracking, or communication.",
+    "tags": ["fundamentals", "wearables"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F116",
+    "question": "What is a smart city?",
+    "answer": "An urban area that uses digital technology to enhance performance, well-being, and sustainability through improved infrastructure, services, and quality of life.",
+    "tags": ["fundamentals", "smart-city"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {    "id": "F117",
+    "question": "What is a digital twin?",
+    "answer": "A digital replica of a physical entity, used for simulation, analysis, and optimization of processes and systems.",
+    "tags": ["fundamentals", "digital-twin"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {    "id": "F118",
+    "question": "What is machine learning?", 
+    "answer": "A subset of artificial intelligence that enables systems to learn from data, identify patterns, and make decisions with minimal human intervention.",
+    "tags": ["fundamentals", "machine-learning"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {    "id": "F119",
+    "question": "What is artificial intelligence (AI)?",
+    "answer": "The simulation of human intelligence processes by machines, especially computer systems, including learning, reasoning, and self-correction.",
+    "tags": ["fundamentals", "artificial-intelligence"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {    "id": "F120",
+    "question": "What is the Internet?",
+    "answer": "A global network of interconnected computers that communicate using standardized protocols to share information and resources.",
+    "tags": ["fundamentals", "internet"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  }
+]

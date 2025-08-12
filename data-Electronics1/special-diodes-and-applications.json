@@ -1,0 +1,704 @@
+[
+  {
+    "id": "SPD001",
+    "question": "What is the primary function of a Zener diode?",
+    "answer": "To maintain a constant voltage across its terminals when reverse-biased.",
+    "tags": ["zener", "voltage regulation"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD002",
+    "question": "What is the breakdown voltage of a Zener diode?",
+    "answer": "The voltage at which it conducts in reverse bias without damage.",
+    "tags": ["zener", "breakdown"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD003",
+    "question": "What is the typical use of a light-emitting diode (LED)?",
+    "answer": "To emit light when forward biased.",
+    "tags": ["led", "optical"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD004",
+    "question": "What determines the color of an LED?",
+    "answer": "The bandgap energy of the semiconductor material.",
+    "tags": ["led", "materials"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD005",
+    "question": "What is a photodiode?",
+    "answer": "A diode that generates current when exposed to light.",
+    "tags": ["photodiode", "optical"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD006",
+    "question": "What is the application of a photodiode in electronics?",
+    "answer": "Used in light sensors and optical communication systems.",
+    "tags": ["photodiode", "applications"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD007",
+    "question": "What is a Schottky diode known for?",
+    "answer": "Its low forward voltage drop and fast switching speed.",
+    "tags": ["schottky", "speed"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD008",
+    "question": "What is the typical forward voltage of a Schottky diode?",
+    "answer": "Approximately 0.2 to 0.3 volts.",
+    "tags": ["schottky", "voltage"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD009",
+    "question": "What is a varactor diode?",
+    "answer": "A diode whose capacitance varies with reverse voltage.",
+    "tags": ["varactor", "tuning"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD010",
+    "question": "Where are varactor diodes commonly used?",
+    "answer": "In RF tuning circuits and voltage-controlled oscillators.",
+    "tags": ["varactor", "rf"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD011",
+    "question": "What is a tunnel diode?",
+    "answer": "A diode that exhibits negative resistance due to quantum tunneling.",
+    "tags": ["tunnel", "quantum"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD012",
+    "question": "What is the main application of tunnel diodes?",
+    "answer": "Used in high-frequency oscillators and amplifiers.",
+    "tags": ["tunnel", "hf circuits"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD013",
+    "question": "What is a PIN diode?",
+    "answer": "A diode with an intrinsic layer between p-type and n-type regions.",
+    "tags": ["pin", "structure"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD014",
+    "question": "What is the function of a PIN diode in RF applications?",
+    "answer": "Used as a variable resistor in RF switches and attenuators.",
+    "tags": ["pin", "rf"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD015",
+    "question": "What is a laser diode?",
+    "answer": "A diode that emits coherent light through stimulated emission.",
+    "tags": ["laser", "optical"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD016",
+    "question": "Where are laser diodes commonly used?",
+    "answer": "In optical drives, barcode scanners, and fiber-optic communication.",
+    "tags": ["laser", "applications"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD017",
+    "question": "What is a step recovery diode?",
+    "answer": "A diode used to generate sharp pulses in high-frequency circuits.",
+    "tags": ["step recovery", "pulse"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD018",
+    "question": "What is the role of a step recovery diode in frequency multipliers?",
+    "answer": "It sharpens transitions to produce harmonics for multiplication.",
+    "tags": ["step recovery", "multipliers"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD019",
+    "question": "What is a transient voltage suppression (TVS) diode?",
+    "answer": "A diode designed to protect circuits from voltage spikes.",
+    "tags": ["tvs", "protection"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD020",
+    "question": "Where are TVS diodes typically used?",
+    "answer": "In surge protection for data lines and power supplies.",
+    "tags": ["tvs", "surge"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD021",
+    "question": "What is a gold-doped diode?",
+    "answer": "A diode with gold impurities to improve switching speed.",
+    "tags": ["gold-doped", "speed"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD022",
+    "question": "Why is gold used in doping diodes?",
+    "answer": "It reduces carrier lifetime, enhancing switching performance.",
+    "tags": ["gold-doped", "carrier lifetime"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD023",
+    "question": "What is a silicon-controlled rectifier (SCR)?",
+    "answer": "A four-layer semiconductor device used for power control.",
+    "tags": ["scr", "power"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD024",
+    "question": "How is an SCR triggered?",
+    "answer": "By applying a gate pulse to initiate conduction.",
+    "tags": ["scr", "trigger"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD025",
+    "question": "What is the main use of an SCR?",
+    "answer": "In motor speed control, light dimming, and AC power regulation.",
+    "tags": ["scr", "applications"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD026",
+    "question": "What is a triac?",
+    "answer": "A bidirectional device used to control AC power.",
+    "tags": ["triac", "ac control"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD027",
+    "question": "How does a triac differ from an SCR?",
+    "answer": "A triac conducts in both directions, while an SCR conducts in one.",
+    "tags": ["triac", "scr"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD028",
+    "question": "Where are triacs commonly used?",
+    "answer": "In light dimmers, fan speed controllers, and AC switches.",
+    "tags": ["triac", "applications"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD029",
+    "question": "What is a diac?",
+    "answer": "A bidirectional trigger diode used to initiate conduction in triacs.",
+    "tags": ["diac", "trigger"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD030",
+    "question": "What is the function of a diac in a dimmer circuit?",
+    "answer": "It helps trigger the triac at a specific voltage threshold.",
+    "tags": ["diac", "dimmer"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD031",
+    "question": "What is a Gunn diode?",
+    "answer": "A diode used to generate microwave frequencies through negative resistance.",
+    "tags": ["gunn", "microwave"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD032",
+    "question": "Where are Gunn diodes used?",
+    "answer": "In radar systems and microwave oscillators.",
+    "tags": ["gunn", "applications"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD033",
+    "question": "What is a phototransistor?",
+    "answer": "A transistor that responds to light instead of electrical signals.",
+    "tags": ["phototransistor", "optical"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD034",
+    "question": "What is the advantage of a phototransistor over a photodiode?",
+    "answer": "It provides higher sensitivity and gain.",
+    "tags": ["phototransistor", "gain"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD035",
+    "question": "What is a solar cell?",
+    "answer": "A device that converts light energy directly into electrical energy.",
+    "tags": ["solar", "energy"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD036",
+    "question": "What is the principle behind solar cells?",
+    "answer": "The photovoltaic effect in semiconductors.",
+    "tags": ["solar", "photovoltaic"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD037",
+    "question": "What is a thermistor?",
+    "answer": "A resistor whose resistance changes significantly with temperature.",
+    "tags": ["thermistor", "temperature"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD038",
+    "question": "What are the two types of thermistors?",
+    "answer": "NTC (negative temperature coefficient) and PTC (positive temperature coefficient).",
+    "tags": ["thermistor", "ntc", "ptc"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD039",
+    "question": "What is a photoconductive cell?",
+    "answer": "A light-sensitive resistor whose resistance decreases with light intensity.",
+    "tags": ["photoconductive", "light"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD040",
+    "question": "Where are photoconductive cells used?",
+    "answer": "In automatic lighting and exposure meters.",
+    "tags": ["photoconductive", "applications"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD041",
+    "question": "What is a piezoelectric sensor?",
+    "answer": "A device that generates voltage when mechanical stress is applied.",
+    "tags": ["piezoelectric", "sensor"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD042",
+    "question": "What is the application of piezoelectric sensors?",
+    "answer": "Used in microphones, accelerometers, and pressure sensors.",
+    "tags": ["piezoelectric", "applications"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD043",
+    "question": "What is a reed switch?",
+    "answer": "An electromechanical switch operated by a magnetic field.",
+    "tags": ["reed", "magnetic"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD044",
+    "question": "Where are reed switches used?",
+    "answer": "In security systems and proximity sensors.",
+    "tags": ["reed", "applications"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD045",
+    "question": "What is a Hall effect sensor?",
+    "answer": "A device that detects magnetic fields via the Hall effect.",
+    "tags": ["hall", "magnetic"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD046",
+    "question": "What is the Hall effect?",
+    "answer": "The generation of voltage across a conductor due to a magnetic field.",
+    "tags": ["hall", "physics"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD047",
+    "question": "What is a unijunction transistor (UJT)?",
+    "answer": "A three-terminal device used mainly in triggering and timing circuits.",
+    "tags": ["ujt", "timing"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD048",
+    "question": "What is the main characteristic of a UJT?",
+    "answer": "It has a negative resistance region useful for oscillators.",
+    "tags": ["ujt", "oscillator"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD049",
+    "question": "What is a current mirror?",
+    "answer": "A circuit that copies current from one active device to another.",
+    "tags": ["current mirror", "analog"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD050",
+    "question": "Where are current mirrors used?",
+    "answer": "In analog integrated circuits for biasing and amplification.",
+    "tags": ["current mirror", "applications"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD051",
+    "question": "What is a voltage regulator?",
+    "answer": "A device that maintains a constant output voltage regardless of input or load changes.",
+    "tags": ["voltage regulator", "stability"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD052",
+    "question": "What are the types of voltage regulators?",
+    "answer": "Linear and switching regulators.",
+    "tags": ["voltage regulator", "types"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD053",
+    "question": "What is a linear voltage regulator?",
+    "answer": "A regulator that uses a variable resistance to maintain constant voltage.",
+    "tags": ["linear regulator", "voltage"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD054",
+    "question": "What is a switching voltage regulator?",
+    "answer": "A regulator that uses high-frequency switching and energy storage elements.",
+    "tags": ["switching regulator", "efficiency"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD055",
+    "question": "What is a buck converter?",
+    "answer": "A DC-DC converter that steps down voltage.",
+    "tags": ["buck", "dc-dc"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD056",
+    "question": "What is a boost converter?",
+    "answer": "A DC-DC converter that steps up voltage.",
+    "tags": ["boost", "dc-dc"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD057",
+    "question": "What is a buck-boost converter?",
+    "answer": "A converter that can either step up or step down voltage.",
+    "tags": ["buck-boost", "dc-dc"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD058",
+    "question": "What is a flyback converter?",
+    "answer": "A converter that stores energy in a transformer and releases it to the output.",
+    "tags": ["flyback", "transformer"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD059",
+    "question": "What is a forward converter?",
+    "answer": "A converter that transfers energy directly through a transformer during the switch-on period.",
+    "tags": ["forward", "transformer"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD060",
+    "question": "What is a bridge rectifier?",
+    "answer": "A circuit that converts AC to DC using four diodes.",
+    "tags": ["rectifier", "ac-dc"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD061",
+    "question": "What is ripple in a rectifier output?",
+    "answer": "The residual periodic variation in DC voltage after rectification.",
+    "tags": ["ripple", "rectifier"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD062",
+    "question": "What is a filter capacitor used for?",
+    "answer": "To smooth out the ripple in rectified DC voltage.",
+    "tags": ["capacitor", "filter"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD063",
+    "question": "What is a voltage doubler circuit?",
+    "answer": "A circuit that increases the input voltage to approximately twice its value.",
+    "tags": ["voltage doubler", "dc conversion"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD064",
+    "question": "What is a clamping circuit?",
+    "answer": "A circuit that shifts the voltage level of a waveform without changing its shape.",
+    "tags": ["clamping", "waveform"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD065",
+    "question": "What is a clipping circuit?",
+    "answer": "A circuit that removes portions of a signal above or below a certain level.",
+    "tags": ["clipping", "signal"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD066",
+    "question": "What is a logic diode used for?",
+    "answer": "To implement logic gates and protect circuits from reverse currents.",
+    "tags": ["logic", "diode"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD067",
+    "question": "What is a power diode?",
+    "answer": "A diode designed to handle high current and voltage in power applications.",
+    "tags": ["power", "diode"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD068",
+    "question": "What is reverse recovery time in diodes?",
+    "answer": "The time it takes for a diode to stop conducting after reverse bias is applied.",
+    "tags": ["reverse recovery", "diode"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD069",
+    "question": "What is a fast recovery diode?",
+    "answer": "A diode with a short reverse recovery time used in high-speed switching.",
+    "tags": ["fast recovery", "switching"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD070",
+    "question": "What is a snubber circuit?",
+    "answer": "A circuit used to suppress voltage spikes in switching devices.",
+    "tags": ["snubber", "protection"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD071",
+    "question": "What is a crowbar circuit?",
+    "answer": "A protection circuit that shorts the power supply in case of overvoltage.",
+    "tags": ["crowbar", "protection"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD072",
+    "question": "What is a soft-start circuit?",
+    "answer": "A circuit that gradually increases voltage to prevent inrush current.",
+    "tags": ["soft-start", "power"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD073",
+    "question": "What is a heat sink?",
+    "answer": "A device that dissipates heat from electronic components.",
+    "tags": ["heat sink", "thermal"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD074",
+    "question": "What is thermal runaway?",
+    "answer": "A condition where increased temperature causes more current, leading to further heating.",
+    "tags": ["thermal runaway", "failure"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD075",
+    "question": "What is a voltage reference diode?",
+    "answer": "A diode that provides a stable reference voltage for circuits.",
+    "tags": ["reference", "voltage"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD076",
+    "question": "What is a constant current diode?",
+    "answer": "A diode that maintains a fixed current regardless of voltage changes.",
+    "tags": ["constant current", "diode"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD077",
+    "question": "What is a avalanche diode?",
+    "answer": "A diode designed to break down at a specific voltage and conduct without damage.",
+    "tags": ["avalanche", "breakdown"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD078",
+    "question": "What is the difference between Zener and avalanche diodes?",
+    "answer": "Zener diodes operate at lower breakdown voltages; avalanche diodes handle higher voltages.",
+    "tags": ["zener", "avalanche"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD079",
+    "question": "What is a silicon diode?",
+    "answer": "A diode made from silicon, commonly used in general-purpose applications.",
+    "tags": ["silicon", "diode"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD080",
+    "question": "What is a germanium diode?",
+    "answer": "A diode made from germanium with lower forward voltage drop than silicon.",
+    "tags": ["germanium", "semiconductor"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD081",
+    "question": "What is the forward voltage drop of a germanium diode?",
+    "answer": "Approximately 0.3 volts.",
+    "tags": ["germanium", "voltage"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD082",
+    "question": "What is a rectifier diode?",
+    "answer": "A diode used to convert AC to DC in power supplies.",
+    "tags": ["rectifier", "conversion"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD083",
+    "question": "What is a signal diode?",
+    "answer": "A small diode used in low-current applications like switching and logic circuits.",
+    "tags": ["signal", "low current"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD084",
+    "question": "What is a recovery diode?",
+    "answer": "A diode designed to quickly recover from conducting to blocking state.",
+    "tags": ["recovery", "switching"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD085",
+    "question": "What is a transient diode array?",
+    "answer": "An array of diodes used to protect data lines from electrostatic discharge.",
+    "tags": ["transient", "array"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD086",
+    "question": "What is a dual diode?",
+    "answer": "A package containing two diodes, often used in push-pull circuits.",
+    "tags": ["dual", "package"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD087",
+    "question": "What is a diode array?",
+    "answer": "A set of diodes integrated into a single package for compact circuit design.",
+    "tags": ["array", "integration"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD088",
+    "question": "What is a diode bridge?",
+    "answer": "A configuration of four diodes used for full-wave rectification.",
+    "tags": ["bridge", "rectification"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD089",
+    "question": "What is a diode matrix?",
+    "answer": "A grid of diodes used in keyboard encoding and memory addressing.",
+    "tags": ["matrix", "logic"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD090",
+    "question": "What is a diode logic gate?",
+    "answer": "A logic gate implemented using diodes and resistors.",
+    "tags": ["logic", "gate"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD091",
+    "question": "What is a diode clamp?",
+    "answer": "A circuit that fixes the voltage level of a signal to a desired reference.",
+    "tags": ["clamp", "voltage"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD092",
+    "question": "What is a diode limiter?",
+    "answer": "A circuit that restricts the amplitude of a signal to a set threshold.",
+    "tags": ["limiter", "signal"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD093",
+    "question": "What is a diode switch?",
+    "answer": "A diode used to control signal paths in electronic switching circuits.",
+    "tags": ["switch", "signal"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD094",
+    "question": "What is a diode tester?",
+    "answer": "A device used to check the functionality and polarity of a diode.",
+    "tags": ["tester", "diagnostics"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD095",
+    "question": "What is a diode's reverse leakage current?",
+    "answer": "The small current that flows when the diode is reverse-biased.",
+    "tags": ["leakage", "reverse"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  },
+  {
+    "id": "SPD096",
+    "question": "What is the peak inverse voltage (PIV) of a diode?",
+    "answer": "The maximum reverse voltage a diode can withstand without breakdown.",
+    "tags": ["piv", "breakdown"],
+    "source": "Principles of Electronics – V&R Mehta"
+  },
+  {
+    "id": "SPD097",
+    "question": "What is the ideal diode model?",
+    "answer": "A theoretical model where the diode conducts perfectly in forward bias and blocks completely in reverse bias.",
+    "tags": ["ideal", "model"],
+    "source": "Fundamentals of Electric Circuit – Sadiku"
+  },
+  {
+    "id": "SPD098",
+    "question": "What is the real diode model?",
+    "answer": "A practical model that includes forward voltage drop and reverse leakage.",
+    "tags": ["real", "model"],
+    "source": "Engineering Circuit Analysis – Hayt"
+  },
+  {
+    "id": "SPD099",
+    "question": "What is the dynamic resistance of a diode?",
+    "answer": "The small-signal resistance of a diode in its conducting state.",
+    "tags": ["dynamic", "resistance"],
+    "source": "Electrical Circuit Theory and Technology – John Bird"
+  },
+  {
+    "id": "SPD100",
+    "question": "What is the static resistance of a diode?",
+    "answer": "The ratio of voltage to current at a specific operating point.",
+    "tags": ["static", "resistance"],
+    "source": "Teach Yourself Electricity and Electronics – Stan Gibilisco"
+  }
+]
+
+  

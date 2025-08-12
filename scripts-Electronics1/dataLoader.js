@@ -9,7 +9,12 @@ const topics = [
   "safety",
   "electrical-properties",
   "resistance",
-  "dc-ohms-law"
+  "dc-ohms-law",
+  "combinational",
+  "fundamentals",
+  "introsemiconductors",
+  "semiconductor-diodes",
+  "special-diodes-and-applications",
 ];
 
 export async function loadAllFlashcardData() {
