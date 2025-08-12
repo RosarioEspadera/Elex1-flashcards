@@ -1,4 +1,7 @@
 import { loadAllFlashcardData } from './dataLoader.js';
+import { checkVersion } from "./scripts-Electronics1/app.js";
+
+document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
 loadAllFlashcardData().then(allData => {
   renderFlashcards(allData); // Placeholder for future bulk rendering

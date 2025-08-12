@@ -9,10 +9,13 @@
   <link rel="manifest" href="manifest.json">
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(() => {
-      console.log('Service Worker registered');
-    });
-  }
+  navigator.serviceWorker.getRegistrations().then(regs => {
+    for (let reg of regs) {
+      reg.unregister();
+    }
+    location.reload(true);
+  });
+}
 </script>
 
 </head>
@@ -36,7 +39,8 @@
   </header>
 <section>
     <div>
-<button id="installBtn" style="display:none;">Install App</button></div>
+      <button id="updateCheckBtn">🔄 Check for Updates</button>
+      <button id="installBtn" style="display:none;">Install App</button></div>
 </section>
   <section class="topics-grid">
   <div class="topic-card" data-topic="dc-math">📊 DC Math</div>
@@ -107,5 +111,6 @@
     }
   });
 </script>
+<script src="scripts-Electronics1/app.js"></script>
 </body>
 </html>

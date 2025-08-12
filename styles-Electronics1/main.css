@@ -29,6 +29,21 @@ body {
   outline: none;
 }
 
+#updateCheckBtn {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+#updateCheckBtn:hover {
+  background: var(--accent-color-dark);
+}
+
 :root {
   --bg: #fdfdfd;
   --text: #222;
