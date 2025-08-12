@@ -1,5 +1,9 @@
 let pdfjsLib = window.pdfjsLib;
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.js';
+if (pdfjsLib && pdfjsLib.GlobalWorkerOptions) {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.js';
+} else {
+  console.error('PDF.js library not loaded.');
+}
 
 const pdfSelect = document.getElementById('pdfSelect');
 const loadPdfBtn = document.getElementById('loadPdfBtn');
