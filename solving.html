@@ -16,6 +16,27 @@
 </script>
 </head>
 <body>
+<button id="installBtn" style="display:none;">Install App</button>
+<script>
+  let deferredPrompt;
+  const installBtn = document.getElementById('installBtn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'block';
+  });
+
+  installBtn.addEventListener('click', () => {
+    installBtn.style.display = 'none';
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(() => {
+        deferredPrompt = null;
+      });
+    }
+  });
+</script>
   <header class="site-header">
     <h1 class="site-title">Elex1 Flashcards</h1>
     <nav class="top-nav" aria-label="Main navigation">
@@ -42,6 +63,9 @@
       </div>
       <div class="topic-card" data-topic="transistor-biasing" tabindex="0" role="button" aria-pressed="false">
         Transistor-Biasing
+      </div>
+      <div class="topic-card" data-topic="transistor-amplifiers" tabindex="0" role="button" aria-pressed="false">
+        Single-Stage-Transistor-Amplifiers
       </div>
     </section>
 

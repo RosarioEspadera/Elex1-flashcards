@@ -17,6 +17,27 @@
 
 </head>
 <body>
+<button id="installBtn" style="display:none;">Install App</button>
+<script>
+  let deferredPrompt;
+  const installBtn = document.getElementById('installBtn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'block';
+  });
+
+  installBtn.addEventListener('click', () => {
+    installBtn.style.display = 'none';
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(() => {
+        deferredPrompt = null;
+      });
+    }
+  });
+</script>
   <header>
     <h1>Elex1 Flashcards</h1>
      <nav class="top-nav">

@@ -5,6 +5,7 @@ export async function loadAllFlashcardData() {
     'semiconductor-diode',
     'transistor',
     'transistor-biasing',
+    'transistor-amplifiers'
   ];
 
   const allData = {};
