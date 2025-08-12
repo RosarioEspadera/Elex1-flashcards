@@ -31,29 +31,10 @@
       </a>
     </nav>
   </header>
-<script>
-  let deferredPrompt;
-  const installBtn = document.getElementById('installBtn');
-
-  window.addEventListener('beforeinstallprompt', (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-    installBtn.style.display = 'block';
-  });
-
-  installBtn.addEventListener('click', () => {
-    installBtn.style.display = 'none';
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.then(() => {
-        deferredPrompt = null;
-      });
-    }
-  });
-</script>
 <main>
   <div>
-<button id="installBtn" style="display:none;">Install App</button></div>
+    <button id="installBtn" style="display:none;">Install App</button>
+  </div>
      <section class="topics-grid">
       <div class="topic-card" data-topic="semiconductor-diode" tabindex="0" role="button" aria-pressed="false">
         Semiconductor Diode
@@ -99,5 +80,25 @@
 
   <script type="module" src="scripts-Electronics1/solving.js"></script>
   <script type="module" src="scripts-Electronics1/dataLoadersolving.js"></script>
+<script>
+  let deferredPrompt;
+  const installBtn = document.getElementById('installBtn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'block';
+  });
+
+  installBtn.addEventListener('click', () => {
+    installBtn.style.display = 'none';
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(() => {
+        deferredPrompt = null;
+      });
+    }
+  });
+</script>
 </body>
 </html>
