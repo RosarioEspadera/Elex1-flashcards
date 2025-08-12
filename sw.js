@@ -3,14 +3,17 @@ const urlsToCache = [
   '/Elex1-flashcards/',
   '/Elex1-flashcards/index.html',
   '/Elex1-flashcards/solving.html',
+  '/Elex1-flashcards/pdf.html', // <-- Added PDF viewer page
   '/Elex1-flashcards/favicon.ico',
   '/Elex1-flashcards/manifest.json',
   '/Elex1-flashcards/styles-Electronics1/main.css',
   '/Elex1-flashcards/styles-Electronics1/solving.css',
+  '/Elex1-flashcards/styles-Electronics1/pdf-viewer.css', // <-- Added PDF viewer CSS
   '/Elex1-flashcards/scripts-Electronics1/main.js',
   '/Elex1-flashcards/scripts-Electronics1/solving.js',
   '/Elex1-flashcards/scripts-Electronics1/dataLoader.js',
   '/Elex1-flashcards/scripts-Electronics1/dataLoadersolving.js',
+  '/Elex1-flashcards/scripts-Electronics1/pdf-viewer.js', // <-- Added PDF viewer JS
   // Electronics1 topic JSON files
   '/Elex1-flashcards/data-Electronics1/amplifiers.json',
   '/Elex1-flashcards/data-Electronics1/biasing.json',
@@ -27,7 +30,8 @@ const urlsToCache = [
   // Electronics1solving topic JSON files
   '/Elex1-flashcards/data-Electronics1solving/semiconductor-diode.json',
   '/Elex1-flashcards/data-Electronics1solving/transistor.json',
-  '/Elex1-flashcards/data-Electronics1solving/transistor-biasing.json'
+  '/Elex1-flashcards/data-Electronics1solving/transistor-biasing.json',
+  '/Elex1-flashcards/data-Electronics1solving/transistor-amplifiers.json',
 ];
 
 self.addEventListener('install', event => {
