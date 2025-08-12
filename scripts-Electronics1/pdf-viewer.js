@@ -12,25 +12,26 @@ const prevPageBtn = document.getElementById('prevPage');
 const nextPageBtn = document.getElementById('nextPage');
 const pageInfo = document.getElementById('pageInfo');
 
+canvas.width = 800;
+canvas.height = 1000;
 let pdfDoc = null;
 let pageNum = 1;
 let pageCount = 0;
 
-// Render a page
 function renderPage(num) {
   pdfDoc.getPage(num).then(page => {
     const viewport = page.getViewport({ scale: 1.5 });
     canvas.height = viewport.height;
     canvas.width = viewport.width;
-
-    const renderContext = {
-      canvasContext: ctx,
-      viewport: viewport
-    };
-    page.render(renderContext);
-    pageInfo.textContent = `Page ${num} of ${pageCount}`;
-    prevPageBtn.disabled = (num <= 1);
-    nextPageBtn.disabled = (num >= pageCount);
+    page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise
+      .then(() => {
+        pageInfo.textContent = `Page ${num} of ${pageCount}`;
+      })
+      .catch(err => {
+        pageInfo.textContent = 'Error rendering page: ' + err.message;
+      });
+  }).catch(err => {
+    pageInfo.textContent = 'Error loading page: ' + err.message;
   });
 }
 
