@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.appmaker.peypvm",
+      "sha256_cert_fingerprints": [
+        "61:A4:3B:B8:A7:D8:E0:08:10:71:12:82:A0:1F:BC:9E:5B:C0:72:81:ED:51:84:29:1F:CA:62:BA:E6:B6:2F:1C"
+      ]
+    }
+  }
+]
