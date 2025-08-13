@@ -1,4 +1,4 @@
-const localVersion = "1.0.26";
+const localVersion = "1.0.27";
 
 export function checkVersion(onUpdate) {
   fetch("version.json", { cache: "no-store" })
