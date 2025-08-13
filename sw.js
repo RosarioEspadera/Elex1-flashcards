@@ -1,4 +1,5 @@
 const CACHE_NAME = 'elex1-cache-v2';
+
 const STATIC_ASSETS = [
   '/Elex1-flashcards/',
   '/Elex1-flashcards/index.html',
@@ -13,38 +14,24 @@ const STATIC_ASSETS = [
   '/Elex1-flashcards/scripts-Electronics1/solving.js',
   '/Elex1-flashcards/scripts-Electronics1/dataLoader.js',
   '/Elex1-flashcards/scripts-Electronics1/dataLoadersolving.js',
- '/Elex1-flashcards/data-Electronics1/amplifiers.json',
-  '/Elex1-flashcards/data-Electronics1/biasing.json',
-  '/Elex1-flashcards/data-Electronics1/bjts.json',
-  '/Elex1-flashcards/data-Electronics1/dc-math.json',
-  '/Elex1-flashcards/data-Electronics1/dc-ohms-law.json',
-  '/Elex1-flashcards/data-Electronics1/diodes.json',
-  '/Elex1-flashcards/data-Electronics1/electrical-properties.json',
-  '/Elex1-flashcards/data-Electronics1/fets.json',
-  '/Elex1-flashcards/data-Electronics1/power-supplies.json',
-  '/Elex1-flashcards/data-Electronics1/resistance.json',
-  '/Elex1-flashcards/data-Electronics1/safety.json',
-  '/Elex1-flashcards/data-Electronics1/transistor.json',
-  '/Elex1-flashcards/data-Electronics1/combinational.json',
-  '/Elex1-flashcards/data-Electronics1/fundamentals.json',
-  '/Elex1-flashcards/data-Electronics1/introsemiconductors.json',
-  '/Elex1-flashcards/data-Electronics1/semiconductor-diodes.json',
-  '/Elex1-flashcards/data-Electronics1/special-diodes-and-applications.json',
-  // Electronics1solving topic JSON files
-  '/Elex1-flashcards/data-Electronics1solving/semiconductor-diode.json',
-  '/Elex1-flashcards/data-Electronics1solving/transistor.json',
-  '/Elex1-flashcards/data-Electronics1solving/transistor-biasing.json',
-  '/Elex1-flashcards/data-Electronics1solving/transistor-amplifiers.json',
   '/Elex1-flashcards/scripts-Electronics1/pdf-viewer.js',
-  '/Elex1-flashcards/scripts-Electronics1/app.js'
-
+  '/Elex1-flashcards/scripts-Electronics1/app.js',
+  // JSON decks
+  ...[
+    'amplifiers','biasing','bjts','dc-math','dc-ohms-law','diodes','electrical-properties',
+    'fets','power-supplies','resistance','safety','transistor','combinational',
+    'fundamentals','introsemiconductors','semiconductor-diodes','special-diodes-and-applications'
+  ].map(name => `/Elex1-flashcards/data-Electronics1/${name}.json`),
+  ...[
+    'semiconductor-diode','transistor','transistor-biasing','transistor-amplifiers'
+  ].map(name => `/Elex1-flashcards/data-Electronics1solving/${name}.json`)
 ];
 
-// Utility matchers
+// Matchers
 const isDeck = url =>
   url.includes('/data-Electronics1/') || url.includes('/data-Electronics1solving/');
 const isImage = url =>
-  url.includes('/images-Electronics1solving/');
+  url.includes('/images-Electronics1solving/') || url.includes('/images-transistor-biasing/');
 
 // Install: cache static assets
 self.addEventListener('install', event => {
