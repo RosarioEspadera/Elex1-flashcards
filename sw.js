@@ -635,6 +635,35 @@ self.addEventListener('install', event => {
   );
 });
 
+self.addEventListener('install', event => {
+  event.waitUntil(
+    (async () => {
+      const cache = await caches.open('elex1-cache');
+      let downloaded = 0;
+      const total = filesToCache.length;
+
+      for (const file of filesToCache) {
+        try {
+          const response = await fetch(file);
+          await cache.put(file, response.clone());
+          downloaded++;
+
+          const clients = await self.clients.matchAll();
+          clients.forEach(client => {
+            client.postMessage({
+              type: 'download-progress',
+              downloaded,
+              total
+            });
+          });
+        } catch (err) {
+          console.warn(`❌ Failed to cache ${file}`, err);
+        }
+      }
+    })()
+  );
+});
+
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(response => {

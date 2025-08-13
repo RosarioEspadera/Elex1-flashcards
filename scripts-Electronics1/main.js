@@ -1,6 +1,8 @@
 import { loadAllFlashcardData } from './dataLoader.js';
 import { checkVersion } from './app.js';
 
+
+
 document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
 loadAllFlashcardData().then(allData => {
