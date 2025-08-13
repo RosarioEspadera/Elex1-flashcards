@@ -91,6 +91,8 @@
 });
 
 navigator.serviceWorker.addEventListener('message', event => {
+  console.log('Message from SW:', event.data); // ✅ should log progress
+
   if (event.data.type === 'download-progress') {
     const { downloaded, total } = event.data;
     const percent = Math.round((downloaded / total) * 100);
@@ -103,6 +105,7 @@ navigator.serviceWorker.addEventListener('message', event => {
     }
   }
 });
+
 
 
   function showToast(message) {

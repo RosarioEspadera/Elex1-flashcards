@@ -88,19 +88,25 @@
 </div>
 
 <script>
-  navigator.serviceWorker.addEventListener('message', event => {
-    if (event.data.type === 'download-progress') {
-      const { downloaded, total } = event.data;
-      const percent = Math.round((downloaded / total) * 100);
-      const bar = document.getElementById('progress-bar');
-      bar.style.width = percent + '%';
-      bar.textContent = `Downloading: ${percent}%`;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+  console.log('Service worker now controlling the page');
+  location.reload(); // optional: reload to activate message handling
+});
 
-      if (percent === 100) {
-        showToast('✅ All files downloaded. Ready for offline use!');
-      }
+navigator.serviceWorker.addEventListener('message', event => {
+  if (event.data.type === 'download-progress') {
+    const { downloaded, total } = event.data;
+    const percent = Math.round((downloaded / total) * 100);
+    const bar = document.getElementById('progress-bar');
+    bar.style.width = percent + '%';
+    bar.textContent = `Downloading: ${percent}%`;
+
+    if (percent === 100) {
+      showToast('✅ All files downloaded. Ready for offline use!');
     }
-  });
+  }
+});
+
 
   function showToast(message) {
     const toast = document.createElement('div');
