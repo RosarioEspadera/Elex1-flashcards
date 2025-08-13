@@ -4,10 +4,43 @@ import { checkVersion } from './app.js';
 document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/Elex1-flashcards/sw.js')
-    .then(reg => console.log('Service Worker registered:', reg))
-    .catch(err => console.error('Service Worker registration failed:', err));
-}
+    navigator.serviceWorker.register('./sw.js').then(reg => {
+      console.log('Service Worker registered!', reg);
+
+      // Listen for updates
+      reg.onupdatefound = () => {
+        const newWorker = reg.installing;
+        newWorker.onstatechange = () => {
+          if (newWorker.state === 'activated') {
+            showOfflineReadyNotification();
+          }
+        };
+      };
+
+      // If already active
+      if (reg.active) {
+        showOfflineReadyNotification();
+      }
+    }).catch(err => console.error('Service Worker registration failed:', err));
+  }
+
+  function showOfflineReadyNotification() {
+    const toast = document.createElement('div');
+    toast.textContent = '✅ App is ready for offline use!';
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.left = '50%';
+    toast.style.transform = 'translateX(-50%)';
+    toast.style.background = '#2e7d32';
+    toast.style.color = '#fff';
+    toast.style.padding = '10px 20px';
+    toast.style.borderRadius = '8px';
+    toast.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+    toast.style.zIndex = '1000';
+    document.body.appendChild(toast);
+
+    setTimeout(() => toast.remove(), 5000);
+  }
 
 loadAllFlashcardData().then(allData => {
   renderFlashcards(allData); // Placeholder for future bulk rendering
