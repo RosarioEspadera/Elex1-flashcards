@@ -36,6 +36,8 @@ const STATIC_ASSETS = [
   '/Elex1-flashcards/data-Electronics1solving/transistor-biasing.json',
   '/Elex1-flashcards/data-Electronics1solving/transistor-amplifiers.json',
   '/Elex1-flashcards/scripts-Electronics1/pdf-viewer.js'
+  '/Elex1-flashcards/scripts-Electronics1/app.js',
+
 ];
 
 // Modular detection for JSON decks
