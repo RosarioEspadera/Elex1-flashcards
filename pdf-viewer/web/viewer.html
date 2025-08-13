@@ -38,6 +38,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   </head>
 
   <body tabindex="0">
+
     <div id="outerContainer">
       <span id="viewer-alert" class="visuallyHidden" role="alert"></span>
 
@@ -57,6 +58,10 @@ See https://github.com/adobe-type-tools/cmap-resources
               <button id="viewLayers" class="toolbarButton" type="button" tabindex="0" data-l10n-id="pdfjs-layers-button" role="radio" aria-checked="false" aria-controls="layersView">
                  <span data-l10n-id="pdfjs-layers-button-label"></span>
               </button>
+              <button id="viewLibrary" class="toolbarButton" type="button" tabindex="0" role="radio" aria-checked="false">
+              <span>📚 PDF Library</span>
+              </button>
+
             </div>
           </div>
 
@@ -765,6 +770,16 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     </div> <!-- outerContainer -->
     <div id="printContainer"></div>
+<div id="pdfLibraryModal" style="display:none; position:fixed; top:10%; left:50%; transform:translateX(-50%);
+  background:#fff; border:1px solid #ccc; padding:1rem; z-index:1000; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+  <h3>📚 Choose a Circuit Scroll</h3>
+  <ul style="list-style:none; padding:0;">
+    <li><a href="viewer.html?file=/Elex1-flashcards/pdfs/electronics1111.pdf">Transistor Amplifiers</a></li>
+    <li><a href="viewer.html?file=/Elex1-flashcards/pdfs/Basic-Electricity-and-Electronics-1.pdf">Basic Electricity and Electronics 1</a></li>
+    <!-- Add more as needed -->
+  </ul>
+  <button onclick="document.getElementById('pdfLibraryModal').style.display='none'">❌ Close</button>
+</div>
 
   </body>
 </html>
