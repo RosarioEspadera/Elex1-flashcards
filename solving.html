@@ -129,7 +129,30 @@
 
   <script type="module" src="scripts-Electronics1/solving.js"></script>
   <script type="module" src="scripts-Electronics1/dataLoadersolving.js"></script>
+<script type="module">
+  import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-window.prod.mjs';
+
+  if ('serviceWorker' in navigator) {
+    const wb = new Workbox('/sw.js');
+
+    wb.addEventListener('waiting', () => {
+      const updateToast = document.createElement('div');
+      updateToast.textContent = '🔄 A new version is available. Click to refresh.';
+      updateToast.style = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#6b4f3b;color:#fff;padding:10px 20px;border-radius:8px;z-index:1000;cursor:pointer;';
+      updateToast.onclick = () => wb.messageSkipWaiting();
+      document.body.appendChild(updateToast);
+    });
+
+    wb.addEventListener('controlling', () => {
+      window.location.reload();
+    });
+
+    wb.register();
+  }
+</script>
+
 <script>
+
   let deferredPrompt;
   const installBtn = document.getElementById('installBtn');
 

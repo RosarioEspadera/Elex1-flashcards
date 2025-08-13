@@ -3,36 +3,6 @@ import { checkVersion } from './app.js';
 
 document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js').then(reg => {
-      console.log('Service Worker registered!', reg);
-
-      // Listen for updates
-      reg.onupdatefound = () => {
-        const newWorker = reg.installing;
-        newWorker.onstatechange = () => {
-          if (newWorker.state === 'activated') {
-            showOfflineReadyNotification();
-          }
-        };
-      };
-
-      // If already active
-      if (reg.active) {
-        showOfflineReadyNotification();
-      }
-    }).catch(err => console.error('Service Worker registration failed:', err));
-  }
-
-  navigator.serviceWorker.addEventListener('message', event => {
-  if (event.data.type === 'download-progress') {
-    const { downloaded, total } = event.data;
-    const percent = Math.round((downloaded / total) * 100);
-    showDownloadProgress(percent);
-  }
-});
-
-
 loadAllFlashcardData().then(allData => {
   renderFlashcards(allData); // Placeholder for future bulk rendering
 });
