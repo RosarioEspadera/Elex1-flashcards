@@ -3,6 +3,12 @@ import { checkVersion } from './app.js';
 
 document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/Elex1-flashcards/sw.js')
+    .then(reg => console.log('Service Worker registered:', reg))
+    .catch(err => console.error('Service Worker registration failed:', err));
+}
+
 loadAllFlashcardData().then(allData => {
   renderFlashcards(allData); // Placeholder for future bulk rendering
 });
