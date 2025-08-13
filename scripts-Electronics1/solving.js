@@ -28,13 +28,19 @@ topicCards.forEach(card => {
   card.addEventListener('click', async () => {
     const topic = card.dataset.topic;
     currentTopic = topic;
-    const res = await fetch(`data-Electronics1solving/${topic}.json`);
-    currentCards = await res.json();
-    currentIndex = 0;
-    showCard();
-    flashcardViewer.classList.remove('hidden');
+    try {
+      const res = await fetch(`data-Electronics1solving/${topic}.json`);
+      if (!res.ok) throw new Error("Deck not found");
+      currentCards = await res.json();
+      currentIndex = 0;
+      showCard();
+      flashcardViewer.classList.remove('hidden');
+    } catch (err) {
+      showToast(`📴 You're offline or "${topic}" deck isn't cached yet.`);
+    }
   });
 });
+
 
 // Flip on click
 flashcard.addEventListener('click', () => {
@@ -87,4 +93,19 @@ function renderContent(container, content) {
       }
     });
   }
+}
+function showToast(message) {
+  const toast = document.createElement('div');
+  toast.textContent = message;
+  toast.style.position = 'fixed';
+  toast.style.bottom = '1rem';
+  toast.style.left = '50%';
+  toast.style.transform = 'translateX(-50%)';
+  toast.style.background = '#333';
+  toast.style.color = '#fff';
+  toast.style.padding = '0.75rem 1.25rem';
+  toast.style.borderRadius = '8px';
+  toast.style.zIndex = '1000';
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 3000);
 }
