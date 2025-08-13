@@ -1,4 +1,4 @@
-importScripts('./cache-list.js');
+importScripts('cache-list.js');
 
 self.addEventListener('install', event => {
   event.waitUntil(
