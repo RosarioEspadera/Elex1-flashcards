@@ -35,14 +35,16 @@ const STATIC_ASSETS = [
   '/Elex1-flashcards/data-Electronics1solving/transistor.json',
   '/Elex1-flashcards/data-Electronics1solving/transistor-biasing.json',
   '/Elex1-flashcards/data-Electronics1solving/transistor-amplifiers.json',
-  '/Elex1-flashcards/scripts-Electronics1/pdf-viewer.js'
-  '/Elex1-flashcards/scripts-Electronics1/app.js',
+  '/Elex1-flashcards/scripts-Electronics1/pdf-viewer.js',
+  '/Elex1-flashcards/scripts-Electronics1/app.js'
 
 ];
 
-// Modular detection for JSON decks
+// Utility matchers
 const isDeck = url =>
   url.includes('/data-Electronics1/') || url.includes('/data-Electronics1solving/');
+const isImage = url =>
+  url.includes('/images-Electronics1solving/');
 
 // Install: cache static assets
 self.addEventListener('install', event => {
@@ -78,30 +80,49 @@ self.addEventListener('fetch', event => {
 
   // Stale-while-revalidate for JSON decks
   if (isDeck(request.url)) {
-  event.respondWith(
-    caches.open(CACHE_NAME).then(cache =>
-      cache.match(request).then(cached => {
-        return fetch(request)
-          .then(networkResponse => {
-            if (networkResponse.ok) {
-              cache.put(request, networkResponse.clone());
-              return networkResponse;
-            } else {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(cache =>
+        cache.match(request).then(cached =>
+          fetch(request)
+            .then(networkResponse => {
+              if (networkResponse.ok) {
+                cache.put(request, networkResponse.clone());
+                return networkResponse;
+              }
               throw new Error("Network response not ok");
-            }
-          })
-          .catch(() => {
-            if (cached) return cached;
-            return new Response("Offline and deck not cached.", {
+            })
+            .catch(() => cached || new Response("Offline and deck not cached.", {
               status: 503,
               statusText: "Service Unavailable"
-            });
-          });
-      })
-    )
-  );
-  return;
-}
+            }))
+        )
+      )
+    );
+    return;
+  }
+
+  // Cache-on-demand for images
+  if (isImage(request.url)) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(cache =>
+        cache.match(request).then(cached =>
+          fetch(request)
+            .then(networkResponse => {
+              if (networkResponse.ok) {
+                cache.put(request, networkResponse.clone());
+                return networkResponse;
+              }
+              throw new Error("Network response not ok");
+            })
+            .catch(() => cached || new Response("Offline and image not cached.", {
+              status: 503,
+              statusText: "Service Unavailable"
+            }))
+        )
+      )
+    );
+    return;
+  }
 
   // Cache-first for everything else
   event.respondWith(
