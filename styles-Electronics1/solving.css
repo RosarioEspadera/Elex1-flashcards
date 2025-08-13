@@ -96,6 +96,11 @@ button:hover {
   background: #c7d2fe;
   outline: none;
 }
+.cache-loader {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
 
 /* Flashcard Viewer */
 .flashcard-viewer {

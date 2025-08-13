@@ -109,3 +109,25 @@ function showToast(message) {
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), 3000);
 }
+async function showDeckCacheAge(topic) {
+  const url = `/Elex1-flashcards/data-Electronics1solving/${topic}.json`;
+  const loader = document.getElementById(`loader-${topic}`);
+  const cache = await caches.open('elex1-cache-v2');
+  const response = await cache.match(url);
+
+  if (!response) {
+    loader.textContent = '❌ Not cached';
+    return;
+  }
+
+  const dateHeader = response.headers.get('date');
+  if (dateHeader) {
+    const cachedTime = new Date(dateHeader);
+    const now = new Date();
+    const ageMinutes = Math.floor((now - cachedTime) / 60000);
+    loader.textContent = `✅ Cached ${ageMinutes} min ago`;
+  } else {
+    loader.textContent = '✅ Cached (age unknown)';
+  }
+}
+deckTopics.forEach(topic => showDeckCacheAge(topic));
