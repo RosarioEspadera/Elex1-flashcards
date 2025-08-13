@@ -5,6 +5,7 @@ const STATIC_ASSETS = [
   '/Elex1-flashcards/index.html',
   '/Elex1-flashcards/solving.html',
   '/Elex1-flashcards/pdf.html',
+  '/Elex1-flashcards/guide.html',
   '/Elex1-flashcards/favicon.ico',
   '/Elex1-flashcards/manifest.json',
   '/Elex1-flashcards/styles-Electronics1/main.css',
