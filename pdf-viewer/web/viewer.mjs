@@ -17462,3 +17462,6 @@ document.getElementById('viewLibrary').addEventListener('click', () => {
     });
 });
 
+document.getElementById('goHome').addEventListener('click', () => {
+  window.location.href = '/Elex1-flashcards/index.html';
+});
