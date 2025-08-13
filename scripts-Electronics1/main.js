@@ -24,23 +24,14 @@ if ('serviceWorker' in navigator) {
     }).catch(err => console.error('Service Worker registration failed:', err));
   }
 
-  function showOfflineReadyNotification() {
-    const toast = document.createElement('div');
-    toast.textContent = '✅ App is ready for offline use!';
-    toast.style.position = 'fixed';
-    toast.style.bottom = '20px';
-    toast.style.left = '50%';
-    toast.style.transform = 'translateX(-50%)';
-    toast.style.background = '#2e7d32';
-    toast.style.color = '#fff';
-    toast.style.padding = '10px 20px';
-    toast.style.borderRadius = '8px';
-    toast.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
-    toast.style.zIndex = '1000';
-    document.body.appendChild(toast);
-
-    setTimeout(() => toast.remove(), 5000);
+  navigator.serviceWorker.addEventListener('message', event => {
+  if (event.data.type === 'download-progress') {
+    const { downloaded, total } = event.data;
+    const percent = Math.round((downloaded / total) * 100);
+    showDownloadProgress(percent);
   }
+});
+
 
 loadAllFlashcardData().then(allData => {
   renderFlashcards(allData); // Placeholder for future bulk rendering

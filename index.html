@@ -77,6 +77,47 @@
   <section class="progress">
     <p id="progress-info">Select a topic to begin.</p>
   </section>
+  <div id="progress-container" style="width: 100%; background: #eee; border-radius: 8px;">
+  <div id="progress-bar" style="width: 0%; background: #6b4f3b; color: white; padding: 5px; border-radius: 8px;">
+    Downloading: 0%
+  </div>
+</div>
+
+<script>
+  navigator.serviceWorker.addEventListener('message', event => {
+    if (event.data.type === 'download-progress') {
+      const { downloaded, total } = event.data;
+      const percent = Math.round((downloaded / total) * 100);
+      const bar = document.getElementById('progress-bar');
+      bar.style.width = percent + '%';
+      bar.textContent = `Downloading: ${percent}%`;
+
+      if (percent === 100) {
+        showToast('✅ All files downloaded. Ready for offline use!');
+      }
+    }
+  });
+
+  function showToast(message) {
+    const toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.left = '50%';
+    toast.style.transform = 'translateX(-50%)';
+    toast.style.background = '#6b4f3b';
+    toast.style.color = '#fff';
+    toast.style.padding = '10px 20px';
+    toast.style.borderRadius = '8px';
+    toast.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+    toast.style.zIndex = '1000';
+    document.body.appendChild(toast);
+
+    setTimeout(() => toast.remove(), 5000);
+  }
+</script>
+
+
 
   <footer>
     <p>Built by Rosario Espadera</p>
