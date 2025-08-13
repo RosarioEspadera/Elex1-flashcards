@@ -1,4 +1,5 @@
 const CACHE_NAME = 'elex1-cache-v2';
+const CURRENT_VERSION = 'v2';
 
 const STATIC_ASSETS = [
   '/Elex1-flashcards/',
@@ -17,7 +18,6 @@ const STATIC_ASSETS = [
   '/Elex1-flashcards/scripts-Electronics1/dataLoadersolving.js',
   '/Elex1-flashcards/scripts-Electronics1/pdf-viewer.js',
   '/Elex1-flashcards/scripts-Electronics1/app.js',
-  // JSON decks
   ...[
     'amplifiers','biasing','bjts','dc-math','dc-ohms-law','diodes','electrical-properties',
     'fets','power-supplies','resistance','safety','transistor','combinational',
@@ -36,8 +36,7 @@ const isImage = url =>
   url.includes('/images-transistor-biasing/') ||
   url.includes('/images-transistor-amplifiers/');
 
-
-// Install: cache static assets
+// 🌱 Install: Cache static assets
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS))
@@ -45,7 +44,7 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
-// Activate: clean old caches
+// 🧹 Activate: Clean old caches and claim clients
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
@@ -57,11 +56,11 @@ self.addEventListener('activate', event => {
   clients.claim();
 });
 
-// Fetch: smart strategies
+// 🚦 Fetch: Smart strategies
 self.addEventListener('fetch', event => {
   const { request } = event;
 
-  // Network-first for version.json
+  // 🌐 Network-first for version.json
   if (request.url.endsWith('version.json')) {
     event.respondWith(
       fetch(request).catch(() => caches.match(request))
@@ -69,7 +68,7 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Stale-while-revalidate for JSON decks
+  // 🔄 Stale-while-revalidate for JSON decks
   if (isDeck(request.url)) {
     event.respondWith(
       caches.open(CACHE_NAME).then(cache =>
@@ -92,7 +91,7 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Cache-on-demand for images
+  // 🖼️ Cache-on-demand for images
   if (isImage(request.url)) {
     event.respondWith(
       caches.open(CACHE_NAME).then(cache =>
@@ -115,7 +114,7 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Cache-first for everything else
+  // 📦 Cache-first for everything else
   event.respondWith(
     caches.match(request).then(cached =>
       cached || fetch(request)
