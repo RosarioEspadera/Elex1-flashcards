@@ -34,12 +34,25 @@ const isDeck = url =>
 const isImage = url =>
   url.includes('/images-Electronics1solving/') ||
   url.includes('/images-transistor-biasing/') ||
-  url.includes('/images-transistor-amplifiers/');
+  url.includes('/images-transistor-amplifiers/') ||
+  url.includes('/images-semiconductor-diode/') ||
+  url.includes('/images-transistor/');
 
-// 🌱 Install: Cache static assets
+// 🌱 Install: Cache static assets + manifest-based images
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS))
+    Promise.all([
+      caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS)),
+      fetch('/Elex1-flashcards/imageManifest.json')
+        .then(res => res.json())
+        .then(({ images }) => {
+          const allPaths = Object.entries(images).flatMap(([folder, files]) =>
+            files.map(name => `/Elex1-flashcards/images-${folder}/${name}`)
+          );
+          return caches.open(CACHE_NAME).then(cache => cache.addAll(allPaths));
+        })
+        .catch(() => console.warn('Image manifest not available during install.'))
+    ])
   );
   self.skipWaiting();
 });

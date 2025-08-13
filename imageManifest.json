@@ -1,0 +1,48 @@
+{
+  "images": {
+    "semiconductor-diode": [
+      "Q1.jpeg", "Q1ans.jpeg", "Q2.jpeg", "Q2ans.jpeg", "Q3.jpeg", "Q3ans.jpeg",
+      "Q4.jpeg", "Q4ans.jpeg", "Q5.jpeg", "Q5ans.jpeg", "Q6.jpeg", "Q6ans.jpeg",
+      "Q7.jpeg", "Q7ans.jpeg", "Q8.jpeg", "Q8ans.jpeg", "Q9.jpeg", "Q9ans.jpeg",
+      "Q10.jpeg", "Q10ans.jpeg"
+    ],
+    "transistor": [
+      "Q1.jpeg", "Q1ans.jpeg", "Q2.jpeg", "Q2ans.jpeg", "Q3.jpeg", "Q3ans.jpeg",
+      "Q4.jpeg", "Q4ans.jpeg", "Q5.jpeg", "Q5ans.jpeg", "Q6.jpeg", "Q6ans.jpeg",
+      "Q7.jpeg", "Q7ans.jpeg", "Q8.jpeg", "Q8ans.jpeg", "Q9.jpeg", "Q9ans.jpeg",
+      "Q10.jpeg", "Q10ans.jpeg", "Q11.jpeg", "Q11ans.jpeg", "Q12.jpeg", "Q12ans.jpeg",
+      "Q13.jpeg", "Q13ans.jpeg", "Q14.jpeg", "Q14ans.jpeg", "Q15.jpeg", "Q15ans.jpeg", 
+      "Q16.jpeg", "Q16ans.jpeg", "Q17.jpeg", "Q17ans.jpeg", "Q18.jpeg", "Q18ans.jpeg",
+      "Q19.jpeg", "Q19ans.jpeg", "Q20.jpeg", "Q20ans.jpeg", "Q21.jpeg", "Q21ans.jpeg",
+      "Q22.jpeg", "Q22ans.jpeg", "Q23.jpeg", "Q23ans.jpeg", "Q24.jpeg", "Q24ans.jpeg",
+      "Q25.jpeg", "Q25ans.jpeg", "Q26.jpeg", "Q26ans.jpeg", "Q27.jpeg", "Q27ans.jpeg",
+      "Q28.jpeg", "Q28ans.jpeg", "Q29.jpeg", "Q29ans.jpeg", "Q30.jpeg", "Q30ans.jpeg",
+      "Q31.jpeg", "Q31ans.jpeg", "Q32.jpeg", "Q32ans.jpeg", "Q33.jpeg", "Q33ans.jpeg",
+      "Q34.jpeg", "Q34ans.jpeg", "Q35.jpeg", "Q35ans.jpeg", "Q36.jpeg", "Q36ans.jpeg",
+      "Q37.jpeg", "Q37ans.jpeg", "Q38.jpeg", "Q38ans.jpeg", "Q39.jpeg", "Q39ans.jpeg",
+      "Q40.jpeg", "Q40ans.jpeg"
+    ],
+    "transistor-amplifiers": [
+      "Q1.jpeg", "Q1ans.jpeg", "Q2.jpeg", "Q2ans.jpeg", "Q3.jpeg", "Q3ans.jpeg",
+      "Q4.jpeg", "Q4ans.jpeg", "Q5.jpeg", "Q5ans.jpeg", "Q6.jpeg", "Q6ans.jpeg",
+      "Q7.jpeg", "Q7ans.jpeg", "Q8.jpeg", "Q8ans.jpeg", "Q9.jpeg", "Q9ans.jpeg",
+      "Q10.jpeg", "Q10ans.jpeg", "Q11.jpeg", "Q11ans.jpeg",
+      "Q12.jpeg", "Q12ans.jpeg", "Q13.jpeg", "Q13ans.jpeg",
+      "Q14.jpeg", "Q14ans.jpeg", "Q15.jpeg", "Q15ans.jpeg",
+      "Q16.jpeg", "Q16ans.jpeg", "Q17.jpeg", "Q17ans.jpeg"
+    ],
+    "transistor-biasing": [
+      "Q1.jpeg", "Q1ans.jpeg", "Q2.jpeg", "Q2ans.jpeg", "Q3.jpeg", "Q3ans.jpeg",
+      "Q4.jpeg", "Q4ans.jpeg", "Q5.jpeg", "Q5ans.jpeg", "Q6.jpeg", "Q6ans.jpeg",
+      "Q7.jpeg", "Q7ans.jpeg", "Q8.jpeg", "Q8ans.jpeg",
+      "Q9.jpeg", "Q9ans.jpeg", "Q10.jpeg", "Q10ans.jpeg",
+        "Q11.jpeg", "Q11ans.jpeg", "Q12.jpeg", "Q12ans.jpeg", 
+        "Q13.jpeg", "Q13ans.jpeg", "Q14.jpeg", "Q14ans.jpeg",
+        "Q15.jpeg", "Q15ans.jpeg", "Q16.jpeg", "Q16ans.jpeg",
+        "Q17.jpeg", "Q17ans.jpeg", "Q18.jpeg", "Q18ans.jpeg",
+        "Q19.jpeg", "Q19ans.jpeg", "Q20.jpeg", "Q20ans.jpeg",
+        "Q21.jpeg", "Q21ans.jpeg", "Q22.jpeg", "Q22ans.jpeg",
+        "Q23.jpeg", "Q23ans.jpeg", "Q24.jpeg", "Q24ans.jpeg"  
+    ]
+  }
+}
