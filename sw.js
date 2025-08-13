@@ -31,7 +31,10 @@ const STATIC_ASSETS = [
 const isDeck = url =>
   url.includes('/data-Electronics1/') || url.includes('/data-Electronics1solving/');
 const isImage = url =>
-  url.includes('/images-Electronics1solving/') || url.includes('/images-transistor-biasing/');
+  url.includes('/images-Electronics1solving/') ||
+  url.includes('/images-transistor-biasing/') ||
+  url.includes('/images-transistor-amplifiers/');
+
 
 // Install: cache static assets
 self.addEventListener('install', event => {
