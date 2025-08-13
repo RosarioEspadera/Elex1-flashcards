@@ -85,6 +85,11 @@
 
 
 <script>
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+  console.log('Service worker now controlling the page');
+  location.reload(); // optional: reload to activate message handling
+});
+
 navigator.serviceWorker.addEventListener('message', event => {
   if (event.data.type === 'download-progress') {
     const { downloaded, total } = event.data;
