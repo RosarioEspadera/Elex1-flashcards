@@ -12,6 +12,7 @@ const back = document.querySelector('.back');
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
 const progressInfo = document.getElementById('progress-info');
+const deckTopics = Array.from(document.querySelectorAll('.topic-card')).map(card => card.dataset.topic);
 
 let currentCards = [];
 let currentIndex = 0;
@@ -130,4 +131,7 @@ async function showDeckCacheAge(topic) {
     loader.textContent = '✅ Cached (age unknown)';
   }
 }
-deckTopics.forEach(topic => showDeckCacheAge(topic));
+
+if (typeof deckTopics !== 'undefined') {
+  deckTopics.forEach(topic => showDeckCacheAge(topic));
+}
