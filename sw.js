@@ -14,14 +14,15 @@ self.addEventListener('install', event => {
           await cache.put(file, response.clone());
           downloaded++;
 
-          const clients = await self.clients.matchAll();
-          clients.forEach(client => {
-            client.postMessage({
-              type: 'download-progress',
-              downloaded,
-              total
-            });
-          });
+        const clients = await self.clients.matchAll();
+clients.forEach(client => {
+  client.postMessage({
+    type: 'download-progress',
+    downloaded,
+    total
+  });
+});
+
         } catch (err) {
           console.warn(`❌ Failed to cache ${file}`, err);
         }
