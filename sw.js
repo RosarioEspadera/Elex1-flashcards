@@ -76,19 +76,30 @@ self.addEventListener('fetch', event => {
 
   // Stale-while-revalidate for JSON decks
   if (isDeck(request.url)) {
-    event.respondWith(
-      caches.open(CACHE_NAME).then(cache =>
-        cache.match(request).then(cached => {
-          const fetchPromise = fetch(request).then(networkResponse => {
-            cache.put(request, networkResponse.clone());
-            return networkResponse;
+  event.respondWith(
+    caches.open(CACHE_NAME).then(cache =>
+      cache.match(request).then(cached => {
+        return fetch(request)
+          .then(networkResponse => {
+            if (networkResponse.ok) {
+              cache.put(request, networkResponse.clone());
+              return networkResponse;
+            } else {
+              throw new Error("Network response not ok");
+            }
+          })
+          .catch(() => {
+            if (cached) return cached;
+            return new Response("Offline and deck not cached.", {
+              status: 503,
+              statusText: "Service Unavailable"
+            });
           });
-          return cached || fetchPromise;
-        })
-      )
-    );
-    return;
-  }
+      })
+    )
+  );
+  return;
+}
 
   // Cache-first for everything else
   event.respondWith(
