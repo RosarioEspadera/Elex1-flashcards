@@ -17467,7 +17467,7 @@ document.getElementById('goHome').addEventListener('click', () => {
 });
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('.../sw.js').then(reg => {
+    navigator.serviceWorker.register('Elex1-flashcards/sw.js').then(reg => {
       console.log('Service Worker registered!', reg);
 
       // Listen for updates
