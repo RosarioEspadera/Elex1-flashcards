@@ -17444,5 +17444,21 @@ export { PDFViewerApplication, AppConstants as PDFViewerApplicationConstants, Ap
 
 //# sourceMappingURL=viewer.mjs.map
 document.getElementById('viewLibrary').addEventListener('click', () => {
-  document.getElementById('pdfLibraryModal').style.display = 'block';
+  fetch('/Elex1-flashcards/pdfManifest.json')
+    .then(res => res.json())
+    .then(data => {
+      const list = document.getElementById('pdfList');
+      list.innerHTML = '';
+      data.forEach(pdf => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <a href="viewer.html?file=/Elex1-flashcards/pdfs/${encodeURIComponent(pdf.filename)}">
+            ${pdf.title}
+          </a>
+        `;
+        list.appendChild(li);
+      });
+      document.getElementById('pdfLibraryModal').style.display = 'block';
+    });
 });
+
