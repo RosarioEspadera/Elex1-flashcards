@@ -764,27 +764,5 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     </div> <!-- outerContainer -->
     <div id="printContainer"></div>
-    <canvas id="pdf-canvas"></canvas>
-
-<script type="module">
-  import * as pdfjsLib from './pdf.mjs';
-
-  pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.mjs';
-
-  const url = '/Elex1-flashcards/pdfs/transistor-amplifiers.pdf';
-
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then(pdf => {
-    pdf.getPage(1).then(page => {
-      const canvas = document.getElementById('pdf-canvas');
-      const context = canvas.getContext('2d');
-      const viewport = page.getViewport({ scale: 1.5 });
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
-      page.render({ canvasContext: context, viewport });
-    });
-  });
-</script>
-
   </body>
 </html>

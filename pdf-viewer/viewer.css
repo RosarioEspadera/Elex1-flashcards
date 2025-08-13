@@ -4748,7 +4748,7 @@
 @media (prefers-color-scheme: dark){
 
 :root{
-  --csstools-color-scheme--light:#f4f4f4;
+  --csstools-color-scheme--light:;
 }
 }
 
@@ -5710,21 +5710,13 @@ body.wait::before{
 .toolbarField:focus{
     border-color:#0a84ff;
   }
-input[type="text"],
-textarea {
-  appearance: textfield;         /* Standard */
-  -moz-appearance: textfield;    /* Firefox */
-  -webkit-appearance: none;      /* Safari/Chrome */
-}
 
-#pageNumber {
-  appearance: textfield;
-  -moz-appearance: textfield;
-  -webkit-appearance: none;
-  text-align: end;
-  width: 40px;
-  background-size: 0 0;
-  transition-property: none;
+#pageNumber{
+  -moz-appearance:textfield;
+  text-align:end;
+  width:40px;
+  background-size:0 0;
+  transition-property:none;
 }
 
 #pageNumber::-webkit-inner-spin-button{
