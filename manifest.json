@@ -1,7 +1,7 @@
 {
  "name": "Elex1 Flashcards",
   "short_name": "Elex1",
-  "start_url": "solving.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#f9f9fc",
   "theme_color": "#4f46e5",
