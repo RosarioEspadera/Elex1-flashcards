@@ -1,5 +1,5 @@
 import { loadAllFlashcardData } from './dataLoadersolving.js';
-import { checkVersion } from "./scripts-Electronics1/app.js";
+import { checkVersion } from "./app.js";
 
 document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
