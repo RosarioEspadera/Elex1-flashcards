@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elex1 Flashcards</title>
+  <script src="https://unpkg.com/idb@7/build/iife/index-min.js"></script>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles-Electronics1/main.css" />
   <link rel="manifest" href="manifest.json">
-  <script src="https://unpkg.com/idb@7/build/iife/index-min.js"></script>
+
   
 </head>
 <body>
@@ -193,9 +194,8 @@ installBtn.addEventListener('click', () => {
 
     console.log("All materials cached for offline use.");
   }
-
-  cacheAllFiles('/assets-manifest.json');
 </script>
+
 <button onclick="cacheAllFiles('/assets-manifest.json')">📥 Download Materials</button>
 
 <script type="module" src="scripts-Electronics1/app.js"></script>
