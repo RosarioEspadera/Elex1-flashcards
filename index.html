@@ -5,6 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elex1 Flashcards</title>
   <script src="https://unpkg.com/idb@7/build/iife/index-min.js"></script>
+    <script>
+  const dbPromise = idb.openDB('elex-db', 1, {
+    upgrade(db) {
+      db.createObjectStore('assets');
+    }
+  });
+
+  async function cacheAllFiles(manifestUrl) {
+    const res = await fetch('./assets-manifest.json');
+    const files = await res.json();
+    const db = await dbPromise;
+
+    for (const file of files) {
+      try {
+        const response = await fetch(file);
+        const blob = await response.blob();
+        await db.put('assets', blob, file);
+      } catch (err) {
+        console.warn('Failed to cache:', file, err);
+      }
+    }
+
+    console.log("All materials cached for offline use.");
+  }
+</script>
+
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles-Electronics1/main.css" />
   <link rel="manifest" href="manifest.json">
@@ -170,32 +196,6 @@ installBtn.addEventListener('click', () => {
 });
 
 </script>
-  <script>
-  const dbPromise = idb.openDB('elex-db', 1, {
-    upgrade(db) {
-      db.createObjectStore('assets');
-    }
-  });
-
-  async function cacheAllFiles(manifestUrl) {
-    const res = await fetch('./assets-manifest.json');
-    const files = await res.json();
-    const db = await dbPromise;
-
-    for (const file of files) {
-      try {
-        const response = await fetch(file);
-        const blob = await response.blob();
-        await db.put('assets', blob, file);
-      } catch (err) {
-        console.warn('Failed to cache:', file, err);
-      }
-    }
-
-    console.log("All materials cached for offline use.");
-  }
-</script>
-
 <button onclick="cacheAllFiles('/assets-manifest.json')">📥 Download Materials</button>
 
 <script type="module" src="scripts-Electronics1/app.js"></script>
