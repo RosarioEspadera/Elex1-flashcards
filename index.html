@@ -94,7 +94,11 @@
   <footer>
     <p>Built by Rosario Espadera</p>
   </footer>
-  <script src="https://unpkg.com/idb@7/build/iife/index-min.js"></script>
+  <script type="module">
+  import { openDB } from 'https://unpkg.com/idb@7/build/esm/index.js';
+  window.openDB = openDB;
+</script>
+
     <script type="module" src="scripts-Electronics1/main.js"></script>
     <script type="module" src="scripts-Electronics1/dataLoader.js"></script>
     

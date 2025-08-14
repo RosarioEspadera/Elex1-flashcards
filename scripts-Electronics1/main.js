@@ -1,7 +1,8 @@
 import { loadAllFlashcardData } from './dataLoader.js';
 import { checkVersion } from './app.js';
 
-const { openDB } = window.idb;
+const openDB = window.openDB;
+
 
 
 const dbPromise = openDB('elex-db', 1, {
@@ -13,7 +14,7 @@ const dbPromise = openDB('elex-db', 1, {
 });
 
 window.cacheAllFiles = async function () {
-  const res = await fetch('./assets-manifest.json');
+  const res = await fetch('../assets-manifest.json');
   const files = await res.json();
   const db = await dbPromise;
 
