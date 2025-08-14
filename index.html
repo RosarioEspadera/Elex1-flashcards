@@ -6,7 +6,6 @@
   <title>Elex1 Flashcards</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles-Electronics1/main.css" />
-  <script src="https://unpkg.com/idb@7/build/iife/index-min.js"></script>
   <link rel="manifest" href="manifest.json">
 
   
@@ -89,7 +88,17 @@
 
 
 
-<script>
+
+
+
+  <footer>
+    <p>Built by Rosario Espadera</p>
+  </footer>
+  <script src="https://unpkg.com/idb@7/build/iife/index-min.js"></script>
+    <script type="module" src="scripts-Electronics1/main.js"></script>
+    <script type="module" src="scripts-Electronics1/dataLoader.js"></script>
+    
+    <script>
   navigator.serviceWorker.addEventListener('controllerchange', () => {
   console.log('Service worker now controlling the page');
   location.reload(); // optional: reload to activate message handling
@@ -132,14 +141,9 @@ if ('serviceWorker' in navigator) {
   }
 </script>
 
-
-
-  <footer>
-    <p>Built by Rosario Espadera</p>
-  </footer>
-    <script type="module" src="scripts-Electronics1/main.js"></script>
-    <script type="module" src="scripts-Electronics1/dataLoader.js"></script>
+    
     <script>
+
 
       self.addEventListener('install', event => {
   event.waitUntil(
