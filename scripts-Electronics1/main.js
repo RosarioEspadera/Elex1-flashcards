@@ -1,9 +1,10 @@
+// Imports
 import { loadAllFlashcardData } from './dataLoader.js';
 import { checkVersion } from './app.js';
-import { openDB } from 'idb';
+import { openDB } from 'https://cdn.jsdelivr.net/npm/idb@7.1.1/build/esm/index.js';
 
-
-const dbPromise = openDB('elex-db', 1, {
+// IndexedDB setup
+const db = await openDB('elex-db', 1, {
   upgrade(db) {
     if (!db.objectStoreNames.contains('assets')) {
       db.createObjectStore('assets');
@@ -11,10 +12,10 @@ const dbPromise = openDB('elex-db', 1, {
   }
 });
 
+// Cache all files
 window.cacheAllFiles = async function () {
   const res = await fetch('../assets-manifest.json');
   const files = await res.json();
-  const db = await dbPromise;
 
   for (const file of files) {
     try {
@@ -29,16 +30,90 @@ window.cacheAllFiles = async function () {
   console.log("✅ All materials cached for offline use.");
 };
 
+// Service worker registration
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
+
+// Service worker events
+navigator.serviceWorker.addEventListener('controllerchange', () => {
+  console.log('Service worker now controlling the page');
+  location.reload();
+});
+
+navigator.serviceWorker.addEventListener('message', event => {
+  if (event.data?.type === 'download-progress') {
+    const { downloaded, total } = event.data;
+    const percent = Math.round((downloaded / total) * 100);
+    const bar = document.getElementById('progress-bar');
+    if (bar) {
+      bar.style.width = percent + '%';
+      bar.textContent = `Downloading: ${percent}%`;
+    }
+
+    if (percent === 100) {
+      showToast('✅ All files downloaded. Ready for offline use!');
+    }
+  }
+});
+
+// Install prompt
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  if (installBtn) {
+    installBtn.style.display = 'block';
+  }
+});
+
+if (installBtn) {
+  installBtn.addEventListener('click', () => {
+    installBtn.style.display = 'none';
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.finally(() => {
+        deferredPrompt = null;
+      });
+    }
+  });
+}
+
+// Toast notification
+function showToast(message) {
+  const toast = document.createElement('div');
+  toast.textContent = message;
+  Object.assign(toast.style, {
+    position: 'fixed',
+    bottom: '20px',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    background: '#6b4f3b',
+    color: '#fff',
+    padding: '10px 20px',
+    borderRadius: '8px',
+    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+    zIndex: '1000',
+    fontFamily: 'sans-serif',
+    fontSize: '14px'
+  });
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 5000);
+}
+
+// Flashcard logic
 document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
 loadAllFlashcardData().then(allData => {
-  renderFlashcards(allData); // Placeholder for future bulk rendering
+  renderFlashcards(allData);
 });
 
 async function loadTopic(topic) {
   const res = await fetch(`data-Electronics1/${topic}.json`);
   const cards = await res.json();
-  renderFlashcards(cards); // Optional: show all cards in grid
+  renderFlashcards(cards);
 }
 
 const topicCards = document.querySelectorAll(".topic-card");
@@ -79,7 +154,6 @@ nextBtn.onclick = () => {
   showCard("right");
 };
 
-
 function showCard(direction = "right") {
   const card = currentCards[currentIndex];
   front.textContent = card.question;
@@ -87,15 +161,12 @@ function showCard(direction = "right") {
   flashcard.classList.remove("flipped");
 
   flashcard.classList.remove("slide-left", "slide-right");
-  void flashcard.offsetWidth; // Force reflow
+  void flashcard.offsetWidth;
   flashcard.classList.add(direction === "left" ? "slide-left" : "slide-right");
 }
 
-
 function renderFlashcards(data) {
   console.log("Loaded all flashcard data:", data);
-
-  // Optional: render all cards in a grid for editor mode
   const container = document.querySelector(".card-grid");
   if (!container) return;
 
