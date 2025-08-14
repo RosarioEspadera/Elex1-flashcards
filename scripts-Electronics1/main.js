@@ -2,34 +2,17 @@ import { loadAllFlashcardData } from './dataLoader.js';
 import { checkVersion } from './app.js';
 
 const { openDB } = idb;
+
 const dbPromise = openDB('elex-db', 1, {
   upgrade(db) {
     if (!db.objectStoreNames.contains('assets')) {
       db.createObjectStore('assets');
     }
   }
-}); 
+});
 
-async function cacheAllFiles(manifestUrl) {
-    const res = await fetch('./assets-manifest.json');
-    const files = await res.json();
-    const db = await dbPromise;
-
-    for (const file of files) {
-      try {
-        const response = await fetch(file);
-        const blob = await response.blob();
-        await db.put('assets', blob, file);
-      } catch (err) {
-        console.warn('Failed to cache:', file, err);
-      }
-    }
-
-    console.log("All materials cached for offline use.");
-  }
-
-async function cacheAllFiles(manifestUrl) {
-  const res = await fetch(manifestUrl);
+window.cacheAllFiles = async function () {
+  const res = await fetch('./assets-manifest.json');
   const files = await res.json();
   const db = await dbPromise;
 
@@ -38,15 +21,13 @@ async function cacheAllFiles(manifestUrl) {
       const response = await fetch(file);
       const blob = await response.blob();
       await db.put('assets', blob, file);
-      updateProgressUI(file); // Optional: show progress
     } catch (err) {
       console.warn('Failed to cache:', file, err);
     }
   }
 
-  showToast("All materials downloaded. You're ready to study offline!");
-}
-
+  console.log("✅ All materials cached for offline use.");
+};
 
 document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
