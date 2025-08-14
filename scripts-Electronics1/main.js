@@ -1,7 +1,8 @@
 // Imports
 import { loadAllFlashcardData } from './dataLoader.js';
 import { checkVersion } from './app.js';
-import { openDB } from 'https://cdn.jsdelivr.net/npm/idb@7.1.1/build/esm/index.js';
+import { openDB } from 'https://cdn.jsdelivr.net/npm/idb@8/+esm';
+
 
 // IndexedDB setup
 const db = await openDB('elex-db', 1, {
