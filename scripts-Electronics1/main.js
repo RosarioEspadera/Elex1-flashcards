@@ -1,7 +1,8 @@
 import { loadAllFlashcardData } from './dataLoader.js';
 import { checkVersion } from './app.js';
 
-const { openDB } = idb;
+const { openDB } = window.idb;
+
 
 const dbPromise = openDB('elex-db', 1, {
   upgrade(db) {
