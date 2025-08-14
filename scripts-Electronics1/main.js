@@ -3,6 +3,26 @@ import { checkVersion } from './app.js';
 
 
 
+async function cacheAllFiles(manifestUrl) {
+  const res = await fetch(manifestUrl);
+  const files = await res.json();
+  const db = await dbPromise;
+
+  for (const file of files) {
+    try {
+      const response = await fetch(file);
+      const blob = await response.blob();
+      await db.put('assets', blob, file);
+      updateProgressUI(file); // Optional: show progress
+    } catch (err) {
+      console.warn('Failed to cache:', file, err);
+    }
+  }
+
+  showToast("All materials downloaded. You're ready to study offline!");
+}
+
+
 document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
 
 loadAllFlashcardData().then(allData => {
