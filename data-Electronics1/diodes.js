@@ -1,0 +1,1002 @@
+window.flashcards_diodes = [
+  {
+    "id": "diodes-001",
+    "question": "What is a diode?",
+    "answer": "A two-terminal device that allows current to flow in one direction only.",
+    "tags": [
+      "diodes",
+      "definition"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-002",
+    "question": "What are the terminals of a diode?",
+    "answer": "Anode and Cathode.",
+    "tags": [
+      "diodes",
+      "structure"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-003",
+    "question": "What is forward bias in a diode?",
+    "answer": "When the anode is more positive than the cathode, allowing current flow.",
+    "tags": [
+      "diodes",
+      "biasing"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-004",
+    "question": "What is reverse bias in a diode?",
+    "answer": "When the cathode is more positive than the anode, blocking current flow.",
+    "tags": [
+      "diodes",
+      "biasing"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-005",
+    "question": "What is the typical forward voltage drop of a silicon diode?",
+    "answer": "Approximately 0.7 V.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-006",
+    "question": "What is the forward voltage drop of a germanium diode?",
+    "answer": "Approximately 0.3 V.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-007",
+    "question": "What is the reverse saturation current?",
+    "answer": "A small leakage current that flows under reverse bias.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-008",
+    "question": "What is breakdown voltage?",
+    "answer": "The reverse voltage at which a diode begins to conduct heavily.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-009",
+    "question": "What is avalanche breakdown?",
+    "answer": "Breakdown caused by carrier multiplication under high reverse voltage.",
+    "tags": [
+      "diodes",
+      "breakdown"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-010",
+    "question": "What is Zener breakdown?",
+    "answer": "Breakdown due to strong electric fields in heavily doped junctions.",
+    "tags": [
+      "diodes",
+      "breakdown"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-011",
+    "question": "What is a Zener diode?",
+    "answer": "A diode designed to operate in reverse breakdown for voltage regulation.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-012",
+    "question": "What is a Schottky diode?",
+    "answer": "A diode with low forward voltage and fast switching speed.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-013",
+    "question": "What is a light-emitting diode (LED)?",
+    "answer": "A diode that emits light when forward biased.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-014",
+    "question": "What is a photodiode?",
+    "answer": "A diode that generates current when exposed to light.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-015",
+    "question": "What is a tunnel diode?",
+    "answer": "A diode with negative resistance due to quantum tunneling.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-016",
+    "question": "What is the role of a diode in a rectifier?",
+    "answer": "To convert AC to DC by allowing current in one direction.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-017",
+    "question": "What is a half-wave rectifier?",
+    "answer": "A circuit that uses one diode to pass only one half of the AC cycle.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-018",
+    "question": "What is a full-wave rectifier?",
+    "answer": "A circuit that uses multiple diodes to pass both halves of the AC cycle.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-019",
+    "question": "What is peak inverse voltage (PIV)?",
+    "answer": "The maximum reverse voltage a diode can withstand without breakdown.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-020",
+    "question": "What is the role of a diode in a clamping circuit?",
+    "answer": "To fix the voltage level of a waveform to a reference.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-021",
+    "question": "What is the role of a diode in a clipping circuit?",
+    "answer": "To limit the voltage of a waveform to a set threshold.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-022",
+    "question": "What is reverse recovery time?",
+    "answer": "The time it takes for a diode to stop conducting after reverse bias is applied.",
+    "tags": [
+      "diodes",
+      "performance"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-023",
+    "question": "What is the ideal diode model?",
+    "answer": "A model where the diode conducts perfectly in forward bias and blocks completely in reverse bias.",
+    "tags": [
+      "diodes",
+      "models"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-024",
+    "question": "What is the piecewise-linear diode model?",
+    "answer": "A model that includes forward voltage drop and reverse breakdown.",
+    "tags": [
+      "diodes",
+      "models"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-025",
+    "question": "What is the dynamic resistance of a diode?",
+    "answer": "The small-signal resistance in the forward-biased region.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-026",
+    "question": "What is the role of a diode in a voltage doubler?",
+    "answer": "To steer charge and increase output voltage using capacitors.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-027",
+    "question": "What is the role of a diode in a flyback converter?",
+    "answer": "To conduct current during the off phase and transfer energy to the output.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-028",
+    "question": "What is the role of a diode in reverse polarity protection?",
+    "answer": "To block current if the power supply is connected backward.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-029",
+    "question": "What is the role of a diode in a snubber circuit?",
+    "answer": "To suppress voltage spikes and protect switching devices.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-030",
+    "question": "What is the role of a diode in a solar panel?",
+    "answer": "To prevent reverse current flow during low light conditions.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-031",
+    "question": "What is the role of a diode in a logic gate?",
+    "answer": "To steer signals and implement logic functions.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-032",
+    "question": "What is the reverse leakage current in a diode?",
+    "answer": "A small current that flows under reverse bias due to minority carriers.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-033",
+    "question": "What is the temperature coefficient of a diode?",
+    "answer": "The rate at which forward voltage changes with temperature.",
+    "tags": [
+      "diodes",
+      "thermal"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-034",
+    "question": "What is the role of a diode in a mixer circuit?",
+    "answer": "To combine signals and generate sum/difference frequencies.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-035",
+    "question": "What is the ideality factor of a diode?",
+    "answer": "A measure of how closely a diode follows the ideal diode equation.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-036",
+    "question": "What is the diode equation?",
+    "answer": "I = Is × (e^(V/nVt) - 1)",
+    "tags": [
+      "diodes",
+      "formulas"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-037",
+    "question": "What is the thermal voltage (Vt) at room temperature?",
+    "answer": "Approximately 25 mV.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-038",
+    "question": "What is the role of a diode in a crowbar circuit?",
+    "answer": "To protect against overvoltage by shorting the supply.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-039",
+    "question": "What is a varactor diode?",
+    "answer": "A diode whose capacitance varies with reverse voltage.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-040",
+    "question": "What is the role of a diode in RF tuning circuits?",
+    "answer": "To vary capacitance and adjust resonance frequency.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-041",
+    "question": "What is a PIN diode?",
+    "answer": "A diode with an intrinsic layer for RF switching and attenuation.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-042",
+    "question": "What is the role of a diode in a temperature sensor?",
+    "answer": "To measure temperature via forward voltage variation.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-043",
+    "question": "What is the maximum current rating of a diode?",
+    "answer": "The highest current it can conduct without damage.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-044",
+    "question": "What is the surge current rating of a diode?",
+    "answer": "The peak current it can handle briefly without failure.",
+    "tags": [
+      "diodes",
+      "parameters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-045",
+    "question": "What is the role of a diode in a battery charger?",
+    "answer": "To prevent reverse current from the battery to the supply.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-046",
+    "question": "What is the role of a diode in a motor driver?",
+    "answer": "To suppress back EMF and protect switching components.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-047",
+    "question": "What is the role of a diode in a relay coil?",
+    "answer": "To absorb inductive kickback when the coil is de-energized.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-048",
+    "question": "What is the role of a diode in a signal demodulator?",
+    "answer": "To extract the envelope of an AM signal.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-049",
+    "question": "What is the role of a diode in a peak detector?",
+    "answer": "To capture and hold the peak value of a signal.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-050",
+    "question": "What is the role of a diode in a voltage multiplier?",
+    "answer": "To steer charge and increase output voltage using capacitors.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-051",
+    "question": "What is the role of a diode in a bridge rectifier?",
+    "answer": "To convert AC to DC using four diodes.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-052",
+    "question": "What is the ripple factor in a rectifier circuit?",
+    "answer": "A measure of the AC content in the rectified output.",
+    "tags": [
+      "diodes",
+      "performance"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-053",
+    "question": "What is the efficiency of a full-wave rectifier?",
+    "answer": "Approximately 81.2%.",
+    "tags": [
+      "diodes",
+      "performance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-054",
+    "question": "What is the form factor in rectifier analysis?",
+    "answer": "Ratio of RMS value to average value of output voltage.",
+    "tags": [
+      "diodes",
+      "formulas"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-055",
+    "question": "What is the role of a diode in a capacitor filter?",
+    "answer": "To allow charging during conduction and block discharge during non-conduction.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-056",
+    "question": "What is the role of a diode in a voltage reference?",
+    "answer": "To maintain a stable voltage using Zener breakdown.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-057",
+    "question": "What is the role of a diode in an OR gate?",
+    "answer": "To allow any high input to pass through to the output.",
+    "tags": [
+      "diodes",
+      "logic"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-058",
+    "question": "What is the role of a diode in an AND gate?",
+    "answer": "To block output unless all inputs are high.",
+    "tags": [
+      "diodes",
+      "logic"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-059",
+    "question": "What is the role of a diode in a voltage clamp?",
+    "answer": "To limit the voltage to a predefined level.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-060",
+    "question": "What is the role of a diode in a waveform shaper?",
+    "answer": "To modify signal shape by clipping or clamping.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-061",
+    "question": "What is a Zener diode?",
+    "answer": "A diode designed to allow reverse current flow at a specific breakdown voltage.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-062",
+    "question": "What is the function of a Zener diode in a circuit?",
+    "answer": "It regulates voltage by maintaining a constant output despite input fluctuations.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-063",
+    "question": "What is a Schottky diode?",
+    "answer": "A diode with low forward voltage drop and fast switching speed.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-064",
+    "question": "What is a photodiode?",
+    "answer": "A diode that generates current when exposed to light.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-065",
+    "question": "What is reverse bias in a diode?",
+    "answer": "When the cathode is more positive than the anode, preventing current flow.",
+    "tags": [
+      "diodes",
+      "biasing"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-066",
+    "question": "What is the breakdown voltage of a diode?",
+    "answer": "The reverse voltage at which the diode begins to conduct significantly.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-067",
+    "question": "What is the forward voltage drop of a silicon diode?",
+    "answer": "Approximately 0.7 volts.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-068",
+    "question": "What is the forward voltage drop of a germanium diode?",
+    "answer": "Approximately 0.3 volts.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-069",
+    "question": "What is a clamping circuit?",
+    "answer": "A circuit that shifts the voltage level of a waveform using diodes.",
+    "tags": [
+      "diode-circuits",
+      "waveform-shaping"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-070",
+    "question": "What is a clipping circuit?",
+    "answer": "A circuit that limits the voltage of a signal to a specific level using diodes.",
+    "tags": [
+      "diode-circuits",
+      "waveform-shaping"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-071",
+    "question": "What is a signal snubber circuit?",
+    "answer": "A circuit that uses diodes to protect against voltage spikes in signals.",
+    "tags": [
+      "diode-circuits",
+      "protection"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-072",
+    "question": "What is a flyback diode?",
+    "answer": "A diode used to protect circuits from inductive kickback in coils or motors.",
+    "tags": [
+      "diode-circuits",
+      "protection"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-073",
+    "question": "What is the role of a diode in a relay circuit?",
+    "answer": "It prevents voltage spikes when the relay coil is de-energized.",
+    "tags": [
+      "diode-circuits",
+      "protection"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-074",
+    "question": "What is the reverse recovery time of a diode?",
+    "answer": "The time it takes for a diode to stop conducting after reverse bias is applied.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-075",
+    "question": "What is a tunnel diode?",
+    "answer": "A diode with negative resistance due to quantum tunneling.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-076",
+    "question": "What is a varactor diode?",
+    "answer": "A diode whose capacitance varies with reverse voltage.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-077",
+    "question": "What is the use of a varactor diode?",
+    "answer": "It is used in tuning circuits like RF oscillators and filters.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-078",
+    "question": "What is a light-emitting diode (LED)?",
+    "answer": "A diode that emits light when forward biased.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-079",
+    "question": "What is the typical forward voltage of an LED?",
+    "answer": "Between 1.8V and 3.3V depending on color and material.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-080",
+    "question": "What is the role of a current-limiting resistor in an LED circuit?",
+    "answer": "It prevents excessive current that could damage the LED.",
+    "tags": [
+      "diode-circuits",
+      "protection"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-081",
+    "question": "What is a diode array?",
+    "answer": "A group of diodes packaged together for compact circuit integration.",
+    "tags": [
+      "diodes",
+      "structure"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-082",
+    "question": "What is a PIN diode?",
+    "answer": "A diode with a wide intrinsic layer between p-type and n-type regions, used in RF switching.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-083",
+    "question": "What is the role of a PIN diode in RF circuits?",
+    "answer": "It acts as a variable resistor for signal attenuation and switching.",
+    "tags": [
+      "diodes",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-084",
+    "question": "What is a laser diode?",
+    "answer": "A diode that emits coherent light through stimulated emission.",
+    "tags": [
+      "diodes",
+      "types"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-085",
+    "question": "What is avalanche breakdown in diodes?",
+    "answer": "A condition where reverse current increases rapidly due to carrier multiplication.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-086",
+    "question": "What is a diode limiter circuit?",
+    "answer": "A circuit that restricts signal amplitude to a set threshold using diodes.",
+    "tags": [
+      "diode-circuits",
+      "waveform-shaping"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-087",
+    "question": "What is a diode logic gate?",
+    "answer": "A basic logic gate implemented using diodes and resistors.",
+    "tags": [
+      "diode-circuits",
+      "digital-logic"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-088",
+    "question": "What is an OR gate using diodes?",
+    "answer": "A circuit where multiple diodes allow high output if any input is high.",
+    "tags": [
+      "diode-circuits",
+      "digital-logic"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-089",
+    "question": "What is an AND gate using diodes?",
+    "answer": "A circuit where output is high only if all diode inputs are high.",
+    "tags": [
+      "diode-circuits",
+      "digital-logic"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-090",
+    "question": "What is thermal runaway in diodes?",
+    "answer": "A condition where increased temperature causes more current, further heating the diode.",
+    "tags": [
+      "diodes",
+      "failure-modes"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-091",
+    "question": "What is a diode's reverse leakage current?",
+    "answer": "A small current that flows when the diode is reverse biased.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-092",
+    "question": "What is a diode's maximum current rating?",
+    "answer": "The highest current the diode can safely conduct without damage.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-093",
+    "question": "What is a diode's power dissipation?",
+    "answer": "The amount of power converted to heat during operation.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-094",
+    "question": "What is a diode's junction capacitance?",
+    "answer": "The capacitance formed between the p-n junction under reverse bias.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-095",
+    "question": "What is a diode's ideality factor?",
+    "answer": "A measure of how closely a diode follows the ideal diode equation.",
+    "tags": [
+      "diodes",
+      "characteristics"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "diodes-096",
+    "question": "What is the role of a diode in voltage regulation?",
+    "answer": "It maintains a stable output voltage, especially in Zener configurations.",
+    "tags": [
+      "diode-circuits",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-097",
+    "question": "What is a diode tester?",
+    "answer": "A tool used to check the forward and reverse characteristics of a diode.",
+    "tags": [
+      "diodes",
+      "tools"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-098",
+    "question": "How do you test a diode using a multimeter?",
+    "answer": "Set to diode mode, connect probes; a forward voltage drop indicates a good diode.",
+    "tags": [
+      "diodes",
+      "tools"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "diodes-099",
+    "question": "What is a diode's role in solar panels?",
+    "answer": "It prevents reverse current flow from the battery to the panel at night.",
+    "tags": [
+      "diode-circuits",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "diodes-100",
+    "question": "What is a diode matrix?",
+    "answer": "A grid of diodes used for encoding or routing signals in digital systems.",
+    "tags": [
+      "diode-circuits",
+      "digital-logic"
+    ],
+    "difficulty": "hard"
+  }
+];

@@ -1,0 +1,915 @@
+window.flashcards_amplifiers = [
+  {
+    "id": "amplifiers-001",
+    "question": "What is the primary function of an amplifier?",
+    "answer": "To increase the amplitude of an input signal.",
+    "tags": [
+      "amplifiers",
+      "definition"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-002",
+    "question": "What is voltage gain in an amplifier?",
+    "answer": "Voltage gain = Output voltage / Input voltage",
+    "tags": [
+      "amplifiers",
+      "formulas"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-003",
+    "question": "What is the unit of gain in decibels?",
+    "answer": "dB (decibels)",
+    "tags": [
+      "amplifiers",
+      "units"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-004",
+    "question": "What is the formula for gain in decibels?",
+    "answer": "Gain (dB) = 20 × log₁₀(Vout / Vin)",
+    "tags": [
+      "amplifiers",
+      "formulas"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-005",
+    "question": "What is the input impedance of an amplifier?",
+    "answer": "The resistance seen by the input signal source.",
+    "tags": [
+      "amplifiers",
+      "impedance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-006",
+    "question": "What is the output impedance of an amplifier?",
+    "answer": "The resistance seen by the load connected to the output.",
+    "tags": [
+      "amplifiers",
+      "impedance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-007",
+    "question": "What is a common-emitter amplifier?",
+    "answer": "An amplifier configuration using a BJT where the emitter is common to both input and output.",
+    "tags": [
+      "amplifiers",
+      "bjts"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-008",
+    "question": "What is the phase relationship in a common-emitter amplifier?",
+    "answer": "The output is 180° out of phase with the input.",
+    "tags": [
+      "amplifiers",
+      "bjts"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-009",
+    "question": "What is the role of a coupling capacitor in an amplifier?",
+    "answer": "To block DC and allow AC signals to pass between stages.",
+    "tags": [
+      "amplifiers",
+      "components"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-010",
+    "question": "What is the bandwidth of an amplifier?",
+    "answer": "The range of frequencies over which the amplifier operates effectively.",
+    "tags": [
+      "amplifiers",
+      "frequency"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-011",
+    "question": "What is a class A amplifier?",
+    "answer": "An amplifier where the transistor conducts for the entire input cycle.",
+    "tags": [
+      "amplifiers",
+      "classes"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-012",
+    "question": "What is a class B amplifier?",
+    "answer": "An amplifier where the transistor conducts for half of the input cycle.",
+    "tags": [
+      "amplifiers",
+      "classes"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-013",
+    "question": "What is crossover distortion?",
+    "answer": "Distortion occurring in class B amplifiers when switching between transistors.",
+    "tags": [
+      "amplifiers",
+      "distortion"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-014",
+    "question": "What is a push-pull amplifier?",
+    "answer": "An amplifier using two transistors to handle positive and negative halves of the signal.",
+    "tags": [
+      "amplifiers",
+      "configuration"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-015",
+    "question": "What is the role of feedback in amplifiers?",
+    "answer": "To stabilize gain and reduce distortion.",
+    "tags": [
+      "amplifiers",
+      "feedback"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-016",
+    "question": "What is negative feedback?",
+    "answer": "Feedback that subtracts from the input to reduce gain and improve stability.",
+    "tags": [
+      "amplifiers",
+      "feedback"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-017",
+    "question": "What is positive feedback?",
+    "answer": "Feedback that adds to the input, potentially causing oscillation.",
+    "tags": [
+      "amplifiers",
+      "feedback"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-018",
+    "question": "What is the role of a bypass capacitor?",
+    "answer": "To increase gain by shorting the emitter resistor at high frequencies.",
+    "tags": [
+      "amplifiers",
+      "components"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-019",
+    "question": "What is the gain of an amplifier with Vin = 0.5 V and Vout = 5 V?",
+    "answer": "Gain = 10",
+    "tags": [
+      "amplifiers",
+      "calculations"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-020",
+    "question": "What is the gain in dB for an amplifier with Vin = 1 V and Vout = 10 V?",
+    "answer": "Gain = 20 dB",
+    "tags": [
+      "amplifiers",
+      "calculations"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-021",
+    "question": "What is the midband region of an amplifier?",
+    "answer": "The frequency range where gain is flat and unaffected by reactive components.",
+    "tags": [
+      "amplifiers",
+      "frequency-response"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-022",
+    "question": "What causes roll-off at low frequencies?",
+    "answer": "Coupling and bypass capacitors acting as high-pass filters.",
+    "tags": [
+      "amplifiers",
+      "frequency-response"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-023",
+    "question": "What causes roll-off at high frequencies?",
+    "answer": "Parasitic capacitances and transistor limitations.",
+    "tags": [
+      "amplifiers",
+      "frequency-response"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-024",
+    "question": "What is slew rate?",
+    "answer": "The maximum rate of change of output voltage per unit time.",
+    "tags": [
+      "amplifiers",
+      "performance"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-025",
+    "question": "What is total harmonic distortion (THD)?",
+    "answer": "The ratio of the sum of powers of all harmonic components to the power of the fundamental frequency.",
+    "tags": [
+      "amplifiers",
+      "distortion"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-026",
+    "question": "What is a differential amplifier?",
+    "answer": "An amplifier that amplifies the difference between two input signals.",
+    "tags": [
+      "amplifiers",
+      "configuration"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-027",
+    "question": "What is common-mode rejection ratio (CMRR)?",
+    "answer": "The ability of a differential amplifier to reject common-mode signals.",
+    "tags": [
+      "amplifiers",
+      "performance"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-028",
+    "question": "What is a unity gain amplifier?",
+    "answer": "An amplifier with a gain of 1, used for buffering.",
+    "tags": [
+      "amplifiers",
+      "configuration"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-029",
+    "question": "What is a buffer amplifier?",
+    "answer": "An amplifier that isolates input from output without amplifying voltage.",
+    "tags": [
+      "amplifiers",
+      "configuration"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-030",
+    "question": "What is the purpose of an operational amplifier (op-amp)?",
+    "answer": "To perform mathematical operations like amplification, integration, and differentiation.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-031",
+    "question": "What is the ideal gain of an op-amp?",
+    "answer": "Infinite",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-032",
+    "question": "What is the input impedance of an ideal op-amp?",
+    "answer": "Infinite",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-033",
+    "question": "What is the output impedance of an ideal op-amp?",
+    "answer": "Zero",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-034",
+    "question": "What is the bandwidth of an ideal op-amp?",
+    "answer": "Infinite",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-035",
+    "question": "What is the gain-bandwidth product?",
+    "answer": "The product of gain and bandwidth, constant for a given op-amp.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-036",
+    "question": "What is an inverting amplifier?",
+    "answer": "An op-amp configuration where the output is inverted and scaled by the input.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-037",
+    "question": "What is a non-inverting amplifier?",
+    "answer": "An op-amp configuration where the output follows the input with gain.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-038",
+    "question": "What is a summing amplifier?",
+    "answer": "An op-amp configuration that adds multiple input signals.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-039",
+    "question": "What is an integrator amplifier?",
+    "answer": "An op-amp configuration that outputs the integral of the input signal.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-040",
+    "question": "What is a differentiator amplifier?",
+    "answer": "An op-amp configuration that outputs the derivative of the input signal.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-041",
+    "question": "What is the formula for gain in an inverting op-amp?",
+    "answer": "Gain = -Rf / Rin",
+    "tags": [
+      "amplifiers",
+      "op-amp",
+      "formulas"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-042",
+    "question": "What is the formula for gain in a non-inverting op-amp?",
+    "answer": "Gain = 1 + (Rf / Rin)",
+    "tags": [
+      "amplifiers",
+      "op-amp",
+      "formulas"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-043",
+    "question": "What is the input offset voltage in an op-amp?",
+    "answer": "The differential DC voltage required to make the output zero.",
+    "tags": [
+      "amplifiers",
+      "op-amp",
+      "performance"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-044",
+    "question": "What is power gain?",
+    "answer": "Power gain = Output power / Input power",
+    "tags": [
+      "amplifiers",
+      "formulas"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-045",
+    "question": "What is a class AB amplifier?",
+    "answer": "An amplifier combining class A and B to reduce distortion and improve efficiency.",
+    "tags": [
+      "amplifiers",
+      "classes"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-046",
+    "question": "What is a class C amplifier used for?",
+    "answer": "High-efficiency RF applications with conduction less than half the input cycle.",
+    "tags": [
+      "amplifiers",
+      "classes"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-047",
+    "question": "What is a class D amplifier?",
+    "answer": "A switching amplifier using pulse-width modulation for high efficiency.",
+    "tags": [
+      "amplifiers",
+      "classes"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-048",
+    "question": "What is thermal distortion?",
+    "answer": "Distortion caused by temperature-induced changes in component behavior.",
+    "tags": [
+      "amplifiers",
+      "distortion"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-049",
+    "question": "What is intermodulation distortion?",
+    "answer": "Distortion caused by mixing of multiple frequencies producing sum/difference tones.",
+    "tags": [
+      "amplifiers",
+      "distortion"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-050",
+    "question": "What is a gain stage?",
+    "answer": "A section of an amplifier circuit that increases signal amplitude.",
+    "tags": [
+      "amplifiers",
+      "design"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-051",
+    "question": "What is a driver stage?",
+    "answer": "An intermediate amplifier stage that prepares signal for power amplification.",
+    "tags": [
+      "amplifiers",
+      "design"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-052",
+    "question": "What is a power stage?",
+    "answer": "The final amplifier stage delivering high current to the load.",
+    "tags": [
+      "amplifiers",
+      "design"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-053",
+    "question": "What is the role of heat sinks in amplifiers?",
+    "answer": "To dissipate heat and prevent thermal damage to components.",
+    "tags": [
+      "amplifiers",
+      "components"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-054",
+    "question": "What is the quiescent point (Q-point)?",
+    "answer": "The DC operating point of a transistor in an amplifier.",
+    "tags": [
+      "amplifiers",
+      "biasing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-055",
+    "question": "What is signal clipping?",
+    "answer": "Distortion caused when output exceeds the amplifier’s voltage limits.",
+    "tags": [
+      "amplifiers",
+      "distortion"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-056",
+    "question": "What is a multistage amplifier?",
+    "answer": "An amplifier composed of multiple gain stages for higher overall gain.",
+    "tags": [
+      "amplifiers",
+      "configuration"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-057",
+    "question": "What is a tuned amplifier?",
+    "answer": "An amplifier designed to operate at a specific frequency using resonant circuits.",
+    "tags": [
+      "amplifiers",
+      "frequency"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-058",
+    "question": "What is a video amplifier?",
+    "answer": "An amplifier optimized for wide bandwidth to handle video signals.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-059",
+    "question": "What is a power amplifier?",
+    "answer": "An amplifier designed to deliver high power to a load.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-060",
+    "question": "What is a preamplifier?",
+    "answer": "An amplifier that boosts weak signals before further processing.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-061",
+    "question": "What is a logarithmic amplifier?",
+    "answer": "An amplifier whose output is proportional to the logarithm of the input signal.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-062",
+    "question": "What is an instrumentation amplifier?",
+    "answer": "A high-precision amplifier with high input impedance and excellent CMRR.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-063",
+    "question": "What is a transconductance amplifier?",
+    "answer": "An amplifier that converts input voltage to output current.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-064",
+    "question": "What is a transimpedance amplifier?",
+    "answer": "An amplifier that converts input current to output voltage.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-065",
+    "question": "What is a programmable gain amplifier (PGA)?",
+    "answer": "An amplifier with digitally adjustable gain settings.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-066",
+    "question": "What is a chopper amplifier?",
+    "answer": "An amplifier that reduces offset and drift using modulation techniques.",
+    "tags": [
+      "amplifiers",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-067",
+    "question": "What is a noise figure?",
+    "answer": "A measure of how much noise an amplifier adds to the signal.",
+    "tags": [
+      "amplifiers",
+      "performance"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-068",
+    "question": "What is dynamic range?",
+    "answer": "The ratio between the largest and smallest signal levels an amplifier can handle.",
+    "tags": [
+      "amplifiers",
+      "performance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-069",
+    "question": "What is input bias current?",
+    "answer": "The average current flowing into the input terminals of an op-amp.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-070",
+    "question": "What is input offset current?",
+    "answer": "The difference in bias currents between the op-amp’s input terminals.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-071",
+    "question": "What is common-mode voltage?",
+    "answer": "The average voltage applied to both inputs of a differential amplifier.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-072",
+    "question": "What is the maximum output swing of an op-amp?",
+    "answer": "The peak voltage range the op-amp can output without distortion.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-073",
+    "question": "What is rail-to-rail output?",
+    "answer": "An op-amp feature allowing output voltage to reach both supply rails.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-074",
+    "question": "What is a virtual ground in op-amp circuits?",
+    "answer": "A point that maintains zero voltage due to feedback, though not physically grounded.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-075",
+    "question": "What is the purpose of a decoupling capacitor?",
+    "answer": "To filter out noise and stabilize power supply voltage.",
+    "tags": [
+      "amplifiers",
+      "components"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-076",
+    "question": "What is the effect of temperature on gain?",
+    "answer": "Temperature changes can affect transistor parameters, altering gain.",
+    "tags": [
+      "amplifiers",
+      "performance"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-077",
+    "question": "What is a gain margin?",
+    "answer": "The amount of gain increase before an amplifier becomes unstable.",
+    "tags": [
+      "amplifiers",
+      "feedback"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-078",
+    "question": "What is phase margin?",
+    "answer": "The amount of phase shift before an amplifier becomes unstable.",
+    "tags": [
+      "amplifiers",
+      "feedback"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-079",
+    "question": "What is a bode plot?",
+    "answer": "A graph showing gain and phase versus frequency.",
+    "tags": [
+      "amplifiers",
+      "frequency-response"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-080",
+    "question": "What is the 3 dB point?",
+    "answer": "The frequency where gain drops to 70.7% of its maximum value.",
+    "tags": [
+      "amplifiers",
+      "frequency-response"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-081",
+    "question": "What is a feedback resistor?",
+    "answer": "A resistor used to control gain and stability in feedback loops.",
+    "tags": [
+      "amplifiers",
+      "feedback"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-082",
+    "question": "What is a gain error?",
+    "answer": "Deviation from expected gain due to component tolerances.",
+    "tags": [
+      "amplifiers",
+      "performance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-083",
+    "question": "What is a load line?",
+    "answer": "A graphical representation of all possible output voltages and currents.",
+    "tags": [
+      "amplifiers",
+      "design"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-084",
+    "question": "What is a signal-to-noise ratio (SNR)?",
+    "answer": "The ratio of signal power to noise power.",
+    "tags": [
+      "amplifiers",
+      "performance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-085",
+    "question": "What is a unity-gain bandwidth?",
+    "answer": "The frequency at which the gain of an op-amp drops to 1.",
+    "tags": [
+      "amplifiers",
+      "op-amp"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-086",
+    "question": "What is a bootstrapped amplifier?",
+    "answer": "An amplifier using positive feedback to increase input impedance.",
+    "tags": [
+      "amplifiers",
+      "configuration"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-087",
+    "question": "What is a Darlington pair?",
+    "answer": "Two BJTs connected to provide high current gain.",
+    "tags": [
+      "amplifiers",
+      "bjts"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "amplifiers-088",
+    "question": "What is a cascode amplifier?",
+    "answer": "A two-stage amplifier combining high gain and bandwidth.",
+    "tags": [
+      "amplifiers",
+      "configuration"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-089",
+    "question": "What is a current mirror?",
+    "answer": "A circuit that copies current from one branch to another.",
+    "tags": [
+      "amplifiers",
+      "bjts"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "amplifiers-090",
+    "question": "What is a load resistor?",
+    "answer": "A resistor connected to the output to simulate or control load conditions.",
+    "tags": [
+      "amplifiers",
+      "components"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "amplifiers-091",
+    "question": "What is a gain stage coupling method?",
+    "answer": "Techniques like RC, transformer, or direct coupling between amplifier stages.",
+    "tags": [
+      "amplifiers",
+      "configuration"
+    ],
+    "difficulty": "medium"
+  }
+];

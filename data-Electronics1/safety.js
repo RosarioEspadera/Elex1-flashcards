@@ -1,0 +1,502 @@
+window.flashcards_safety = [
+  {
+    "id": "safety-001",
+    "question": "What is the primary purpose of lockout/tagout procedures?",
+    "answer": "To prevent accidental energization of equipment during maintenance.",
+    "tags": [
+      "safety",
+      "lockout-tagout"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-002",
+    "question": "Why should you never wear metal jewelry when working with electricity?",
+    "answer": "Metal conducts electricity and increases the risk of shock or burns.",
+    "tags": [
+      "safety",
+      "personal-protection"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-003",
+    "question": "What does PPE stand for?",
+    "answer": "Personal Protective Equipment",
+    "tags": [
+      "safety",
+      "ppe"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-004",
+    "question": "Name two common types of PPE used in electrical work.",
+    "answer": "Insulated gloves and safety goggles",
+    "tags": [
+      "safety",
+      "ppe"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-005",
+    "question": "What is the minimum safe distance from exposed live parts?",
+    "answer": "Typically 3 feet (varies by voltage and regulation)",
+    "tags": [
+      "safety",
+      "electrical-hazards"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-006",
+    "question": "What should you do before using a power tool?",
+    "answer": "Inspect it for damage and ensure it's properly grounded.",
+    "tags": [
+      "safety",
+      "tools"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-007",
+    "question": "Why is it dangerous to work in wet conditions with electrical equipment?",
+    "answer": "Water increases conductivity and the risk of electric shock.",
+    "tags": [
+      "safety",
+      "environment"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-008",
+    "question": "What class of fire extinguisher is used for electrical fires?",
+    "answer": "Class C",
+    "tags": [
+      "safety",
+      "fire-safety"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-009",
+    "question": "What is the first step in responding to an electrical shock incident?",
+    "answer": "Disconnect the power source if safe to do so.",
+    "tags": [
+      "safety",
+      "emergency-response"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-010",
+    "question": "What does GFCI stand for?",
+    "answer": "Ground Fault Circuit Interrupter",
+    "tags": [
+      "safety",
+      "devices"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-011",
+    "question": "What is the function of a GFCI?",
+    "answer": "It shuts off power when a ground fault is detected to prevent shock.",
+    "tags": [
+      "safety",
+      "devices"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-012",
+    "question": "Why should you avoid using extension cords as permanent wiring?",
+    "answer": "They are not rated for continuous use and pose fire hazards.",
+    "tags": [
+      "safety",
+      "wiring"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-013",
+    "question": "What should you do if you smell burning insulation?",
+    "answer": "Turn off power immediately and investigate the source.",
+    "tags": [
+      "safety",
+      "fire-safety"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-014",
+    "question": "What is the role of a circuit breaker?",
+    "answer": "To interrupt current flow in case of overload or fault.",
+    "tags": [
+      "safety",
+      "devices"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-015",
+    "question": "What is arc flash?",
+    "answer": "A dangerous release of energy caused by an electrical fault.",
+    "tags": [
+      "safety",
+      "hazards"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-016",
+    "question": "What type of footwear is recommended for electrical work?",
+    "answer": "Non-conductive, insulated safety boots",
+    "tags": [
+      "safety",
+      "ppe"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-017",
+    "question": "What should you do before entering a confined space?",
+    "answer": "Test for hazardous gases and ensure proper ventilation.",
+    "tags": [
+      "safety",
+      "environment"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-018",
+    "question": "What is the purpose of a safety data sheet (SDS)?",
+    "answer": "To provide information on handling, hazards, and emergency measures for chemicals.",
+    "tags": [
+      "safety",
+      "chemical-safety"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-019",
+    "question": "What is the recommended action if a coworker is electrocuted?",
+    "answer": "Call emergency services and do not touch the person until power is off.",
+    "tags": [
+      "safety",
+      "emergency-response"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-020",
+    "question": "Why is it important to keep work areas dry and clean?",
+    "answer": "To reduce the risk of slips, falls, and electrical hazards.",
+    "tags": [
+      "safety",
+      "environment"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-021",
+    "question": "What is the purpose of grounding in electrical systems?",
+    "answer": "To provide a safe path for fault current and prevent electric shock.",
+    "tags": [
+      "safety",
+      "grounding"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-022",
+    "question": "What is the function of an insulated tool?",
+    "answer": "To protect the user from electric shock when working on live circuits.",
+    "tags": [
+      "safety",
+      "tools"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-023",
+    "question": "What does a Class C fire extinguisher target?",
+    "answer": "Electrical fires involving energized equipment.",
+    "tags": [
+      "safety",
+      "fire-safety"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-024",
+    "question": "What is the risk of bypassing a fuse with a wire?",
+    "answer": "It eliminates overcurrent protection and can cause fire or equipment damage.",
+    "tags": [
+      "safety",
+      "circuit-protection"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-025",
+    "question": "Why should you avoid touching a victim of electric shock directly?",
+    "answer": "You may become part of the circuit and get shocked yourself.",
+    "tags": [
+      "safety",
+      "emergency-response"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-026",
+    "question": "What is the role of a fuse in a circuit?",
+    "answer": "To break the circuit when current exceeds a safe level.",
+    "tags": [
+      "safety",
+      "circuit-protection"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-027",
+    "question": "What should be done before working on a de-energized circuit?",
+    "answer": "Verify it is de-energized using a properly rated tester.",
+    "tags": [
+      "safety",
+      "verification"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-028",
+    "question": "What is the danger of using damaged insulation on wires?",
+    "answer": "It can expose live conductors and cause shock or fire.",
+    "tags": [
+      "safety",
+      "wiring"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-029",
+    "question": "What is the recommended action if a tool sparks unexpectedly?",
+    "answer": "Stop using it immediately and report or replace it.",
+    "tags": [
+      "safety",
+      "tools"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-030",
+    "question": "Why is it important to follow manufacturer instructions for equipment?",
+    "answer": "To ensure safe operation and avoid misuse that could lead to injury.",
+    "tags": [
+      "safety",
+      "procedures"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-031",
+    "question": "What is the purpose of a circuit breaker?",
+    "answer": "To automatically disconnect power during overload or fault conditions.",
+    "tags": [
+      "safety",
+      "devices"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-032",
+    "question": "What should be done if a GFCI trips repeatedly?",
+    "answer": "Investigate the cause and repair the fault before resetting.",
+    "tags": [
+      "safety",
+      "devices"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-033",
+    "question": "What is the hazard of overloading a power strip?",
+    "answer": "It can overheat and cause fire.",
+    "tags": [
+      "safety",
+      "wiring"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-034",
+    "question": "Why is it important to label circuit breakers?",
+    "answer": "To quickly identify and isolate circuits during maintenance or emergencies.",
+    "tags": [
+      "safety",
+      "devices"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-035",
+    "question": "What is the role of a voltage tester?",
+    "answer": "To verify the presence or absence of voltage before working.",
+    "tags": [
+      "safety",
+      "tools"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-036",
+    "question": "What is the danger of using tools with frayed cords?",
+    "answer": "They can expose live wires and cause shock or fire.",
+    "tags": [
+      "safety",
+      "tools"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-037",
+    "question": "What should you do if you see smoke coming from a panel?",
+    "answer": "Evacuate the area and alert emergency personnel.",
+    "tags": [
+      "safety",
+      "fire-safety"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-038",
+    "question": "What is the purpose of a safety interlock?",
+    "answer": "To prevent operation of equipment when a guard or door is open.",
+    "tags": [
+      "safety",
+      "devices"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-039",
+    "question": "What is the risk of using ungrounded outlets?",
+    "answer": "They increase the chance of electric shock.",
+    "tags": [
+      "safety",
+      "grounding"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-040",
+    "question": "Why should you never assume a wire is dead?",
+    "answer": "It may still be energized and pose a shock hazard.",
+    "tags": [
+      "safety",
+      "verification"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-041",
+    "question": "What is the purpose of a warning label on electrical equipment?",
+    "answer": "To alert users to potential hazards and required precautions.",
+    "tags": [
+      "safety",
+      "signage"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-042",
+    "question": "What is the danger of using a ladder near power lines?",
+    "answer": "Risk of electrocution if contact is made.",
+    "tags": [
+      "safety",
+      "environment"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-043",
+    "question": "What is the safest way to unplug a device?",
+    "answer": "Pull the plug, not the cord.",
+    "tags": [
+      "safety",
+      "tools"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-044",
+    "question": "What is the role of a safety officer?",
+    "answer": "To oversee compliance with safety protocols and training.",
+    "tags": [
+      "safety",
+      "roles"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-045",
+    "question": "What is the hazard of storing flammable materials near electrical panels?",
+    "answer": "Increased fire risk during faults or overheating.",
+    "tags": [
+      "safety",
+      "environment"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-046",
+    "question": "What is the purpose of a fire watch during hot work?",
+    "answer": "To monitor for fire hazards and respond immediately.",
+    "tags": [
+      "safety",
+      "fire-safety"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "safety-047",
+    "question": "Why should safety training be repeated regularly?",
+    "answer": "To reinforce knowledge and update procedures.",
+    "tags": [
+      "safety",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-048",
+    "question": "What is the danger of using a higher-rated fuse than specified?",
+    "answer": "It may not protect the circuit properly, leading to overheating or fire.",
+    "tags": [
+      "safety",
+      "circuit-protection"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "safety-049",
+    "question": "What is the purpose of a safety checklist?",
+    "answer": "To ensure all safety steps are followed before starting work.",
+    "tags": [
+      "safety",
+      "procedures"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "safety-050",
+    "question": "What is the role of signage in a hazardous area?",
+    "answer": "To warn personnel and indicate required PPE or precautions.",
+    "tags": [
+      "safety",
+      "signage"
+    ],
+    "difficulty": "easy"
+  }
+];

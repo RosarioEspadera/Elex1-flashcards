@@ -1,0 +1,312 @@
+window.flashcards_power_supplies = [
+  {
+    "id": "ps-001",
+    "question": "What is the function of a power supply in electronic circuits?",
+    "answer": "To convert electrical energy into a stable DC voltage for circuit operation.",
+    "tags": [
+      "function",
+      "power",
+      "basic"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "ps-002",
+    "question": "What is rectification?",
+    "answer": "The process of converting AC to DC using diodes.",
+    "tags": [
+      "rectification",
+      "diodes",
+      "conversion"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "ps-003",
+    "question": "What is the difference between half-wave and full-wave rectification?",
+    "answer": "Half-wave uses one diode and conducts during one half-cycle; full-wave uses multiple diodes and conducts during both half-cycles.",
+    "tags": [
+      "rectification",
+      "comparison",
+      "diodes"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-004",
+    "question": "What is the role of a filter capacitor in a power supply?",
+    "answer": "To smooth out the ripples in the rectified DC voltage.",
+    "tags": [
+      "filtering",
+      "capacitors",
+      "power"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-005",
+    "question": "What is voltage regulation?",
+    "answer": "Maintaining a constant output voltage despite changes in input or load.",
+    "tags": [
+      "regulation",
+      "stability",
+      "power"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-006",
+    "question": "What is the function of a Zener diode in voltage regulation?",
+    "answer": "It maintains a constant voltage across its terminals when reverse biased beyond breakdown.",
+    "tags": [
+      "zener",
+      "regulation",
+      "power"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-007",
+    "question": "What is ripple voltage?",
+    "answer": "The residual periodic variation in DC voltage after rectification and filtering.",
+    "tags": [
+      "ripple",
+      "filtering",
+      "power"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-008",
+    "question": "What is the role of a transformer in a power supply?",
+    "answer": "To step up or step down AC voltage before rectification.",
+    "tags": [
+      "transformers",
+      "conversion",
+      "power"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "ps-009",
+    "question": "What is a linear regulator?",
+    "answer": "A device that uses resistive elements to maintain a constant output voltage.",
+    "tags": [
+      "linear",
+      "regulation",
+      "power"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "ps-010",
+    "question": "What is a switching regulator?",
+    "answer": "A regulator that uses high-frequency switching and energy storage elements for efficient voltage control.",
+    "tags": [
+      "switching",
+      "efficiency",
+      "power"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-021",
+    "question": "What is the purpose of biasing a FET?",
+    "answer": "To set the operating point for linear amplification or switching.",
+    "tags": [
+      "fets",
+      "biasing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-022",
+    "question": "What is self-biasing in a JFET?",
+    "answer": "Using a resistor in the source leg to develop Vgs automatically.",
+    "tags": [
+      "fets",
+      "biasing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-023",
+    "question": "What is the role of a voltage divider in MOSFET biasing?",
+    "answer": "To set a stable gate voltage using resistors.",
+    "tags": [
+      "fets",
+      "biasing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-024",
+    "question": "What happens when Vgs < Vth in an enhancement-mode MOSFET?",
+    "answer": "The MOSFET remains off; no conduction occurs.",
+    "tags": [
+      "fets",
+      "operation"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fets-025",
+    "question": "What is the ohmic region in a FET?",
+    "answer": "The region where the FET behaves like a variable resistor.",
+    "tags": [
+      "fets",
+      "operation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-026",
+    "question": "What is the saturation region in a FET?",
+    "answer": "The region where drain current is mostly independent of Vds.",
+    "tags": [
+      "fets",
+      "operation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-027",
+    "question": "What is the cutoff region in a FET?",
+    "answer": "The region where the FET is off and no current flows.",
+    "tags": [
+      "fets",
+      "operation"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "fets-028",
+    "question": "What is the role of a FET in a CMOS inverter?",
+    "answer": "To switch between high and low output states using complementary MOSFETs.",
+    "tags": [
+      "fets",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-029",
+    "question": "Why are FETs preferred in low-noise amplifiers?",
+    "answer": "Due to their high input impedance and low gate current.",
+    "tags": [
+      "fets",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-030",
+    "question": "What is the role of a FET in a voltage follower?",
+    "answer": "To buffer signals without amplification, preserving voltage.",
+    "tags": [
+      "fets",
+      "applications"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "fets-031",
+    "question": "What is the gate capacitance in a MOSFET?",
+    "answer": "The capacitance between gate and channel due to the oxide layer.",
+    "tags": [
+      "fets",
+      "parameters"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-032",
+    "question": "What is channel-length modulation in MOSFETs?",
+    "answer": "A slight increase in drain current with Vds due to shortening of the channel.",
+    "tags": [
+      "fets",
+      "edge-cases"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-033",
+    "question": "What is subthreshold conduction in MOSFETs?",
+    "answer": "Leakage current that flows even when Vgs < Vth.",
+    "tags": [
+      "fets",
+      "edge-cases"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-034",
+    "question": "What is the body effect in MOSFETs?",
+    "answer": "An increase in threshold voltage due to source-body voltage.",
+    "tags": [
+      "fets",
+      "edge-cases"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-035",
+    "question": "What is thermal runaway in FETs?",
+    "answer": "A condition where increased temperature leads to higher current and further heating.",
+    "tags": [
+      "fets",
+      "edge-cases"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-036",
+    "question": "What is the safe operating area (SOA) of a FET?",
+    "answer": "The range of voltage and current within which the FET can operate safely.",
+    "tags": [
+      "fets",
+      "parameters"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-037",
+    "question": "What is the role of a FET in a current mirror?",
+    "answer": "To replicate current from one branch to another using matched devices.",
+    "tags": [
+      "fets",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-038",
+    "question": "What is the role of a FET in a differential amplifier?",
+    "answer": "To amplify the difference between two input signals.",
+    "tags": [
+      "fets",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-039",
+    "question": "What is the role of a FET in a mixer circuit?",
+    "answer": "To combine signals at different frequencies for modulation or demodulation.",
+    "tags": [
+      "fets",
+      "applications"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "fets-040",
+    "question": "What is the role of a FET in a sample-and-hold circuit?",
+    "answer": "To isolate and store analog voltage levels temporarily.",
+    "tags": [
+      "fets",
+      "applications"
+    ],
+    "difficulty": "hard"
+  }
+];
