@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Louis George Café Light';
+  src: url('./font/louis_george_cafe_light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Louis George Café Light', sans-serif;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+h1 {
+  margin-bottom: 1rem;
+}
+.top-nav {
+  color: white;
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-nav a {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+}
+#file-input {
+  margin-bottom: 1rem;
+}
+
+#pdf-viewer {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 1rem;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+canvas {
+  width: 100%;
+  margin-bottom: 1rem;
+}

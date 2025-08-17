@@ -7,39 +7,21 @@ body {
   line-height: 1.6;
 }
 
-#installBtn {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 1000;
-  padding: 0.75em 1.5em;
-  background: #1976d2;
-  color: #fff;
-  border: none;
-  border-radius: 2em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  font-size: 1.1em;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-#installBtn:hover,
-#installBtn:focus {
-  background: #1565c0;
-  outline: none;
-}
-  
-  
 a {
   text-decoration: none;
   color: inherit;
 }
 
 button {
-  background: none;
   border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  transition: transform 0.2s ease;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: 10;
+  height: 60px;
+  width: 60px;
+  margin: 2rem;
 }
 
 button:hover {
@@ -47,26 +29,30 @@ button:hover {
 }
 
 /* Header */
-.site-header {
+header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background: #2c3e50;
+  padding: 1rem;
+  background: #007acc;
   color: white;
-  padding: 0.75rem 1.25rem;
 }
 
-.site-title {
+h1 {
   font-size: 1.5rem;
-  margin: 0;
+  margin-top: 50px;
 }
 
 .top-nav {
-  display: flex;
-  gap: 1rem;
+  color: white;
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.nav-icon svg {
+.top-nav a {
   width: 24px;
   height: 24px;
   stroke: white;
@@ -112,12 +98,45 @@ button:hover {
 }
 
 .flashcard {
-  width: 100%;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   perspective: 1000px;
   margin-bottom: 1rem;
   position: relative;
 }
+.flashcard .front,
+.flashcard .back {
+  overflow-y: auto;         /* Enable vertical scroll */
+  max-height: 100%;         /* Prevent overflow */
+  text-align: center;       /* Center image horizontally */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.flashcard img {
+  max-width: 100%;          /* Prevent horizontal overflow */
+  height: auto;             /* Preserve aspect ratio */
+  display: inline-block;
+}
+
+
+.front img,
+.back img {
+  width: 100%;              /* Match flashcard width */
+  height: auto;             /* Maintain aspect ratio */
+  display: block;
+}
+.flashcard .front::after,
+.flashcard .back::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.1));
+  pointer-events: none;
+}
+
 
 .flashcard > .front,
 .flashcard > .back {
@@ -135,9 +154,10 @@ button:hover {
 }
 
 .flashcard > div {
-  position: absolute;
-  min-width: 300px;
-  max-width: 340px;
+ align-content:center;
+   position: absolute;
+   min-width: 320px;
+   max-width: 370px;
   margin: 0 auto;
   backface-visibility: hidden;
   background: white;
@@ -211,4 +231,25 @@ button:hover {
 /* Utility */
 .hidden {
   display: none;
+}
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: 10;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+
+#prev, #next {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }

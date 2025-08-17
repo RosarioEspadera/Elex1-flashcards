@@ -1,9 +1,6 @@
 import { loadAllFlashcardData } from './dataLoadersolving.js';
 import { checkVersion } from "./app.js";
 
-document.getElementById("updateCheckBtn").addEventListener("click", checkVersion);
-
-
 const topicCards = document.querySelectorAll('.topic-card');
 const flashcardViewer = document.querySelector('.flashcard-viewer');
 const flashcard = document.querySelector('.flashcard');

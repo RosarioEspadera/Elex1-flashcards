@@ -1,0 +1,386 @@
+window.flashcards_transistor_biasing = [
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q1.jpeg",
+        "alt": "Q1-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q1ans.jpeg",
+        "alt": "Q1ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q2.jpeg",
+        "alt": "Q2-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q2ans.jpeg",
+        "alt": "Q2ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q3.jpeg",
+        "alt": "Q3-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q3ans.jpeg",
+        "alt": "Q3ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q4.jpeg",
+        "alt": "Q4-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q4ans.jpeg",
+        "alt": "Q4ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q5.jpeg",
+        "alt": "Q5-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q5ans.jpeg",
+        "alt": "Q5ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q6.jpeg",
+        "alt": "Q6-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q6ans.jpeg",
+        "alt": "Q6ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q7.jpeg",
+        "alt": "Q7-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q7ans.jpeg",
+        "alt": "Q7ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q8.jpeg",
+        "alt": "Q8-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q8ans.jpeg",
+        "alt": "Q8ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q9.jpeg",
+        "alt": "Q9-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q9ans.jpeg",
+        "alt": "Q9ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q10.jpeg",
+        "alt": "Q10-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q10ans.jpeg",
+        "alt": "Q10ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q11.jpeg",
+        "alt": "Q11-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q11ans.jpeg",
+        "alt": "Q11ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q12.jpeg",
+        "alt": "Q12-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q12ans.jpeg",
+        "alt": "Q12ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q13.jpeg",
+        "alt": "Q13-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q13ans.jpeg",
+        "alt": "Q13ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q14.jpeg",
+        "alt": "Q14-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q14ans.jpeg",
+        "alt": "Q14ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q15.jpeg",
+        "alt": "Q15-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q15ans.jpeg",
+        "alt": "Q15ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q16.jpeg",
+        "alt": "Q16-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q16ans.jpeg",
+        "alt": "Q16ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q17.jpeg",
+        "alt": "Q17-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q17ans.jpeg",
+        "alt": "Q17ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q18.jpeg",
+        "alt": "Q18-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q18ans.jpeg",
+        "alt": "Q18ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q19.jpeg",
+        "alt": "Q19-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q19ans.jpeg",
+        "alt": "Q19ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q20.jpeg",
+        "alt": "Q20-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q20ans.jpeg",
+        "alt": "Q20ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q21.jpeg",
+        "alt": "Q21-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q21ans.jpeg",
+        "alt": "Q21ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q22.jpeg",
+        "alt": "Q22-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q22ans.jpeg",
+        "alt": "Q22ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q23.jpeg",
+        "alt": "Q23-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q23ans.jpeg",
+        "alt": "Q23ans-transistor-biasing"
+      }
+    ]
+  },
+  {
+    "question": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q24.jpeg",
+        "alt": "Q24-transistor-biasing"
+      }
+    ],
+    "answer": [
+      {
+        "type": "img",
+        "src": "images-transistor-biasing/Q24ans.jpeg",
+        "alt": "Q24ans-transistor-biasing"
+      }
+    ]
+  }
+];
